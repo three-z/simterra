@@ -9,8 +9,6 @@
 		"normalize.css": "*",
 		"jquery": "2.*",
 		"slick.js": "*",
-		"pxgradient": "https://github.com/mrnix/pxgradient.git",
-		"jQuery.dotdotdot": "*",
 		"fancybox": "*"
 	}
 }

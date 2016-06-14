@@ -13,7 +13,7 @@ block('template-page').replace()(function() {
 						},
 						{
 							tag: 'title',
-							content: this.ctx.title
+							content: ''
 						},
 						{
 							tag: 'link',
@@ -53,6 +53,12 @@ block('template-page').replace()(function() {
 								{
 									block: 'template-header'
 								},
+								{
+									block : this.ctx.title ? 'page-title' : undefined,
+									tag : this.ctx.title ? 'h1' : undefined,
+									mix: { block: 'container' },
+									content : this.ctx.title
+								},
 								this.ctx.content,
 								{
 									block: 'template-footer'
@@ -69,10 +75,6 @@ block('template-page').replace()(function() {
 						{
 							tag: 'script',
 							attrs: { src: 'bower_components/slick.js/slick/slick.min.js' }
-						},
-						{
-							tag: 'script',
-							attrs: { src: 'bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js' }
 						},
 						{
 							tag: 'script',

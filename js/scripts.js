@@ -34,10 +34,16 @@ $(document).ready(function() {
 		$('.home-advantages-hide').hide();
 	});
 
-
-});
-
-$(window).bind('load', function() {
-
-	$('.js-dotted').dotdotdot();
+	$('.home-events-list').slick({
+		autoplay: false,
+		autoplaySpeed: 5000,
+		dots: true,
+		arrows: false,
+		infinite: true,
+		speed: 800,
+		adaptiveHeight: false,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		variableWidth: true
+	});
 });
