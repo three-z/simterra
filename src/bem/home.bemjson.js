@@ -86,7 +86,7 @@
 												}
 											].map(function(item) {
 												return {
-													elem: 'item',
+													elem: 'list-item',
 													tag : 'li',
 													mods : { item : item.class },
 													content: [
@@ -181,7 +181,7 @@
 											tag : 'ul',
 											content: [
 												{
-													elem: 'item',
+													elem: 'list-item',
 													tag : 'li',
 													content: [
 														{
@@ -192,7 +192,7 @@
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'list-item',
 													tag : 'li',
 													content: [
 														{
@@ -203,7 +203,7 @@
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'list-item',
 													tag : 'li',
 													mods: { 'active': true },
 													content: [

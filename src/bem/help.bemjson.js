@@ -23,7 +23,7 @@
 													tag: 'ul',
 													content: [
 														{
-															elem: 'item',
+															elem: 'list-item',
 															tag: 'li',
 															mods: { 'active': true },
 															content: [
@@ -35,7 +35,7 @@
 															]
 														},
 														{
-															elem: 'item',
+															elem: 'list-item',
 															tag: 'li',
 															content: [
 																{
@@ -46,7 +46,7 @@
 															]
 														},
 														{
-															elem: 'item',
+															elem: 'list-item',
 															tag: 'li',
 															content: [
 																{
@@ -57,7 +57,7 @@
 															]
 														},
 														{
-															elem: 'item',
+															elem: 'list-item',
 															tag: 'li',
 															content: [
 																{
@@ -68,7 +68,7 @@
 															]
 														},
 														{
-															elem: 'item',
+															elem: 'list-item',
 															tag: 'li',
 															content: [
 																{
@@ -79,7 +79,7 @@
 															]
 														},
 														{
-															elem: 'item',
+															elem: 'list-item',
 															tag: 'li',
 															content: [
 																{
@@ -90,7 +90,7 @@
 															]
 														},
 														{
-															elem: 'item',
+															elem: 'list-item',
 															tag: 'li',
 															content: [
 																{
@@ -101,7 +101,7 @@
 															]
 														},
 														{
-															elem: 'item',
+															elem: 'list-item',
 															tag: 'li',
 															content: [
 																{
@@ -112,7 +112,7 @@
 															]
 														},
 														{
-															elem: 'item',
+															elem: 'list-item',
 															tag: 'li',
 															content: [
 																{

@@ -126,7 +126,7 @@ block('template-footer').replace()(function() {
 									tag : 'ul',
 									content: [
 										{
-											elem: 'item',
+											elem: 'list-item',
 											tag : 'li',
 											content: [
 												{
@@ -137,7 +137,7 @@ block('template-footer').replace()(function() {
 											]
 										},
 										{
-											elem: 'item',
+											elem: 'list-item',
 											tag : 'li',
 											content: [
 												{
@@ -148,7 +148,7 @@ block('template-footer').replace()(function() {
 											]
 										},
 										{
-											elem: 'item',
+											elem: 'list-item',
 											tag : 'li',
 											content: [
 												{
@@ -159,7 +159,7 @@ block('template-footer').replace()(function() {
 											]
 										},
 										{
-											elem: 'item',
+											elem: 'list-item',
 											tag : 'li',
 											content: [
 												{
@@ -170,7 +170,7 @@ block('template-footer').replace()(function() {
 											]
 										},
 										{
-											elem: 'item',
+											elem: 'list-item',
 											tag : 'li',
 											content: [
 												{
@@ -181,7 +181,7 @@ block('template-footer').replace()(function() {
 											]
 										},
 										{
-											elem: 'item',
+											elem: 'list-item',
 											tag : 'li',
 											content: [
 												{
@@ -192,7 +192,7 @@ block('template-footer').replace()(function() {
 											]
 										},
 										{
-											elem: 'item',
+											elem: 'list-item',
 											tag : 'li',
 											content: [
 												{
@@ -203,7 +203,7 @@ block('template-footer').replace()(function() {
 											]
 										},
 										{
-											elem: 'item',
+											elem: 'list-item',
 											tag : 'li',
 											content: [
 												{
