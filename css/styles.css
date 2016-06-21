@@ -1233,7 +1233,7 @@ a:hover {
   background-position: 50% 31px;
 }
 
-.home-advantages-tabs__list-item_item_control.home-advantages-tabs__item_active a {
+.home-advantages-tabs__list-item_item_control.home-advantages-tabs__list-item_active a {
   background-image: url(../img/home-advantages-tabs/icons/control-hover.png);
 }
 
@@ -1242,7 +1242,7 @@ a:hover {
   background-position: 50% 49px;
 }
 
-.home-advantages-tabs__list-item_item_cal.home-advantages-tabs__item_active a {
+.home-advantages-tabs__list-item_item_cal.home-advantages-tabs__list-item_active a {
   background-image: url(../img/home-advantages-tabs/icons/cal-hover.png);
 }
 
@@ -1251,7 +1251,7 @@ a:hover {
   background-position: 50% 30px;
 }
 
-.home-advantages-tabs__list-item_item_local.home-advantages-tabs__item_active a {
+.home-advantages-tabs__list-item_item_local.home-advantages-tabs__list-item_active a {
   background-image: url(../img/home-advantages-tabs/icons/local-hover.png);
 }
 
@@ -1260,7 +1260,7 @@ a:hover {
   background-position: 50% 32px;
 }
 
-.home-advantages-tabs__list-item_item_hot.home-advantages-tabs__item_active a {
+.home-advantages-tabs__list-item_item_hot.home-advantages-tabs__list-item_active a {
   background-image: url(../img/home-advantages-tabs/icons/hot-hover.png);
 }
 
