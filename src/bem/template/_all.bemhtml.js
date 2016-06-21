@@ -718,6 +718,10 @@ block('template-page').replace()(function() {
 						},
 						{
 							tag: 'script',
+							attrs: { src: 'bower_components/circular-carousel/jquery.circular-carousel.js' }
+						},
+						{
+							tag: 'script',
 							attrs: { src: 'js/scripts.js' }
 						},
 					]

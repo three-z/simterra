@@ -167,148 +167,375 @@
 					]
 				},
 				{
-					block : 'home-events',
+					block : 'home-elements',
 					content : [
 						{
 							elem: 'layout',
 							mix: { block: 'container', mods: { 'no-padding': true } },
 							content: [
 								{
-									block: 'home-navigation',
-									content: [
-										{
-											elem: 'list',
-											tag : 'ul',
-											content: [
-												{
-													elem: 'list-item',
-													tag : 'li',
-													content: [
-														{
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'Калькулятор'
-														}
-													]
-												},
-												{
-													elem: 'list-item',
-													tag : 'li',
-													content: [
-														{
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'Пополнить баланс'
-														}
-													]
-												},
-												{
-													elem: 'list-item',
-													tag : 'li',
-													mods: { 'active': true },
-													content: [
-														{
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'Особые мероприятия'
-														}
-													]
-												}
-											]
-										}
-									]
-								},
-								{
-									block : 'home-events-list',
+									block : 'home-elements-list',
 									content : [
 										{
-											date: '12.03.2015',
-											title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
-											text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
-										},
-										{
-											date: '12.03.2015',
-											img: 'img/home-events-list/1.jpg',
-											title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
-											text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
-										},
-										{
-											date: '12.03.2015',
-											title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
-											text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
-										},
-										{
-											date: '12.03.2015',
-											title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
-											text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
-										},
-										{
-											date: '12.03.2015',
-											title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
-											text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
-										},
-										{
-											date: '12.03.2015',
-											img: 'img/home-events-list/1.jpg',
-											title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
-											text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
-										},
-										{
-											date: '12.03.2015',
-											title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
-											text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
-										},
-										{
-											date: '12.03.2015',
-											title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
-											text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
-										}
-									].map(function(item) {
-										return {
-											block : 'home-events-list-item',
+											block : 'home-elements-list-item',
 											content : [
 												{
-													elem : 'date',
-													content : item.date
-												},
-												{
-													elem : 'info',
-													content : [
+													block: 'home-navigation',
+													content: [
 														{
-															tag: item.img ? 'img' : undefined,
-															attrs: { src: item.img }
-														},
-														{
-															elem : 'title',
-															content : item.title
-														},
-														{
-															elem : 'text',
-															content : item.text
+															elem: 'list',
+															tag : 'ul',
+															content: [
+																{
+																	elem: 'list-item',
+																	tag : 'li',
+																	mods: { 'active': true },
+																	attrs: { 'data-slide': '0' },
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: { href: '#' },
+																			content: 'Калькулятор'
+																		}
+																	]
+																},
+																{
+																	elem: 'list-item',
+																	tag : 'li',
+																	attrs: { 'data-slide': '1' },
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: { href: '#' },
+																			content: 'Пополнить баланс'
+																		}
+																	]
+																},
+																{
+																	elem: 'list-item',
+																	tag : 'li',
+																	attrs: { 'data-slide': '2' },
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: { href: '#' },
+																			content: 'Особые мероприятия'
+																		}
+																	]
+																}
+															]
 														}
 													]
 												},
 												{
-													elem : 'more',
+													block : 'home-calculator',
+													content : [
+
+													]
+												}
+											]
+										},
+										{
+											block : 'home-elements-list-item',
+											content : [
+												{
+													block: 'home-navigation',
+													content: [
+														{
+															elem: 'list',
+															tag : 'ul',
+															content: [
+																{
+																	elem: 'list-item',
+																	tag : 'li',
+																	attrs: { 'data-slide': '0' },
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: { href: '#' },
+																			content: 'Калькулятор'
+																		}
+																	]
+																},
+																{
+																	elem: 'list-item',
+																	tag : 'li',
+																	mods: { 'active': true },
+																	attrs: { 'data-slide': '1' },
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: { href: '#' },
+																			content: 'Пополнить баланс'
+																		}
+																	]
+																},
+																{
+																	elem: 'list-item',
+																	tag : 'li',
+																	attrs: { 'data-slide': '2' },
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: { href: '#' },
+																			content: 'Особые мероприятия'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													block : 'home-balance',
 													content : [
 														{
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'Подробнее'
+															elem: 'layout',
+															content: [
+																{
+																	elem : 'layout-left',
+																	content : [
+																		{
+																			block : 'sidebar',
+																			content : [
+																				{
+																					block : 'sidebar-auth',
+																					content : [
+																						{
+																							elem : 'description',
+																							content : '<strong style="color: #dd004e;">*</strong> Для пополнения баланса с сайта необходимо авторизоваться'
+																						},
+																						{
+																							block : 'sidebar-auth-form',
+																							content : [
+																								{
+																									elem : 'form',
+																									tag : 'form',
+																									content : [
+																										{
+																											elem : 'field',
+																											content : [
+																												{
+																													elem : 'input',
+																													tag: 'input',
+																													mods : { 'login' : true },
+																													attrs: { type: 'text', placeholder: 'Введите логин' }
+																												}
+																											]
+																										},
+																										{
+																											elem : 'field',
+																											content : [
+																												{
+																													elem : 'input',
+																													tag: 'input',
+																													mods : { 'password' : true },
+																													attrs: { type: 'password', placeholder: 'Введите пароль' }
+																												},
+																												{
+																													elem : 'show-password',
+																													tag: 'a',
+																													attrs: { href: '#' },
+																													content: [
+																														'Показать пароль'
+																													]
+																												}
+																											]
+																										},
+																										{
+																											elem : 'controls',
+																											content : [
+																												{
+																													tag: 'button',
+																													attrs: { type: 'submit' },
+																													content : 'Авторизоваться'
+																												}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							elem : 'register',
+																							content : '<strong style="color: #dd004e;">*</strong> Если у вас нет логина и пароля Вы можете <br><a href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a> на сайте'
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem : 'layout-right',
+																	content : [
+																		{
+																			block: 'home-balance-content',
+																			content: [
+																				{
+																					tag : 'h3',
+																					content : 'Особые тарифы'
+																				},
+																			   'Simterra предоставляет максимально выгодные тарифы на роуминг для международных звонков, текстовых сообщений, получения и отправки данных, которые действуют в 216 странах мира. <br>',
+																			   'Это делает ее идеальным спутником в путешествиях и является веским аргументом для того, чтобы ее взять за границу.<br>',
+																				'<br><br>',
+																				{
+																					tag : 'h3',
+																					content : 'Как работает simterra?'
+																				},
+																				'Simterra крайне проста в использовании. Вы просто заменяете на время путешествия вашу обычную SIM-карту на карту simterra. При этом вы получаете в подарок три номера: американский, европейский и израильский.    Теперь ваши друзья в Израиле, Америке и Европе смогут разговаривать с вами по своим местным тарифам, причем независимо от вашего местонахождения.<br>',
+																				{
+																					elem : 'go',
+																					content : [
+																						{
+																							tag: 'a',
+																							attrs: { href: '#' },
+																							content: [
+																								'перейти к личному кабинету'
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
 														}
 													]
 												}
 											]
-										};
-									})
-								},
-								{
-									block : 'home-events-all',
-									content : [
+										},
 										{
-											tag: 'a',
-											attrs: { href: '#' },
-											content: 'Все мероприятия'
+											block : 'home-elements-list-item',
+											content : [
+												{
+													block: 'home-navigation',
+													content: [
+														{
+															elem: 'list',
+															tag : 'ul',
+															content: [
+																{
+																	elem: 'list-item',
+																	tag : 'li',
+																	attrs: { 'data-slide': '0' },
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: { href: '#' },
+																			content: 'Калькулятор'
+																		}
+																	]
+																},
+																{
+																	elem: 'list-item',
+																	tag : 'li',
+																	attrs: { 'data-slide': '1' },
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: { href: '#' },
+																			content: 'Пополнить баланс'
+																		}
+																	]
+																},
+																{
+																	elem: 'list-item',
+																	tag : 'li',
+																	mods: { 'active': true },
+																	attrs: { 'data-slide': '2' },
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: { href: '#' },
+																			content: 'Особые мероприятия'
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													block: 'home-events',
+													content: [
+														{
+															block : 'home-events-list',
+															content : [
+																{
+																	date: '12.03.2015',
+																	title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
+																	text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
+																},
+																{
+																	date: '12.03.2015',
+																	img: 'img/home-events-list/1.jpg',
+																	title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
+																	text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
+																},
+																{
+																	date: '12.03.2015',
+																	title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
+																	text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
+																},
+																{
+																	date: '12.03.2015',
+																	title: 'Минфин: МВФ признал долг Украины перед Россией на $3 миллиарда суверенным',
+																	text: 'Суверенный долг не может рассматриваться наравне с коммерческим, пояснила помощник главы Минфина РФ Светлана Никитина. Ранее Россия предложила Украине реструктурировать долг на 3 миллиарда долларов.'
+																}
+															].map(function(item) {
+																return {
+																	block : 'home-events-list-item',
+																	content : [
+																		{
+																			elem : 'date',
+																			content : item.date
+																		},
+																		{
+																			elem : 'info',
+																			content : [
+																				{
+																					tag: item.img ? 'img' : undefined,
+																					attrs: { src: item.img }
+																				},
+																				{
+																					elem : 'title',
+																					content : item.title
+																				},
+																				{
+																					elem : 'text',
+																					content : item.text
+																				}
+																			]
+																		},
+																		{
+																			elem : 'more',
+																			content : [
+																				{
+																					tag: 'a',
+																					attrs: { href: '#' },
+																					content: 'Подробнее'
+																				}
+																			]
+																		}
+																	]
+																};
+															})
+														}
+													]
+												},
+												{
+													block : 'home-events-all',
+													content : [
+														{
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'Все мероприятия'
+														}
+													]
+												}
+											]
 										}
 									]
 								}

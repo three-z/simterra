@@ -21,7 +21,7 @@
 											content : [
 												{
 													elem : 'description',
-													content : '<span style="color: #dd004e;">*</span> В личном кабинете вы можете узнать все подробности о вашей симкарте'
+													content : '<strong style="color: #dd004e;">*</strong> В личном кабинете вы можете узнать все подробности о вашей симкарте'
 												},
 												{
 													block : 'sidebar-auth-form',
@@ -76,7 +76,7 @@
 												},
 												{
 													elem : 'register',
-													content : '* Если у вас нет логина и пароля Вы можете <br><a href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a> на сайте'
+													content : '<strong style="color: #dd004e;">*</strong> Если у вас нет логина и пароля Вы можете <br><a href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a> на сайте'
 												}
 											]
 										}

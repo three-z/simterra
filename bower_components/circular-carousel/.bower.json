@@ -1,0 +1,13 @@
+{
+  "name": "circular-carousel",
+  "homepage": "https://github.com/sgb-io/jquery.circular-carousel",
+  "_release": "e933cd68ec",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e933cd68ecb9f291cde19712181daa4b7b8f3c2b"
+  },
+  "_source": "https://github.com/sgb-io/jquery.circular-carousel.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/sgb-io/jquery.circular-carousel.git"
+}
