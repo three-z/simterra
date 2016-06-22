@@ -20,7 +20,7 @@
 							].map(function(item) {
 								return {
 									block: 'home-slider-list-item',
-									attrs: { style: 'background-image: url(' + item.img + ');' },
+									attrs: { 'style': 'background-image: url(' + item.img + ');' },
 									content: ''
 								};
 							})
@@ -92,7 +92,7 @@
 													content: [
 														{
 															tag: 'a',
-															attrs: { href: '#home-advantages-' + item.class },
+															attrs: { 'href': '#home-advantages-' + item.class },
 															content: item.title
 														}
 													]
@@ -153,7 +153,7 @@
 													content : [
 														{
 															tag: 'a',
-															attrs: { href: '#' },
+															attrs: { 'href': '#' },
 															content: 'Смотреть подробнее'
 														}
 													]
@@ -423,7 +423,7 @@
 																	content: [
 																		{
 																			tag: 'a',
-																			attrs: { href: '#' },
+																			attrs: { 'href': '#' },
 																			content: 'Калькулятор'
 																		}
 																	]
@@ -435,7 +435,7 @@
 																	content: [
 																		{
 																			tag: 'a',
-																			attrs: { href: '#' },
+																			attrs: { 'href': '#' },
 																			content: 'Пополнить баланс'
 																		}
 																	]
@@ -448,7 +448,7 @@
 																	content: [
 																		{
 																			tag: 'a',
-																			attrs: { href: '#' },
+																			attrs: { 'href': '#' },
 																			content: 'Особые мероприятия'
 																		}
 																	]
@@ -497,7 +497,7 @@
 																			content : [
 																				{
 																					tag: item.img ? 'img' : undefined,
-																					attrs: { src: item.img }
+																					attrs: { 'src': item.img }
 																				},
 																				{
 																					elem : 'title',
@@ -514,7 +514,7 @@
 																			content : [
 																				{
 																					tag: 'a',
-																					attrs: { href: '#' },
+																					attrs: { 'href': '#' },
 																					content: 'Подробнее'
 																				}
 																			]

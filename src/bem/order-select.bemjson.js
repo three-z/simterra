@@ -1,6 +1,6 @@
 ({
 	block: 'template-page',
-	title: 'Продукты',
+	title: 'Заказать СИМ карту',
 	content: [
 		{
 			block: 'content',
@@ -10,33 +10,53 @@
 					mix: { block: 'container' },
 					content: [
 						{
-							block: 'order-products',
+							block: 'order',
 							content: [
 								{
-									block : 'order-products-select',
+									block : 'order-steps',
 									content : [
 										{
-											block : 'order-products-select-slider',
+											elem : 'list',
+											content : [
+												{
+													elem : 'list-item',
+													mods : { 'active' : true },
+													content : 'Выбери продукт'
+												},
+												{
+													elem : 'list-item',
+													content : 'Оформить заказ'
+												},
+												{
+													elem : 'list-item',
+													content : 'Завершить заказ'
+												}
+											]
+										},
+									]
+								},
+								{
+									block : 'order-select',
+									content : [
+										{
+											block : 'order-select-slider',
 											content : [
 												{
 													elem : 'list',
 													content : [
 														{
 															elem : 'list-item',
-															mods : { 'slide' : '1' },
-															attrs : { 'data-slide' : '1' },
+															attrs : { 'data-slide' : '1', 'style': 'background-image: url(img/order-select-list/items/1.png);' },
 															content : ''
 														},
 														{
 															elem : 'list-item',
-															mods : { 'slide' : '2' },
-															attrs : { 'data-slide' : '2' },
+															attrs : { 'data-slide' : '2', 'style': 'background-image: url(img/order-select-list/items/2.png);' },
 															content : ''
 														},
 														{
 															elem : 'list-item',
-															mods : { 'slide' : '3' },
-															attrs : { 'data-slide' : '3' },
+															attrs : { 'data-slide' : '3', 'style': 'background-image: url(img/order-select-list/items/3.png);' },
 															content : ''
 														}
 													]
@@ -56,15 +76,15 @@
 											]
 										},
 										{
-											block : 'order-products-select-content',
+											block : 'order-select-content',
 											content : [
 												{
-													block : 'order-products-select-content-list',
+													block : 'order-select-content-list',
 													content : [
 														{
-															block : 'order-products-select-content-list-item',
+															block : 'order-select-content-list-item',
 															mods : { 'slide' : '1' },
-															attrs : { 'id' : 'order-products-select-content-1' },
+															attrs : { 'id' : 'order-select-content-1' },
 															content : [
 																{
 																	elem : 'order',
@@ -102,9 +122,9 @@
 															]
 														},
 														{
-															block : 'order-products-select-content-list-item',
+															block : 'order-select-content-list-item',
 															mods : { 'slide' : '1' },
-															attrs : { 'id' : 'order-products-select-content-2' },
+															attrs : { 'id' : 'order-select-content-2' },
 															content : [
 																{
 																	elem : 'order',
@@ -141,9 +161,9 @@
 															]
 														},
 														{
-															block : 'order-products-select-content-list-item',
+															block : 'order-select-content-list-item',
 															mods : { 'slide' : '1' },
-															attrs : { 'id' : 'order-products-select-content-3' },
+															attrs : { 'id' : 'order-select-content-3' },
 															content : [
 																{
 																	elem : 'order',
