@@ -179,7 +179,7 @@
 																					content : [
 																						{
 																							elem : 'placeholder',
-																							content : '№ удоставерения личности:'
+																							content : '№ удостоверения личности:'
 																						},
 																						{
 																							elem : 'input',
@@ -261,8 +261,7 @@
 																			content : [
 																				{
 																					elem : 'note',
-																					content : '<span style="color: #f80000;">*</span> Если вы незнаете точные даты поездки, то можете указать предполагаемые'
-																					ktiitioyppypor[rpi95656o60rt8uy6r
+																					content : '<span style="color: #f80000;">*</span> Если вы не знаете точные даты поездки, то можете указать предполагаемые'
 																				}
 																			]
 																		}
@@ -288,7 +287,77 @@
 												{
 													block : 'order-info-delivery',
 													content : [
-
+														{
+															elem : 'form',
+															tag : 'form',
+															content : [
+																{
+																	elem : 'switch',
+																	content : [
+																		{
+																			elem : 'label',
+																			tag : 'label',
+																			content : [
+																				{
+																					elem : 'radio',
+																					tag: 'input',
+																					attrs: { 'type': 'radio', 'name': 'delivery', 'checked': 'checked' }
+																				},
+																				'Отправка почтой на указанный адрес'
+																			]
+																		},
+																		{
+																			elem : 'label',
+																			tag : 'label',
+																			content : [
+																				{
+																					elem : 'radio',
+																					tag: 'input',
+																					attrs: { 'type': 'radio', 'name': 'delivery' }
+																				},
+																				'Курьерская доставка'
+																			]
+																		},
+																		{
+																			elem : 'label',
+																			tag : 'label',
+																			content : [
+																				{
+																					elem : 'radio',
+																					tag: 'input',
+																					attrs: { 'type': 'radio', 'name': 'delivery' }
+																				},
+																				'Получение в аэропорту в пункте выдачи'
+																			]
+																		}
+																	]
+																},
+																{
+																	elem : 'address',
+																	content : [
+																		{
+																			elem : 'field',
+																			tag: 'label',
+																			content : [
+																				{
+																					elem : 'placeholder',
+																					content : 'Адрес доставки:'
+																				},
+																				{
+																					elem : 'input',
+																					tag: 'input',
+																					attrs: { 'type': 'text', 'placeholder': '(индекс, страна, область, город, район, улица, дом, квартира)' }
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														},
+														{
+															elem : 'price',
+															content : 'Стоимость доставки: <strong>10 €</strong>'
+														}
 													]
 												},
 												{
@@ -302,14 +371,16 @@
 												},
 												{
 													block : 'order-info-total',
-													content : [
-
-													]
+													content : 'сумма заказа: <strong>10 €</strong>'
 												},
 												{
 													block : 'order-info-pay',
 													content : [
-
+														{
+															tag : 'a',
+															attrs : { 'href' : '#' },
+															content : 'Оплатить'
+														}
 													]
 												}
 											]

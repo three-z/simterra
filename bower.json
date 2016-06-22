@@ -10,6 +10,7 @@
 		"jquery": "2.*",
 		"slick.js": "*",
 		"fancybox": "*",
-		"circular-carousel": "https://github.com/sgb-io/jquery.circular-carousel.git"
+		"circular-carousel": "https://github.com/sgb-io/jquery.circular-carousel.git",
+		"jquery.form-styler": "*"
 	}
 }

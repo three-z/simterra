@@ -37,6 +37,10 @@ block('template-page').replace()(function() {
 						},
 						{
 							tag: 'link',
+							attrs: { rel: 'stylesheet', href: 'bower_components/jquery.form-styler/jquery.formstyler.css' }
+						},
+						{
+							tag: 'link',
 							attrs: { rel: 'stylesheet', href: 'css/styles.css' }
 						}
 					]
@@ -83,6 +87,10 @@ block('template-page').replace()(function() {
 						{
 							tag: 'script',
 							attrs: { src: 'bower_components/circular-carousel/jquery.circular-carousel.js' }
+						},
+						{
+							tag: 'script',
+							attrs: { src: 'bower_components/jquery.form-styler/jquery.formstyler.min.js' }
 						},
 						{
 							tag: 'script',

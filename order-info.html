@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
 		<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
 		<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css" />
+		<link rel="stylesheet" href="bower_components/jquery.form-styler/jquery.formstyler.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 
@@ -78,17 +79,47 @@
 									<div class="order-info-list-item">
 										<div class="order-info-list-item__image"><img src="img/order-info-list/items/1.png" /></div>
 										<div class="order-info-list-item__price">Симкарта - 20 € ; На балансе - 10 €</div>
+										<div class="order-info-list-item__delete"><a href="#">Удалить</a></div>
 									</div>
 								</div>
 								<h4><span>1</span></h4>
 								<h3>Ваши персональные данные</h3>
-								<div class="order-info-personal"></div>
+								<div class="order-info-form">
+									<div class="order-info-form__confidentiality">* Внимание! Мы соблюдаем политику конфиденциальности и не передадим ваши данные третьим лицам</div>
+									<form class="order-info-form__form">
+										<div class="order-info-form__row">
+											<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Ф.И.О.:</div><input class="order-info-form__input" type="text"/></label></div>
+											<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Мобильный телефон:</div><input class="order-info-form__input" type="text"/></label></div>
+											<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Email:</div><input class="order-info-form__input" type="text"/></label></div>
+										</div>
+										<div class="order-info-form__row">
+											<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">№ удостоверения личности:</div><input class="order-info-form__input" type="text"/></label></div>
+											<div class="order-info-form__field order-info-form__field_columns_2"><label class="order-info-form__label"><div class="order-info-form__placeholder">Адрес места жительства:</div><input class="order-info-form__input" type="text" placeholder="(индекс, страна, область, город, район, улица, дом, квартира)"/></label></div>
+										</div>
+										<div class="order-info-form__row">
+											<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Дата вылета:</div><input class="order-info-form__input" type="text" placeholder="__.__.____"/></label></div>
+											<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Дата возвращения:</div><input class="order-info-form__input" type="text" placeholder="__.__.____"/></label></div>
+											<div class="order-info-form__field">
+												<div class="order-info-form__note"><span style="color: #f80000;">*</span> Если вы не знаете точные даты поездки, то можете указать предполагаемые</div>
+											</div>
+										</div>
+									</form>
+								</div>
 								<h4><span>2</span></h4>
 								<h3>Выберите вариант доставки</h3>
-								<div class="order-info-delivery"></div>
+								<div class="order-info-delivery">
+									<form class="order-info-delivery__form">
+										<div class="order-info-delivery__switch"><label class="order-info-delivery__label"><input class="order-info-delivery__radio" type="radio" name="delivery" checked="checked"/>Отправка почтой на указанный адрес</label><label class="order-info-delivery__label"><input class="order-info-delivery__radio" type="radio" name="delivery"/>Курьерская доставка</label>
+											<label
+												class="order-info-delivery__label"><input class="order-info-delivery__radio" type="radio" name="delivery" />Получение в аэропорту в пункте выдачи</label>
+										</div>
+										<div class="order-info-delivery__address"><label class="order-info-delivery__field"><div class="order-info-delivery__placeholder">Адрес доставки:</div><input class="order-info-delivery__input" type="text" placeholder="(индекс, страна, область, город, район, улица, дом, квартира)"/></label></div>
+									</form>
+									<div class="order-info-delivery__price">Стоимость доставки: <strong>10 €</strong></div>
+								</div>
 								<h4><span>3</span></h4>
-								<div class="order-info-total"></div>
-								<div class="order-info-pay"></div>
+								<div class="order-info-total">сумма заказа: <strong>10 €</strong></div>
+								<div class="order-info-pay"><a href="#">Оплатить</a></div>
 							</div>
 						</div>
 					</div>
@@ -148,6 +179,7 @@
 		<script src="bower_components/slick.js/slick/slick.min.js"></script>
 		<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
 		<script src="bower_components/circular-carousel/jquery.circular-carousel.js"></script>
+		<script src="bower_components/jquery.form-styler/jquery.formstyler.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 

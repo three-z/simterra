@@ -4,6 +4,8 @@ $(document).ready(function() {
 		'fitToView': false
 	});
 
+	$('.order-info-delivery__switch input[type="radio"]').styler();
+
 	$('.home-slider-list').slick({
 		autoplay: true,
 		autoplaySpeed: 5000,
