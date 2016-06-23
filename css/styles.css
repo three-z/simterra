@@ -3410,3 +3410,131 @@ a:hover .help-list-item__text {
   border-width: 6px;
   margin-top: -6px;
 }
+
+.order-end {
+  width: 80%;
+  margin: 48px auto 0 auto;
+}
+
+.order-end h2 {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  color: #01B752;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.order-end h3 {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  color: #3D3D3D;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.order-end-list {
+  margin: 0 -20px 20px -20px;
+  padding: 0 20px 10px 20px;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.order-end-list-item__price {
+  color: #282828;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.order-end-personal {
+  margin: 0 -20px 32px -20px;
+  padding: 0 20px 10px 20px;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.order-end-personal__confidentiality {
+  color: #3d3d3d;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.order-end-personal__text {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2d2d2d;
+  line-height: 23px;
+}
+
+.order-end-personal__text strong {
+  color: #01b752;
+}
+
+.order-end-delivery {
+  margin: 0 -20px;
+  padding: 0 20px 10px 20px;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.order-end-delivery__text {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #2d2d2d;
+  line-height: 23px;
+}
+
+.order-end-delivery__text strong {
+  color: #01b752;
+}
+
+.order-end-total {
+  text-align: center;
+  padding-top: 37px;
+  padding-bottom: 41px;
+  background-color: #FFF;
+  border: 1px solid #E2E2E2;
+  box-shadow: 0.5px 0.9px 10px rgba(0, 0, 0, 0.1);
+  color: #3D3D3D;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 28px -20px 0 -20px;
+}
+
+.order-end-total strong {
+  color: #01B752;
+}
