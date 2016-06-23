@@ -77,7 +77,7 @@ $(document).ready(function() {
 		activeItem: 0,
 		duration: 350,
 		className: 'order-select-slider__list-item'
-	}
+	};
 
 	var carousel = $('.order-select-slider__list').CircularCarousel(options);
 

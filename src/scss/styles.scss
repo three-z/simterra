@@ -1,7 +1,7 @@
+@charset "UTF-8";
+
 @import "settings";
 @import "mixins";
-
-@charset "UTF-8";
 
 * {
 	box-sizing: border-box;
@@ -262,7 +262,7 @@ a {
 }
 
 .header-logo {
-
+	overflow: visible;
 	a {
 
 		&:hover {
@@ -615,7 +615,7 @@ a {
 			text-transform: uppercase;
 			white-space: nowrap;
 			-webkit-appearance: none;
-			padding-top: 0px;
+			padding-top: 0;
 			padding-left: 32px;
 			padding-bottom: 5px;
 			background: url(../img/sidebar-auth/icons/enter.png) 0 0 no-repeat;
@@ -1198,7 +1198,7 @@ a {
 			text-decoration: none;
 			white-space: nowrap;
 			-webkit-appearance: none;
-			padding-top: 0px;
+			padding-top: 0;
 			padding-left: 45px;
 			padding-bottom: 7px;
 			background: url(../img/icons/eye.png) 18px 2px no-repeat;
@@ -1486,7 +1486,7 @@ a {
 .help-list {
 	@include clearfix;
 	float: left;
-	border: 0 solid #e2e2e2;
+	border: solid #e2e2e2;
 	border-width: 1px 0 0 1px;
 }
 
@@ -1494,7 +1494,7 @@ a {
 	float: left;
 	width: 342px;
 	background-color: #fff;
-	border: 0 solid #e2e2e2;
+	border: solid #e2e2e2;
 	border-width: 0 1px 1px 0;
 	overflow: hidden;
 
@@ -1890,7 +1890,7 @@ a {
 		cursor: pointer;
 	}
 
-	&__previous,{
+	&__previous {
 		left: 50%;
 		margin-left: -458px;
 	}
@@ -2421,6 +2421,20 @@ a {
 	margin: 28px -20px 0 -20px;
 
 	strong {
-		color: #01B752;;
+		color: #01B752;
 	}
+}
+
+// calculator
+
+.calculator {}
+
+.calculator-tabs {
+
+	&__list {
+		@include null-inline-block;
+		text-align: center;
+	}
+
+	&__list-item {}
 }

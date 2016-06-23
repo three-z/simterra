@@ -354,6 +354,10 @@ a:hover {
   margin-top: 41px;
 }
 
+.header-logo {
+  overflow: visible;
+}
+
 .header-logo a:hover {
   opacity: 1;
 }
@@ -963,7 +967,7 @@ a:hover {
   text-transform: uppercase;
   white-space: nowrap;
   -webkit-appearance: none;
-  padding-top: 0px;
+  padding-top: 0;
   padding-left: 32px;
   padding-bottom: 5px;
   background: url(../img/sidebar-auth/icons/enter.png) 0 0 no-repeat;
@@ -1783,7 +1787,7 @@ a:hover {
   text-decoration: none;
   white-space: nowrap;
   -webkit-appearance: none;
-  padding-top: 0px;
+  padding-top: 0;
   padding-left: 45px;
   padding-bottom: 7px;
   background: url(../img/icons/eye.png) 18px 2px no-repeat;
@@ -2178,7 +2182,7 @@ a:hover .special-events-list-item__more:before {
 
 .help-list {
   float: left;
-  border: 0 solid #e2e2e2;
+  border: solid #e2e2e2;
   border-width: 1px 0 0 1px;
 }
 
@@ -2192,7 +2196,7 @@ a:hover .special-events-list-item__more:before {
   float: left;
   width: 342px;
   background-color: #fff;
-  border: 0 solid #e2e2e2;
+  border: solid #e2e2e2;
   border-width: 0 1px 1px 0;
   overflow: hidden;
 }
@@ -3537,4 +3541,22 @@ a:hover .help-list-item__text {
 
 .order-end-total strong {
   color: #01B752;
+}
+
+.calculator-tabs__list {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
 }
