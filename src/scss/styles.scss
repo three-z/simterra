@@ -2432,7 +2432,7 @@ a {
 .calculator-tabs {
 
 	&__list {
-		@include null-inline-block;
+		@include null-inline-list;
 		text-align: center;
 	}
 

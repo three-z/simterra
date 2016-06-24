@@ -95,4 +95,6 @@ $(document).ready(function() {
 		carousel.cycleActive('next');
 		e.preventDefault();
 	});
+
+	$('#example_id').ionRangeSlider();
 });

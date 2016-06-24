@@ -3556,7 +3556,30 @@ a:hover .help-list-item__text {
   clip: auto;
   width: auto;
   height: auto;
+  display: block;
+  float: none;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  letter-spacing: -1px !important;
+  text-align: center;
+}
+
+.calculator-tabs__list > * {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
   display: inline-block;
   vertical-align: top;
-  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0;
 }

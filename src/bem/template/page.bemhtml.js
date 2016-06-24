@@ -41,6 +41,14 @@ block('template-page').replace()(function() {
 						},
 						{
 							tag: 'link',
+							attrs: { rel: 'stylesheet', href: 'bower_components/ionrangeslider/css/ion.rangeSlider.css' }
+						},
+						{
+							tag: 'link',
+							attrs: { rel: 'stylesheet', href: 'bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css' }
+						},
+						{
+							tag: 'link',
 							attrs: { rel: 'stylesheet', href: 'css/styles.css' }
 						}
 					]
@@ -94,8 +102,12 @@ block('template-page').replace()(function() {
 						},
 						{
 							tag: 'script',
-							attrs: { src: 'js/scripts.js' }
+							attrs: { src: 'bower_components/ionrangeslider/js/ion.rangeSlider.min.js' }
 						},
+						{
+							tag: 'script',
+							attrs: { src: 'js/scripts.js' }
+						}
 					]
 				}
 			]

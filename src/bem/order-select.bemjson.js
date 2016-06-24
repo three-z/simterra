@@ -13,92 +13,92 @@
 							block: 'order',
 							content: [
 								{
-									block : 'order-steps',
-									content : [
+									block: 'order-steps',
+									content: [
 										{
-											elem : 'list',
-											content : [
+											elem: 'list',
+											content: [
 												{
-													elem : 'list-item',
-													mods : { 'active' : true },
-													content : 'Выбери продукт'
+													elem: 'list-item',
+													mods: { 'active': true },
+													content: 'Выбери продукт'
 												},
 												{
-													elem : 'list-item',
-													content : 'Оформить заказ'
+													elem: 'list-item',
+													content: 'Оформить заказ'
 												},
 												{
-													elem : 'list-item',
-													content : 'Завершить заказ'
+													elem: 'list-item',
+													content: 'Завершить заказ'
 												}
 											]
-										},
+										}
 									]
 								},
 								{
-									block : 'order-select',
-									content : [
+									block: 'order-select',
+									content: [
 										{
-											block : 'order-select-slider',
-											content : [
+											block: 'order-select-slider',
+											content: [
 												{
-													elem : 'list',
-													content : [
+													elem: 'list',
+													content: [
 														{
-															elem : 'list-item',
-															attrs : { 'data-slide' : '1', 'style': 'background-image: url(img/order-select-list/items/1.png);' },
-															content : ''
+															elem: 'list-item',
+															attrs: { 'data-slide': '1', 'style': 'background-image: url(img/order-select-list/items/1.png);' },
+															content: ''
 														},
 														{
-															elem : 'list-item',
-															attrs : { 'data-slide' : '2', 'style': 'background-image: url(img/order-select-list/items/2.png);' },
-															content : ''
+															elem: 'list-item',
+															attrs: { 'data-slide': '2', 'style': 'background-image: url(img/order-select-list/items/2.png);' },
+															content: ''
 														},
 														{
-															elem : 'list-item',
-															attrs : { 'data-slide' : '3', 'style': 'background-image: url(img/order-select-list/items/3.png);' },
-															content : ''
+															elem: 'list-item',
+															attrs: { 'data-slide': '3', 'style': 'background-image: url(img/order-select-list/items/3.png);' },
+															content: ''
 														}
 													]
 												},
 												{
-													elem : 'previous',
-													tag : 'a',
-													attrs : { 'href' : '#' },
-													content : 'Назад'
+													elem: 'previous',
+													tag: 'a',
+													attrs: { 'href': '#' },
+													content: 'Назад'
 												},
 												{
-													elem : 'next',
-													tag : 'a',
-													attrs : { 'href' : '#' },
-													content : 'Вперед'
+													elem: 'next',
+													tag: 'a',
+													attrs: { 'href': '#' },
+													content: 'Вперед'
 												}
 											]
 										},
 										{
-											block : 'order-select-content',
-											content : [
+											block: 'order-select-content',
+											content: [
 												{
-													block : 'order-select-content-list',
-													content : [
+													block: 'order-select-content-list',
+													content: [
 														{
-															block : 'order-select-content-list-item',
-															mods : { 'slide' : '1' },
-															attrs : { 'id' : 'order-select-content-1' },
-															content : [
+															block: 'order-select-content-list-item',
+															mods: { 'slide': '1' },
+															attrs: { 'id': 'order-select-content-1' },
+															content: [
 																{
-																	elem : 'order',
-																	content : [
+																	elem: 'order',
+																	content: [
 																		{
-																			tag : 'a',
-																			attrs : { 'href' : '#' },
-																			content : 'Оформить заказ'
+																			tag: 'a',
+																			attrs: { 'href': '#' },
+																			content: 'Оформить заказ'
 																		}
 																	]
 																},
 																{
-																	elem : 'text',
-																	content : [
+																	elem: 'text',
+																	content: [
 																		'<h3>SIMTERRA as a gift  – special for CAL clients</h3>',
 																		'<strong>SIM карта:</strong> бесплатно <br>',
 																		'<strong>Баланс:</strong> 20 € <br>',
@@ -110,35 +110,35 @@
 																	]
 																},
 																{
-																	elem : 'order',
-																	content : [
+																	elem: 'order',
+																	content: [
 																		{
-																			tag : 'a',
-																			attrs : { 'href' : '#' },
-																			content : 'Оформить заказ'
+																			tag: 'a',
+																			attrs: { 'href': '#' },
+																			content: 'Оформить заказ'
 																		}
 																	]
 																}
 															]
 														},
 														{
-															block : 'order-select-content-list-item',
-															mods : { 'slide' : '1' },
-															attrs : { 'id' : 'order-select-content-2' },
-															content : [
+															block: 'order-select-content-list-item',
+															mods: { 'slide': '1' },
+															attrs: { 'id': 'order-select-content-2' },
+															content: [
 																{
-																	elem : 'order',
-																	content : [
+																	elem: 'order',
+																	content: [
 																		{
-																			tag : 'a',
-																			attrs : { 'href' : '#' },
-																			content : 'Оформить заказ'
+																			tag: 'a',
+																			attrs: { 'href': '#' },
+																			content: 'Оформить заказ'
 																		}
 																	]
 																},
 																{
-																	elem : 'text',
-																	content : [
+																	elem: 'text',
+																	content: [
 																		'<h3>Карта SIMterra с начальным балансом в 20 €</h3>',
 																		'<strong>SIM карта:</strong> 10 € <br>',
 																		'<strong>Баланс:</strong> 20 € <br>',
@@ -149,35 +149,35 @@
 																	]
 																},
 																{
-																	elem : 'order',
-																	content : [
+																	elem: 'order',
+																	content: [
 																		{
-																			tag : 'a',
-																			attrs : { 'href' : '#' },
-																			content : 'Оформить заказ'
+																			tag: 'a',
+																			attrs: { 'href': '#' },
+																			content: 'Оформить заказ'
 																		}
 																	]
 																}
 															]
 														},
 														{
-															block : 'order-select-content-list-item',
-															mods : { 'slide' : '1' },
-															attrs : { 'id' : 'order-select-content-3' },
-															content : [
+															block: 'order-select-content-list-item',
+															mods: { 'slide': '1' },
+															attrs: { 'id': 'order-select-content-3' },
+															content: [
 																{
-																	elem : 'order',
-																	content : [
+																	elem: 'order',
+																	content: [
 																		{
-																			tag : 'a',
-																			attrs : { 'href' : '#' },
-																			content : 'Оформить заказ'
+																			tag: 'a',
+																			attrs: { 'href': '#' },
+																			content: 'Оформить заказ'
 																		}
 																	]
 																},
 																{
-																	elem : 'text',
-																	content : [
+																	elem: 'text',
+																	content: [
 																		'<h3>Карта SIMterra с нулевым балансом</h3>',
 																		'<strong>SIM карта:</strong> 10 € <br>',
 																		'<strong>Баланс:</strong> 0 € <br>',
@@ -187,12 +187,12 @@
 																	]
 																},
 																{
-																	elem : 'order',
-																	content : [
+																	elem: 'order',
+																	content: [
 																		{
-																			tag : 'a',
-																			attrs : { 'href' : '#' },
-																			content : 'Оформить заказ'
+																			tag: 'a',
+																			attrs: { 'href': '#' },
+																			content: 'Оформить заказ'
 																		}
 																	]
 																}
@@ -211,4 +211,4 @@
 			]
 		}
 	]
-})
+});

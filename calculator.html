@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
 		<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css" />
 		<link rel="stylesheet" href="bower_components/jquery.form-styler/jquery.formstyler.css" />
+		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.css" />
+		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 
@@ -67,11 +69,36 @@
 					<div class="calculator">
 						<div class="calculator-tabs">
 							<ul class="calculator-tabs__list">
-								<li class="calculator-tabs__list-item"><a href="#">Вызовы</a></li>
-								<li class="calculator-tabs__list-item"><a href="#">Интернет</a></li>
+								<li class="calculator-tabs__list-item calculator-tabs__list-item_active"><a href="#calculator-content-1">Вызовы</a></li>
+								<li class="calculator-tabs__list-item"><a href="#calculator-content-2">Интернет</a></li>
 							</ul>
 						</div>
-					</div>
+						<div class="calculator-content">
+							<div class="calculator-content-list">
+								<div class="calculator-content-list-item" id="calculator-content-1">
+									<div class="calculator-calls">
+										<div class="calculator-calls-select">
+											<div class="calculator-calls-select__from"><select><option value="0">Таджикистан</option><option value="1">Россия</option></select></div>
+											<div class="calculator-calls-select__to"><select><option value="0">Доминиканская республика</option><option value="1">Россия</option></select></div>
+											<div class="calculator-calls-select__switch"><a href="#">Поменять местами</a></div>
+										</div>
+										<div class="calculator-calls-price">
+											<div class="calculator-calls-price__range"><input type="text" value="45" /></div>
+											<div class="calculator-calls-price__title">буду платить</div>
+										</div>
+										<div class="calculator-calls-list">
+											<div class="calculator-calls-list-item">
+												<div class="calculator-calls-list-item__type"><img src="img/calculator-calls-list/icons/minutes.png" />Минуты</div>
+											</div>
+										</div>
+										<div class="calculator-calls-buy"><a href="#">Приобрести</a></div>
+									</div>
+								</div>
+								<div class="calculator-content-list-item" id="calculator-content-2">
+									<div class="calculator-internet"></div>
+								</div>
+							</div>
+						</div><input type="text" id="example_id" name="example_name" value="" /></div>
 				</div>
 			</div>
 			<div class="bottom">
@@ -129,6 +156,7 @@
 		<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
 		<script src="bower_components/circular-carousel/jquery.circular-carousel.js"></script>
 		<script src="bower_components/jquery.form-styler/jquery.formstyler.min.js"></script>
+		<script src="bower_components/ionrangeslider/js/ion.rangeSlider.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 
