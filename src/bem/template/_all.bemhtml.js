@@ -536,7 +536,7 @@ block('template-header').replace()(function() {
 													content: [
 														{
 															tag: 'img',
-															attrs: { src: 'img/header/logo.png' },
+															attrs: { src: 'img/header/logo.png' }
 														}
 													]
 												}
