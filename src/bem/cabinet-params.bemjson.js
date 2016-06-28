@@ -357,17 +357,62 @@
 																		{
 																			elem: 'list-cell',
 																			mods: {'type': 'icon'},
-																			content: 'VISA CAL'
+																			content: [
+																				{
+																					block : 'icon',
+																					tag: 'i',
+																					mods: {item: 'phone'},
+																					content : ''
+																				}
+																			]
 																		},
 																		{
 																			elem: 'list-cell',
 																			mods: {'type': 'phone'},
-																			content: '5326'
+																			content: '+7 (812) 972- 54- 57'
 																		},
 																		{
 																			elem: 'list-cell',
 																			mods: {'type': 'country'},
-																			content: '5326'
+																			content: 'IL Israil'
+																		},
+																		{
+																			elem: 'list-cell',
+																			mods: {'type': 'date-start'},
+																			content: '17/01/2016'
+																		},
+																		{
+																			elem: 'list-cell',
+																			mods: {'type': 'date-end'},
+																			content: '18/01/2016'
+																		}
+																	]
+																},
+																{
+																	elem: 'list-item',
+																	tag: 'li',
+																	content: [
+																		{
+																			elem: 'list-cell',
+																			mods: {'type': 'icon'},
+																			content: [
+																				{
+																					block : 'icon',
+																					tag: 'i',
+																					mods: {item: 'phone'},
+																					content : ''
+																				}
+																			]
+																		},
+																		{
+																			elem: 'list-cell',
+																			mods: {'type': 'phone'},
+																			content: '+7 (812) 972- 54- 57'
+																		},
+																		{
+																			elem: 'list-cell',
+																			mods: {'type': 'country'},
+																			content: 'IL Israil'
 																		},
 																		{
 																			elem: 'list-cell',
