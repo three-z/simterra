@@ -106,7 +106,7 @@
 									block: 'cabinet-params',
 									content: [
 										{
-											block: 'cabinet-params-balance',
+											block: 'cabinet-balance-info',
 											content: [
 												{
 													elem: 'text',
