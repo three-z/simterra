@@ -46,7 +46,6 @@
 														{
 															elem: 'list-item',
 															tag: 'li',
-															mods: {'active': true},
 															content: [
 																{
 																	tag: 'a',
@@ -58,6 +57,7 @@
 														{
 															elem: 'list-item',
 															tag: 'li',
+															mods: {'active': true},
 															content: [
 																{
 																	tag: 'a',
