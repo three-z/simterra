@@ -1,6 +1,6 @@
 ({
 	block: 'template-page',
-	title: 'Калькулятор',
+	title: 'Личный кабинет',
 	content: [
 		{
 			block: 'content',
@@ -49,12 +49,12 @@
 								{
 									block: 'calculator-content',
 									content: [
-
 										{
-											block: 'calculator-content-list',
+											elem: 'list',
 											content: [
 												{
-													block: 'calculator-content-list-item',
+													elem: 'list-item',
+													mods: {'active': true},
 													attrs: {'id': 'calculator-content-1'},
 													content: [
 														{
@@ -62,13 +62,19 @@
 															content: [
 																{
 																	block: 'calculator-calls-select',
-
 																	content: [
 																		{
 																			elem: 'from',
 																			content: [
 																				{
+																					elem: 'label',
+																					tag: 'label',
+																					content: 'Откуда'
+																				},
+																				{
+																					elem: 'select',
 																					tag: 'select',
+																					mods: {'location': true},
 																					content: [
 																						{
 																							tag: 'option',
@@ -88,7 +94,14 @@
 																			elem: 'to',
 																			content: [
 																				{
+																					elem: 'label',
+																					tag: 'label',
+																					content: 'Куда'
+																				},
+																				{
+																					elem: 'select',
 																					tag: 'select',
+																					mods: {'location': true},
 																					content: [
 																						{
 																							tag: 'option',
@@ -117,14 +130,14 @@
 																	]
 																},
 																{
-																	block: 'calculator-calls-price',
+																	block: 'calculator-price',
 																	content: [
 																		{
 																			elem: 'range',
 																			content: [
 																				{
 																					tag: 'input',
-																					attrs: {'type': 'text', 'value': '45'}
+																					attrs: {'type': 'text', 'value': ''}
 																				}
 																			]
 																		},
@@ -149,13 +162,37 @@
 																						},
 																						'Минуты'
 																					]
+																				},
+																				{
+																					elem: 'info',
+																					content: [
+																						{
+																							elem: 'list',
+																							content: [
+																								{
+																									elem: 'list-item',
+																									content: [
+																										'Для клиентов VISA CAl <strong>244</strong><br>',
+																										'<small>0.2044 €/min</small><br>'
+																									]
+																								},
+																								{
+																									elem: 'list-item',
+																									content: [
+																										'Для клиентов <strong>195</strong><br>',
+																										'<small>0.2044 €/min</small><br>'
+																									]
+																								}
+																							]
+																						}
+																					]
 																				}
 																			]
 																		}
 																	]
 																},
 																{
-																	block: 'calculator-calls-buy',
+																	block: 'calculator-buy',
 																	content: [
 																		{
 																			tag: 'a',
@@ -169,20 +206,166 @@
 													]
 												},
 												{
-													block: 'calculator-content-list-item',
+													elem: 'list-item',
 													attrs: {'id': 'calculator-content-2'},
 													content: [
 														{
 															block: 'calculator-internet',
-															content: []
+															content: [
+																{
+																	block: 'calculator-internet-select',
+																	content: [
+																		{
+																			elem: 'label',
+																			tag: 'label',
+																			content: 'Выберите страну'
+																		},
+																		{
+																			elem: 'select',
+																			tag: 'select',
+																			mods: {'location': true},
+																			content: [
+																				{
+																					tag: 'option',
+																					attrs: {'value': '0'},
+																					content: 'Таджикистан'
+																				},
+																				{
+																					tag: 'option',
+																					attrs: {'value': '1'},
+																					content: 'Россия'
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	block: 'calculator-price',
+																	content: [
+																		{
+																			elem: 'range',
+																			content: [
+																				{
+																					tag: 'input',
+																					attrs: {'type': 'text', 'value': ''}
+																				}
+																			]
+																		},
+																		{
+																			elem: 'title',
+																			content: 'буду платить'
+																		}
+																	]
+																},
+																{
+																	block: 'calculator-internet-list',
+																	content: [
+																		{
+																			block: 'calculator-internet-list-item',
+																			content: [
+																				{
+																					elem: 'type',
+																					content: [
+																						{
+																							tag: 'img',
+																							attrs: {'src': 'img/calculator-internet-list/icons/traffic.png'}
+																						},
+																						'Трафик'
+																					]
+																				},
+																				{
+																					elem: 'info',
+																					content: [
+																						{
+																							elem: 'list',
+																							content: [
+																								{
+																									elem: 'list-item',
+																									content: [
+																										'Для клиентов VISA CAl <strong>244</strong><br>',
+																										'<small>0.2044 €/min</small><br>'
+																									]
+																								},
+																								{
+																									elem: 'list-item',
+																									content: [
+																										'Для клиентов <strong>195</strong><br>',
+																										'<small>0.2044 €/min</small><br>'
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'operator',
+																					content: 'Оператор:  Grand BUSINESS'
+																				}
+																			]
+																		},
+																		{
+																			block: 'calculator-internet-list-item',
+																			content: [
+																				{
+																					elem: 'type',
+																					content: [
+																						{
+																							tag: 'img',
+																							attrs: {'src': 'img/calculator-internet-list/icons/traffic.png'}
+																						},
+																						'Трафик'
+																					]
+																				},
+																				{
+																					elem: 'info',
+																					content: [
+																						{
+																							elem: 'list',
+																							content: [
+																								{
+																									elem: 'list-item',
+																									content: [
+																										'Для клиентов VISA CAl <strong>244</strong><br>',
+																										'<small>0.2044 €/min</small><br>'
+																									]
+																								},
+																								{
+																									elem: 'list-item',
+																									content: [
+																										'Для клиентов <strong>195</strong><br>',
+																										'<small>0.2044 €/min</small><br>'
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'operator',
+																					content: 'Оператор:  Grand BUSINESS'
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	block: 'calculator-buy',
+																	content: [
+																		{
+																			tag: 'a',
+																			attrs: {'href': '#'},
+																			content: 'Приобрести'
+																		}
+																	]
+																}
+															]
 														}
 													]
 												}
 											]
 										}
 									]
-								},
-								'<input type="text" id="example_id" name="example_name" value="" />'
+								}
 							]
 						}
 					]
