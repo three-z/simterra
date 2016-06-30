@@ -3559,8 +3559,6 @@ a:hover .help-list-item__text {
   font-size: 0 !important;
   line-height: 0 !important;
   letter-spacing: -1px !important;
-  display: inline-block;
-  vertical-align: top;
   text-align: center;
 }
 
@@ -3609,8 +3607,8 @@ a:hover .help-list-item__text {
 }
 
 .calculator-content {
-  margin-top: 24px;
-  width: 65%;
+  width: 675px;
+  margin: 34px auto 0 auto;
 }
 
 .calculator-content__list-item {
@@ -3809,7 +3807,7 @@ a:hover .help-list-item__text {
 
 .calculator-calls-select .jq-selectbox__dropdown {
   box-shadow: none;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -4002,7 +4000,7 @@ a:hover .help-list-item__text {
 
 .calculator-internet-select .jq-selectbox__dropdown {
   box-shadow: none;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -5486,6 +5484,10 @@ a:hover .help-list-item__text {
 
 .cabinet-calculator .calculator-tabs__list {
   text-align: left;
+}
+
+.cabinet-calculator .calculator-content {
+  margin: 24px 0 0 0;
 }
 
 .cabinet-questions-tabs__list {
