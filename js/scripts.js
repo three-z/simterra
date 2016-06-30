@@ -4,7 +4,7 @@ $(document).ready(function() {
 		'fitToView': false
 	});
 
-	$('.order-info-delivery__switch input[type="radio"], .cabinet-did-select__field select').styler();
+	$('.order-info-delivery__switch input[type="radio"], .cabinet-did-select__field select, .calculator-content select').styler();
 
 	$('.home-slider-list').slick({
 		autoplay: true,
@@ -96,5 +96,29 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
-	$('#example_id').ionRangeSlider();
+	$('.calculator-price__range input').ionRangeSlider({
+		type: 'single',
+		min: 0,
+		max: 90,
+		from: 45
+	});
+
+	$('.calculator-tabs__list-item a').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).closest('.calculator-tabs__list-item').addClass('calculator-tabs__list-item_active').siblings().removeClass('calculator-tabs__list-item_active');
+		$($(this).attr('href')).addClass('calculator-content__list-item_active').siblings().removeClass('calculator-content__list-item_active');
+	});
+
+	$('.cabinet-questions-list-item__show a').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).closest('.cabinet-questions-list-item__show').toggleClass('cabinet-questions-list-item__show_active').closest('.cabinet-questions-list-item').find('.cabinet-questions-list-item__answer').toggle();
+		if ($(this).closest('.cabinet-questions-list-item__show').hasClass('cabinet-questions-list-item__show_active')) {
+			$(this).text('Свернуть ответ');
+		}
+		else {
+			$(this).text('Посмотреть ответ');
+		}
+	});
 });
