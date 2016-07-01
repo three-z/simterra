@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.css" />
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<div></div>
 	</head>
 
 	<body>
@@ -73,46 +74,40 @@
 								<ul class="cabinet-navigation__list">
 									<li class="cabinet-navigation__list-item"><a href="#">Персональные данные</a></li>
 									<li class="cabinet-navigation__list-item"><a href="#">Текущие параметры</a></li>
-									<li class="cabinet-navigation__list-item cabinet-navigation__list-item_active"><a href="#">Операции</a></li>
-									<li class="cabinet-navigation__list-item"><a href="#">Задать вопрос</a></li>
+									<li class="cabinet-navigation__list-item"><a href="#">Операции</a></li>
+									<li class="cabinet-navigation__list-item cabinet-navigation__list-item_active"><a href="#">Задать вопрос</a></li>
 									<li class="cabinet-navigation__list-item"><a href="#"><i class="icon icon_item_exit"></i>Выход</a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="content__layout">
-							<div class="content__layout-left">
-								<div class="sidebar">
-									<div class="sidebar-navigation">
-										<ul class="sidebar-navigation__list">
-											<li class="sidebar-navigation__list-item sidebar-navigation__list-item_active"><a href="#">История использования</a></li>
-											<li class="sidebar-navigation__list-item"><a href="#">История платежей</a></li>
-											<li class="sidebar-navigation__list-item"><a href="#">Пополнить баланс</a></li>
-											<li class="sidebar-navigation__list-item"><a href="#">Калькулятор</a></li>
-											<li class="sidebar-navigation__list-item"><a href="#">Купить DID</a></li>
-										</ul>
-									</div>
-								</div>
+						<div class="cabinet-questions">
+							<div class="cabinet-questions-tabs">
+								<ul class="cabinet-questions-tabs__list">
+									<li class="cabinet-questions-tabs__list-item cabinet-questions-tabs__list-item_active"><a href="#">Новый вопрос</a></li>
+									<li class="cabinet-questions-tabs__list-item"><a href="#">Все вопросы</a></li>
+								</ul>
 							</div>
-							<div class="content__layout-right">
-								<div class="cabinet-done">
-									<div class="cabinet-balance-info">
-										<div class="cabinet-balance-info__text">Текущий баланс: <strong>1003 €</strong></div>
-										<div class="cabinet-balance-info__refill"><a href="#">Пополнить</a></div>
+							<div class="cabinet-questions-item">
+								<div class="cabinet-questions-item__layout">
+									<div class="cabinet-questions-item__layout-left">
+										<div class="cabinet-questions-item-form">
+											<form class="cabinet-questions-item-form__form">
+												<div class="cabinet-questions-item-form__text"><label><i class="icon icon_item_question"></i>Ваше сообщение</label><textarea></textarea></div>
+												<div class="cabinet-questions-item-form__note"><strong style="color: #DE1616;">*</strong> Здесь вы можете задать любой интересующий вас вопрос связанный с картой Simterra. Наши специалисты ответят на него как можно быстрее.</div>
+												<div class="cabinet-questions-item-form__controls"><button type="submit">Отправить</button></div>
+											</form>
+										</div>
 									</div>
-									<h3><strong style="color: #01B752;">*ПОЗДРАВЛЯМ!</strong> Вы успешно приобрели новый временный номер.</h3>
-									<div class="cabinet-done__number">+7 (789) 456-23-89</div>
-									<ul class="cabinet-done__list">
-										<li class="cabinet-done__list-item">Страна: <strong>Франция</strong></li>
-										<li class="cabinet-done__list-item">Город: <strong>Порше</strong></li>
-										<li class="cabinet-done__list-item">Срок действия: <strong>1 месяц</strong></li>
-									</ul>
-									<div class="cabinet-confirm-info">
-										<ul class="cabinet-confirm-info__list">
-											<li class="cabinet-confirm-info__list-item">Абонплата (Месяц): <strong>100.8306 €</strong></li>
-											<li class="cabinet-confirm-info__list-item">Стоимость за весь срок: <strong>100.8306 €</strong></li>
-										</ul>
+									<div class="cabinet-questions-item__layout-right">
+										<div class="cabinet-questions-item-links">
+											<ul class="cabinet-questions-item-links__list">
+												<li class="cabinet-questions-item-links__list-item"><a href="#">Перейти в раздел помощь</a></li>
+												<li class="cabinet-questions-item-links__list-item"><a href="#">USSD команды</a></li>
+												<li class="cabinet-questions-item-links__list-item"><a href="#">Контакты</a></li>
+												<li class="cabinet-questions-item-links__list-item"><a href="#">Наши продукты</a></li>
+											</ul>
+										</div>
 									</div>
-									<div class="cabinet-done-go"><a href="#">Перейти к моим номерам</a></div>
 								</div>
 							</div>
 						</div>

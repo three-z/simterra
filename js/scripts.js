@@ -114,11 +114,12 @@ $(document).ready(function() {
 		e.preventDefault();
 
 		$(this).closest('.cabinet-questions-list-item__show').toggleClass('cabinet-questions-list-item__show_active').closest('.cabinet-questions-list-item').find('.cabinet-questions-list-item__answer').toggle();
+		$(this).find('span').hide();
 		if ($(this).closest('.cabinet-questions-list-item__show').hasClass('cabinet-questions-list-item__show_active')) {
-			$(this).text('Свернуть ответ');
+			$(this).find('.cabinet-questions-list-item__show-text-close').show();
 		}
 		else {
-			$(this).text('Посмотреть ответ');
+			$(this).find('.cabinet-questions-list-item__show-text-open').show();
 		}
 	});
 });

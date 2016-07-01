@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@import "settings";
+@import "mixins";
+
+body {
+	direction: rtl;
+}
+
+.header-top {
+
+	&__layout-left {
+		float: right;
+	}
+
+	&__layout-right {
+		float: left;
+		text-align: left;
+	}
+}
+
+.header-top-menu {
+
+	&__list-item {
+		float: right;
+		margin-right: 0;
+		margin-left: 48px;
+
+		a {
+
+			.icon {
+				margin-right: 0;
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+.header-bottom {
+
+	&__layout-left {
+		float: right;
+	}
+
+	&__layout-right {
+		float: left;
+		text-align: left;
+	}
+}
+
+.header-navigation {
+
+	&__list-item {
+		margin-left: 0;
+		margin-right: 61px;
+
+		&:first-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.bottom {
+
+	&__layout-left {
+		float: right;
+	}
+
+	&__layout-right {
+		float: left;
+		border-left: none;
+		border-right: 1px solid #e2e2e2;
+	}
+}
+
+.bottom-time {
+	padding-left: 0;
+	padding-right: 57px;
+	margin-left: 0;
+	margin-right: 62px;
+
+	&:before {
+		left: auto;
+		right: 0;
+	}
+}
+
+.bottom-phones {
+	float: right;
+	padding-left: 0;
+	padding-right: 58px;
+	margin-left: 0;
+	margin-right: 42px;
+
+	&:before {
+		left: auto;
+		right: 0;
+	}
+}
+
+.bottom-contacts {
+	float: left;
+	margin-right: 0;
+	margin-left: 36px;
+
+	a {
+
+		&:before {
+			left: auto;
+			right: 50%;
+			margin-left: 0;
+			margin-right: -23px;
+			background: url(../img/bottom/contacts-button-rtl.png);
+		}
+	}
+}
+
+.footer-navigation {
+
+	&__list-item {
+		margin-left: 0;
+		margin-right: 43px;
+
+		&:before {
+			left: auto;
+			right: -23px;
+		}
+
+		&:first-child {
+			margin-right: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+// home
+
+.home-slider-list {
+	direction: ltr;
+
+	.slick-dots {
+		left: auto;
+		right: 50%;
+		margin-left: 0;
+		margin-right: -620px;
+
+		li {
+			float: right;
+			margin-right: 0;
+			margin-left: 10px;
+		}
+	}
+}
+
+.home-slider-text {
+	left: auto;
+	right: 50%;
+	margin-left: 0;
+	margin-right: -620px;
+
+	&__button {
+
+		a {
+
+			.icon {
+				margin-right: 0;
+				margin-left: 8px;
+			}
+		}
+	}
+}

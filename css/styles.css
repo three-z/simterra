@@ -514,11 +514,35 @@ a:hover {
 }
 
 .bottom-time {
+  position: relative;
   padding-left: 57px;
-  background: url(../img/bottom/work-icon.png) 0 6px no-repeat;
   margin-top: 29px;
   margin-left: 62px;
   width: 530px;
+}
+
+.bottom-time:before {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 40px;
+  height: 35px;
+  background: url(../img/bottom/work-icon.png);
 }
 
 .bottom-time__days ul {
@@ -584,13 +608,37 @@ a:hover {
 }
 
 .bottom-phones {
+  position: relative;
   float: left;
   padding-left: 58px;
-  background: url(../img/bottom/phones-icon.png) 0 0 no-repeat;
   margin-top: 35px;
   margin-left: 42px;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.bottom-phones:before {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39px;
+  height: 67px;
+  background: url(../img/bottom/phones-icon.png);
 }
 
 .bottom-phones ul {
@@ -644,14 +692,39 @@ a:hover {
 }
 
 .bottom-contacts a {
+  position: relative;
   display: block;
   width: 70px;
   padding-top: 51px;
-  background: url(../img/bottom/contacts-button.png) 50% 0 no-repeat;
   text-align: center;
   color: #717171;
   font-size: 12px;
   text-decoration: none;
+}
+
+.bottom-contacts a:before {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -23px;
+  width: 46px;
+  height: 46px;
+  background: url(../img/bottom/contacts-button.png);
 }
 
 .footer {
@@ -2210,7 +2283,7 @@ a:hover {
 }
 
 .home-calculator .calculator-calls-select .jq-selectbox__dropdown {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .home-calculator .calculator-calls-select__switch a {
@@ -2291,7 +2364,7 @@ a:hover {
   text-transform: uppercase;
   white-space: nowrap;
   -webkit-appearance: none;
-  padding-top: 0px;
+  padding-top: 0;
   padding-left: 32px;
   padding-bottom: 5px;
   background: url(../img/icons/eye.png) 4px 4px no-repeat;
@@ -6020,6 +6093,10 @@ a:hover .help-list-item__text {
   border-top-color: transparent;
   border-bottom-color: #000;
   top: -5px;
+}
+
+.cabinet-questions-list-item__show-text-close {
+  display: none;
 }
 
 .cabinet-questions-list-item__answer {

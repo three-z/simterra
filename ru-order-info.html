@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.css" />
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<div></div>
 	</head>
 
 	<body>
@@ -63,52 +64,64 @@
 					</div>
 				</div>
 			</div>
-			<h1 class="page-title container">Личный кабинет</h1>
+			<h1 class="page-title container">Заказать СИМ карту</h1>
 			<div class="content">
 				<div class="content__layout container">
-					<div class="cabinet">
-						<div class="cabinet-top">
-							<div class="cabinet-imsi"><strong>IMSI:</strong>7819 4516 1213 7890</div>
-							<div class="cabinet-navigation">
-								<ul class="cabinet-navigation__list">
-									<li class="cabinet-navigation__list-item"><a href="#">Персональные данные</a></li>
-									<li class="cabinet-navigation__list-item"><a href="#">Текущие параметры</a></li>
-									<li class="cabinet-navigation__list-item"><a href="#">Операции</a></li>
-									<li class="cabinet-navigation__list-item cabinet-navigation__list-item_active"><a href="#">Задать вопрос</a></li>
-									<li class="cabinet-navigation__list-item"><a href="#"><i class="icon icon_item_exit"></i>Выход</a></li>
-								</ul>
+					<div class="order">
+						<div class="order-steps">
+							<div class="order-steps__list">
+								<div class="order-steps__list-item">Выбери продукт</div>
+								<div class="order-steps__list-item order-steps__list-item_active">Оформить заказ</div>
+								<div class="order-steps__list-item">Завершить заказ</div>
 							</div>
 						</div>
-						<div class="cabinet-questions">
-							<div class="cabinet-questions-tabs">
-								<ul class="cabinet-questions-tabs__list">
-									<li class="cabinet-questions-tabs__list-item"><a href="#">Новый вопрос</a></li>
-									<li class="cabinet-questions-tabs__list-item cabinet-questions-tabs__list-item_active"><a href="#">Все вопросы</a></li>
-								</ul>
-							</div>
-							<div class="cabinet-questions-list">
-								<div class="cabinet-questions-list-item">
-									<div class="cabinet-questions-list-item__date">18/08/2015</div>
-									<div class="cabinet-questions-list-item__text">Понять не могу, почему одни номера отображаются как основные а другие купленные? можно ли как то купленный перенести в основные? Хотите просмотреть или изменить свой заказ? На странице «Состояние заказа» вы можете проверить состояние заказа,
-										отследить посылку, изменить адрес доставки .</div>
-									<div class="cabinet-questions-list-item__show"><a href="#">Посмотреть ответ</a></div>
-									<div class="cabinet-questions-list-item__answer"><strong>Отвечает Александр друзь:</strong>Здравствуйте! основные номера - это номера которые вы получили при покупле. купленные номера перенести нельзя</div>
-								</div>
-								<div class="cabinet-questions-list-item">
-									<div class="cabinet-questions-list-item__date">18/08/2015</div>
-									<div class="cabinet-questions-list-item__text">Понять не могу, почему одни номера отображаются как основные а другие купленные? можно ли как то купленный перенести в основные? Хотите просмотреть или изменить свой заказ? На странице «Состояние заказа» вы можете проверить состояние заказа,
-										отследить посылку, изменить адрес доставки .</div>
-									<div class="cabinet-questions-list-item__show"><a href="#">Посмотреть ответ</a></div>
-									<div class="cabinet-questions-list-item__answer"><strong>Отвечает Александр друзь:</strong>Здравствуйте! основные номера - это номера которые вы получили при покупле. купленные номера перенести нельзя</div>
-								</div>
-								<div class="cabinet-questions-list-item">
-									<div class="cabinet-questions-list-item__date">18/08/2015</div>
-									<div class="cabinet-questions-list-item__text">Понять не могу, почему одни номера отображаются как основные а другие купленные? можно ли как то купленный перенести в основные? Хотите просмотреть или изменить свой заказ? На странице «Состояние заказа» вы можете проверить состояние заказа,
-										отследить посылку, изменить адрес доставки .</div>
-									<div class="cabinet-questions-list-item__show"><a href="#">Посмотреть ответ</a></div>
-									<div class="cabinet-questions-list-item__answer"><strong>Отвечает Александр друзь:</strong>Здравствуйте! основные номера - это номера которые вы получили при покупле. купленные номера перенести нельзя</div>
+						<div class="order-info">
+							<h3>Ваш заказ</h3>
+							<div class="order-info-list">
+								<div class="order-info-list-item">
+									<div class="order-info-list-item__image"><img src="img/order-info-list/items/1.png" /></div>
+									<div class="order-info-list-item__price">Симкарта - 20 € ; На балансе - 10 €</div>
+									<div class="order-info-list-item__delete"><a href="#">Удалить</a></div>
 								</div>
 							</div>
+							<h4><span>1</span></h4>
+							<h3>Ваши персональные данные</h3>
+							<div class="order-info-form">
+								<div class="order-info-form__confidentiality">* Внимание! Мы соблюдаем политику конфиденциальности и не передадим ваши данные третьим лицам</div>
+								<form class="order-info-form__form">
+									<div class="order-info-form__row">
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Ф.И.О.:</div><input class="order-info-form__input" type="text"/></label></div>
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Мобильный телефон:</div><input class="order-info-form__input" type="text"/></label></div>
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Email:</div><input class="order-info-form__input" type="text"/></label></div>
+									</div>
+									<div class="order-info-form__row">
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">№ удостоверения личности:</div><input class="order-info-form__input" type="text"/></label></div>
+										<div class="order-info-form__field order-info-form__field_columns_2"><label class="order-info-form__label"><div class="order-info-form__placeholder">Адрес места жительства:</div><input class="order-info-form__input" type="text" placeholder="(индекс, страна, область, город, район, улица, дом, квартира)"/></label></div>
+									</div>
+									<div class="order-info-form__row">
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Дата вылета:</div><input class="order-info-form__input" type="text" placeholder="__.__.____"/></label></div>
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">Дата возвращения:</div><input class="order-info-form__input" type="text" placeholder="__.__.____"/></label></div>
+										<div class="order-info-form__field">
+											<div class="order-info-form__note"><span style="color: #f80000;">*</span> Если вы не знаете точные даты поездки, то можете указать предполагаемые</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<h4><span>2</span></h4>
+							<h3>Выберите вариант доставки</h3>
+							<div class="order-info-delivery">
+								<form class="order-info-delivery__form">
+									<div class="order-info-delivery__switch"><label class="order-info-delivery__label"><input class="order-info-delivery__radio" type="radio" name="delivery" checked="checked"/>Отправка почтой на указанный адрес</label><label class="order-info-delivery__label"><input class="order-info-delivery__radio" type="radio" name="delivery"/>Курьерская доставка</label>
+										<label
+											class="order-info-delivery__label"><input class="order-info-delivery__radio" type="radio" name="delivery" />Получение в аэропорту в пункте выдачи</label>
+									</div>
+									<div class="order-info-delivery__address"><label class="order-info-delivery__field"><div class="order-info-delivery__placeholder">Адрес доставки:</div><input class="order-info-delivery__input" type="text" placeholder="(индекс, страна, область, город, район, улица, дом, квартира)"/></label></div>
+								</form>
+								<div class="order-info-delivery__price">Стоимость доставки: <strong>10 €</strong></div>
+							</div>
+							<h4><span>3</span></h4>
+							<div class="order-info-total">Сумма заказа: <strong>10 €</strong></div>
+							<div class="order-info-pay"><a href="#">Оплатить</a></div>
 						</div>
 					</div>
 				</div>

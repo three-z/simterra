@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.css" />
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<div></div>
 	</head>
 
 	<body>
@@ -71,56 +72,78 @@
 							<div class="cabinet-imsi"><strong>IMSI:</strong>7819 4516 1213 7890</div>
 							<div class="cabinet-navigation">
 								<ul class="cabinet-navigation__list">
-									<li class="cabinet-navigation__list-item"><a href="#">Персональные данные</a></li>
+									<li class="cabinet-navigation__list-item cabinet-navigation__list-item_active"><a href="#">Персональные данные</a></li>
 									<li class="cabinet-navigation__list-item"><a href="#">Текущие параметры</a></li>
-									<li class="cabinet-navigation__list-item cabinet-navigation__list-item_active"><a href="#">Операции</a></li>
+									<li class="cabinet-navigation__list-item"><a href="#">Операции</a></li>
 									<li class="cabinet-navigation__list-item"><a href="#">Задать вопрос</a></li>
 									<li class="cabinet-navigation__list-item"><a href="#"><i class="icon icon_item_exit"></i>Выход</a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="content__layout">
-							<div class="content__layout-left">
-								<div class="sidebar">
-									<div class="sidebar-navigation">
-										<ul class="sidebar-navigation__list">
-											<li class="sidebar-navigation__list-item sidebar-navigation__list-item_active"><a href="#">История использования</a></li>
-											<li class="sidebar-navigation__list-item"><a href="#">История платежей</a></li>
-											<li class="sidebar-navigation__list-item"><a href="#">Пополнить баланс</a></li>
-											<li class="sidebar-navigation__list-item"><a href="#">Калькулятор</a></li>
-											<li class="sidebar-navigation__list-item"><a href="#">Купить DID</a></li>
+						<div class="cabinet-info">
+							<div class="cabinet-info-user">
+								<h3>Александр Олегович Марков</h3>
+								<ul class="cabinet-info__list">
+									<li class="cabinet-info__list-item"><strong>E-mail:</strong>mark@test.com</li>
+									<li class="cabinet-info__list-item"><strong>Mobile:</strong>+7 (812) 555-55-55</li>
+									<li class="cabinet-info__list-item"><strong>Статус:</strong>Клиент VISA CAL</li>
+								</ul>
+							</div>
+							<div class="cabinet-info-imsi">
+								<h3>Уникальный идентификатор карточки (IMSI)<a href="#"><i class="icon icon_item_help"></i></a></h3>
+								<ul class="cabinet-info__list">
+									<li class="cabinet-info__list-item"><strong>IMSI:</strong>7819 4516 1213 7890</li>
+								</ul>
+							</div>
+							<div class="cabinet-info-phones">
+								<h3>Мои постоянные номера:</h3>
+								<ul class="cabinet-info__list">
+									<li class="cabinet-info__list-item"><strong>Ваш номер:</strong>+7 (812) 456- 89- 45</li>
+									<li class="cabinet-info__list-item"><strong>Страна:</strong>FR Франция</li>
+								</ul>
+								<ul class="cabinet-info__list">
+									<li class="cabinet-info__list-item"><strong>Ваш номер:</strong>+7 (812) 456- 77- 35</li>
+									<li class="cabinet-info__list-item"><strong>Страна:</strong>IL Израиль</li>
+								</ul>
+								<ul class="cabinet-info__list">
+									<li class="cabinet-info__list-item"><strong>Ваш номер:</strong>+7 (812) 456- 77- 35</li>
+									<li class="cabinet-info__list-item"><strong>Страна:</strong>US США</li>
+								</ul>
+							</div>
+							<div class="cabinet-info-cards">
+								<h3>Мои карты:</h3>
+								<div class="cabinet-info-cards-table">
+									<div class="cabinet-info-cards-table-header">
+										<ul class="cabinet-info-cards-table-header__list">
+											<li class="cabinet-info-cards-table-header__list-item cabinet-info-cards-table-header__list-item_type_name">тип карты</li>
+											<li class="cabinet-info-cards-table-header__list-item cabinet-info-cards-table-header__list-item_type_numbers">последние 4 цифры</li>
+											<li class="cabinet-info-cards-table-header__list-item cabinet-info-cards-table-header__list-item_type_switch">выбрана как основная</li>
+											<li class="cabinet-info-cards-table-header__list-item cabinet-info-cards-table-header__list-item_type_delete">действие</li>
+										</ul>
+									</div>
+									<div class="cabinet-info-cards-table-body">
+										<ul class="cabinet-info-cards-table-body__list">
+											<li class="cabinet-info-cards-table-body__list-item">
+												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_name">VISA CAL</div>
+												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_numbers">5326</div>
+												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_switch"><a class="cabinet-info-cards-table-body__switch cabinet-info-cards-table-body__switch_active" href="#">Выбрать</a></div>
+												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_delete"><a class="cabinet-info-cards-table-body__delete" href="#">Удалить</a></div>
+											</li>
+											<li class="cabinet-info-cards-table-body__list-item">
+												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_name">VISA CAL</div>
+												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_numbers">5326</div>
+												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_switch"><a class="cabinet-info-cards-table-body__switch" href="#">Выбрать</a></div>
+												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_delete"><a class="cabinet-info-cards-table-body__delete" href="#">Удалить</a></div>
+											</li>
 										</ul>
 									</div>
 								</div>
+								<div class="cabinet-info-cards-add"><a href="#">Добавить еще карту</a></div>
 							</div>
-							<div class="content__layout-right">
-								<div class="cabinet-did">
-									<div class="cabinet-balance-info">
-										<div class="cabinet-balance-info__text">Текущий баланс: <strong>1003 €</strong></div>
-										<div class="cabinet-balance-info__refill"><a href="#">Пополнить</a></div>
-									</div>
-									<h3>Приобрести новый временный номер</h3>
-									<div class="cabinet-did__layout">
-										<div class="cabinet-did__layout-left">
-											<div class="cabinet-did-select">
-												<form class="cabinet-did-select__form">
-													<div class="cabinet-did-select__field"><select><option value="">Выберите страну</option><option value="1">Россия</option></select></div>
-													<div class="cabinet-did-select__field"><select><option value="">Выберите город</option><option value="1">Москва</option></select></div>
-													<div class="cabinet-did-select__field"><select><option value="">Срок действия DID</option><option value="1">1 год</option></select></div>
-												</form>
-											</div>
-										</div>
-										<div class="cabinet-did__layout-right">
-											<div class="cabinet-did-info">
-												<ul class="cabinet-did-info__list">
-													<li class="cabinet-did-info__list-item">Абонплата (Месяц): <strong>100.8306 €</strong></li>
-													<li class="cabinet-did-info__list-item">Стоимость за весь срок: <strong>100.8306 €</strong></li>
-												</ul>
-											</div>
-											<div class="cabinet-did-buy"><a href="#">Купить DID</a></div>
-										</div>
-									</div>
-								</div>
+							<div class="cabinet-info-security">
+								<h3>Смена пароля и параметры безопасности:</h3>
+								<div class="cabinet-info-security__text">Изменение пароля, адреса электронной почты для восстановления пароля, управление другими параметрами безопасности своей учетной записи</div>
+								<div class="cabinet-info-security__edit"><a href="#">Изменить</a></div>
 							</div>
 						</div>
 					</div>

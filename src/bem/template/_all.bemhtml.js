@@ -635,6 +635,22 @@ block('template-header').replace()(function() {
 	]
 });
 block('template-page').replace()(function() {
+	var rtlStyle = {};
+	if (this.ctx.rtl) {
+		rtlStyle = {
+			tag: 'link',
+			attrs: {rel: 'stylesheet', href: 'css/rtl.css'}
+		};
+	}
+	var pageTitle = {};
+	if (this.ctx.title) {
+		pageTitle = {
+			block : 'page-title',
+			tag : 'h1',
+			mix: { block: 'container' },
+			content : this.ctx.title
+		};
+	}
 	return [
 		'<!DOCTYPE html>',
 		{
@@ -686,7 +702,8 @@ block('template-page').replace()(function() {
 						{
 							tag: 'link',
 							attrs: { rel: 'stylesheet', href: 'css/styles.css' }
-						}
+						},
+						rtlStyle
 					]
 				},
 				{
@@ -701,12 +718,7 @@ block('template-page').replace()(function() {
 								{
 									block: 'template-header'
 								},
-								{
-									block : this.ctx.title ? 'page-title' : undefined,
-									tag : this.ctx.title ? 'h1' : undefined,
-									mix: { block: 'container' },
-									content : this.ctx.title
-								},
+								pageTitle,
 								this.ctx.content,
 								{
 									block: 'template-footer'

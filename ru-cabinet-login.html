@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.css" />
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<div></div>
 	</head>
 
 	<body>
@@ -65,86 +66,28 @@
 			</div>
 			<h1 class="page-title container">Личный кабинет</h1>
 			<div class="content">
-				<div class="content__layout container">
-					<div class="cabinet">
-						<div class="cabinet-top">
-							<div class="cabinet-imsi"><strong>IMSI:</strong>7819 4516 1213 7890</div>
-							<div class="cabinet-navigation">
-								<ul class="cabinet-navigation__list">
-									<li class="cabinet-navigation__list-item cabinet-navigation__list-item_active"><a href="#">Персональные данные</a></li>
-									<li class="cabinet-navigation__list-item"><a href="#">Текущие параметры</a></li>
-									<li class="cabinet-navigation__list-item"><a href="#">Операции</a></li>
-									<li class="cabinet-navigation__list-item"><a href="#">Задать вопрос</a></li>
-									<li class="cabinet-navigation__list-item"><a href="#"><i class="icon icon_item_exit"></i>Выход</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="cabinet-info">
-							<div class="cabinet-info-user">
-								<h3>Александр Олегович Марков</h3>
-								<ul class="cabinet-info__list">
-									<li class="cabinet-info__list-item"><strong>E-mail:</strong>mark@test.com</li>
-									<li class="cabinet-info__list-item"><strong>Mobile:</strong>+7 (812) 555-55-55</li>
-									<li class="cabinet-info__list-item"><strong>Статус:</strong>Клиент VISA CAL</li>
-								</ul>
-							</div>
-							<div class="cabinet-info-imsi">
-								<h3>Уникальный идентификатор карточки (IMSI)<a href="#"><i class="icon icon_item_help"></i></a></h3>
-								<ul class="cabinet-info__list">
-									<li class="cabinet-info__list-item"><strong>IMSI:</strong>7819 4516 1213 7890</li>
-								</ul>
-							</div>
-							<div class="cabinet-info-phones">
-								<h3>Мои постоянные номера:</h3>
-								<ul class="cabinet-info__list">
-									<li class="cabinet-info__list-item"><strong>Ваш номер:</strong>+7 (812) 456- 89- 45</li>
-									<li class="cabinet-info__list-item"><strong>Страна:</strong>FR Франция</li>
-								</ul>
-								<ul class="cabinet-info__list">
-									<li class="cabinet-info__list-item"><strong>Ваш номер:</strong>+7 (812) 456- 77- 35</li>
-									<li class="cabinet-info__list-item"><strong>Страна:</strong>IL Израиль</li>
-								</ul>
-								<ul class="cabinet-info__list">
-									<li class="cabinet-info__list-item"><strong>Ваш номер:</strong>+7 (812) 456- 77- 35</li>
-									<li class="cabinet-info__list-item"><strong>Страна:</strong>US США</li>
-								</ul>
-							</div>
-							<div class="cabinet-info-cards">
-								<h3>Мои карты:</h3>
-								<div class="cabinet-info-cards-table">
-									<div class="cabinet-info-cards-table-header">
-										<ul class="cabinet-info-cards-table-header__list">
-											<li class="cabinet-info-cards-table-header__list-item cabinet-info-cards-table-header__list-item_type_name">тип карты</li>
-											<li class="cabinet-info-cards-table-header__list-item cabinet-info-cards-table-header__list-item_type_numbers">последние 4 цифры</li>
-											<li class="cabinet-info-cards-table-header__list-item cabinet-info-cards-table-header__list-item_type_switch">выбрана как основная</li>
-											<li class="cabinet-info-cards-table-header__list-item cabinet-info-cards-table-header__list-item_type_delete">действие</li>
-										</ul>
-									</div>
-									<div class="cabinet-info-cards-table-body">
-										<ul class="cabinet-info-cards-table-body__list">
-											<li class="cabinet-info-cards-table-body__list-item">
-												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_name">VISA CAL</div>
-												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_numbers">5326</div>
-												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_switch"><a class="cabinet-info-cards-table-body__switch cabinet-info-cards-table-body__switch_active" href="#">Выбрать</a></div>
-												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_delete"><a class="cabinet-info-cards-table-body__delete" href="#">Удалить</a></div>
-											</li>
-											<li class="cabinet-info-cards-table-body__list-item">
-												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_name">VISA CAL</div>
-												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_numbers">5326</div>
-												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_switch"><a class="cabinet-info-cards-table-body__switch" href="#">Выбрать</a></div>
-												<div class="cabinet-info-cards-table-body__list-cell cabinet-info-cards-table-body__list-cell_type_delete"><a class="cabinet-info-cards-table-body__delete" href="#">Удалить</a></div>
-											</li>
-										</ul>
-									</div>
+				<div class="content__layout content__layout_big-sidebar container">
+					<div class="content__layout-left">
+						<div class="sidebar">
+							<div class="sidebar-auth">
+								<div class="sidebar-auth__description"><span style="color: #dd004e;">*</span> В личном кабинете вы можете узнать все подробности о вашей симкарте</div>
+								<div class="sidebar-auth-form">
+									<form class="sidebar-auth-form__form">
+										<div class="sidebar-auth-form__field"><input class="sidebar-auth-form__input sidebar-auth-form__input_login" type="text" placeholder="Введите логин" /></div>
+										<div class="sidebar-auth-form__field"><input class="sidebar-auth-form__input sidebar-auth-form__input_password" type="password" placeholder="Введите пароль" /><a class="sidebar-auth-form__show-password" href="#">Показать пароль</a></div>
+										<div class="sidebar-auth-form__controls"><button type="submit">Войти в личный кабинет</button></div>
+									</form>
 								</div>
-								<div class="cabinet-info-cards-add"><a href="#">Добавить еще карту</a></div>
-							</div>
-							<div class="cabinet-info-security">
-								<h3>Смена пароля и параметры безопасности:</h3>
-								<div class="cabinet-info-security__text">Изменение пароля, адреса электронной почты для восстановления пароля, управление другими параметрами безопасности своей учетной записи</div>
-								<div class="cabinet-info-security__edit"><a href="#">Изменить</a></div>
+								<div class="sidebar-auth__register">* Если у вас нет логина и пароля Вы можете <br><a href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a> на сайте</div>
 							</div>
 						</div>
+					</div>
+					<div class="content__layout-right">
+						<div class="cabinet-login">
+							<h3>Особые тарифы</h3>Simterra предоставляет максимально выгодные тарифы на роуминг для международных звонков, текстовых сообщений, получения и отправки данных, которые действуют в 216 странах мира. <br>Это делает ее идеальным спутником в путешествиях и является веским
+							аргументом для того, чтобы ее взять за границу.<br><br><br>
+							<h3>Как работает simterra?</h3>Simterra крайне проста в использовании. Вы просто заменяете на время путешествия вашу обычную SIM-карту на карту simterra. При этом вы получаете в подарок три номера: американский, европейский и израильский. <br>Теперь ваши друзья в Израиле, Америке
+							и Европе смогут разговаривать с вами по своим местным тарифам, причем независимо от вашего местонахождения.</div>
 					</div>
 				</div>
 			</div>

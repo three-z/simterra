@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.css" />
 		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<div></div>
 	</head>
 
 	<body>
@@ -63,48 +64,56 @@
 					</div>
 				</div>
 			</div>
-			<h1 class="page-title container">Продукты</h1>
+			<h1 class="page-title container">Личный кабинет</h1>
 			<div class="content">
 				<div class="content__layout container">
-					<div class="order">
-						<div class="order-steps">
-							<div class="order-steps__list">
-								<div class="order-steps__list-item order-steps__list-item_active">Выбери продукт</div>
-								<div class="order-steps__list-item">Оформить заказ</div>
-								<div class="order-steps__list-item">Завершить заказ</div>
+					<div class="cabinet">
+						<div class="cabinet-top">
+							<div class="cabinet-imsi"><strong>IMSI:</strong>7819 4516 1213 7890</div>
+							<div class="cabinet-navigation">
+								<ul class="cabinet-navigation__list">
+									<li class="cabinet-navigation__list-item"><a href="#">Персональные данные</a></li>
+									<li class="cabinet-navigation__list-item"><a href="#">Текущие параметры</a></li>
+									<li class="cabinet-navigation__list-item cabinet-navigation__list-item_active"><a href="#">Операции</a></li>
+									<li class="cabinet-navigation__list-item"><a href="#">Задать вопрос</a></li>
+									<li class="cabinet-navigation__list-item"><a href="#"><i class="icon icon_item_exit"></i>Выход</a></li>
+								</ul>
 							</div>
 						</div>
-						<div class="order-select">
-							<div class="order-select-slider">
-								<div class="order-select-slider__list">
-									<div class="order-select-slider__list-item" data-slide="1" style="background-image: url(img/order-select-list/items/1.png);"></div>
-									<div class="order-select-slider__list-item" data-slide="2" style="background-image: url(img/order-select-list/items/2.png);"></div>
-									<div class="order-select-slider__list-item" data-slide="3" style="background-image: url(img/order-select-list/items/3.png);"></div>
-								</div><a class="order-select-slider__previous" href="#">Назад</a><a class="order-select-slider__next" href="#">Вперед</a></div>
-							<div class="order-select-content">
-								<div class="order-select-content-list">
-									<div class="order-select-content-list-item order-select-content-list-item_slide_1" id="order-select-content-1">
-										<div class="order-select-content-list-item__order"><a href="#">Оформить заказ</a></div>
-										<div class="order-select-content-list-item__text">
-											<h3>SIMTERRA as a gift  – special for CAL clients</h3><strong>SIM карта:</strong> бесплатно <br><strong>Баланс:</strong> 20 € <br><strong>Стоимость:</strong> 20 € <br><small><i>Только для клиентов компании CAL</i></small> <br><br>Вы клиент компании CAL? Закажите карту SIMterra с начальным балансом
-											в 20 евро и получите саму карту стоимостью в 10 евро в подарок! <br>Кроме того, вы получаете постоянную скидку в 50% на все услуги международной связи: звонки, SMS и интернет.</div>
-										<div class="order-select-content-list-item__order"><a href="#">Оформить заказ</a></div>
+						<div class="content__layout">
+							<div class="content__layout-left">
+								<div class="sidebar">
+									<div class="sidebar-navigation">
+										<ul class="sidebar-navigation__list">
+											<li class="sidebar-navigation__list-item sidebar-navigation__list-item_active"><a href="#">История использования</a></li>
+											<li class="sidebar-navigation__list-item"><a href="#">История платежей</a></li>
+											<li class="sidebar-navigation__list-item"><a href="#">Пополнить баланс</a></li>
+											<li class="sidebar-navigation__list-item"><a href="#">Калькулятор</a></li>
+											<li class="sidebar-navigation__list-item"><a href="#">Купить DID</a></li>
+										</ul>
 									</div>
-									<div class="order-select-content-list-item order-select-content-list-item_slide_1" id="order-select-content-2">
-										<div class="order-select-content-list-item__order"><a href="#">Оформить заказ</a></div>
-										<div class="order-select-content-list-item__text">
-											<h3>Карта SIMterra с начальным балансом в 20 €</h3><strong>SIM карта:</strong> 10 € <br><strong>Баланс:</strong> 20 € <br><strong>Стоимость:</strong> 30 € <br><br>Цена включает стоимость самой карты (10 евро) и наполнение карты на сумму в 20 евро. Вы сразу можете: звонить и принимать звонки,
-											отправлять и получать SMS, пользоваться Интернетом. <br>При этом вы можете проверить состояние баланса в любой момент и в случае необходимости пополнить его как через сайт, так и через USSD меню с вашего мобильного устройства без подключения
-											к интернету.</div>
-										<div class="order-select-content-list-item__order"><a href="#">Оформить заказ</a></div>
+								</div>
+							</div>
+							<div class="content__layout-right">
+								<div class="cabinet-confirm">
+									<div class="cabinet-balance-info">
+										<div class="cabinet-balance-info__text">Текущий баланс: <strong>1003 €</strong></div>
+										<div class="cabinet-balance-info__refill"><a href="#">Пополнить</a></div>
 									</div>
-									<div class="order-select-content-list-item order-select-content-list-item_slide_1" id="order-select-content-3">
-										<div class="order-select-content-list-item__order"><a href="#">Оформить заказ</a></div>
-										<div class="order-select-content-list-item__text">
-											<h3>Карта SIMterra с нулевым балансом</h3><strong>SIM карта:</strong> 10 € <br><strong>Баланс:</strong> 0 € <br><strong>Стоимость:</strong> 10 € <br><br>Чтобы начать пользоваться этой картой, вы должны пополнить ее баланс. Вы можете сделать это в любой момент самостоятельно как через
-											сайт, так и через USSD меню с вашего мобильного устройства без подключения к интернету.</div>
-										<div class="order-select-content-list-item__order"><a href="#">Оформить заказ</a></div>
+									<h3><strong style="color: #e41818;">*ВНИМАНИЕ!</strong> Вы хотите приобрести новый временный номер</h3>
+									<ul class="cabinet-confirm__list">
+										<li class="cabinet-confirm__list-item">Страна: <strong>Франция</strong></li>
+										<li class="cabinet-confirm__list-item">Город: <strong>Порше</strong></li>
+										<li class="cabinet-confirm__list-item">Срок действия: <strong>1 месяц</strong></li>
+									</ul>
+									<div class="cabinet-confirm-info">
+										<ul class="cabinet-confirm-info__list">
+											<li class="cabinet-confirm-info__list-item">Абонплата (Месяц): <strong>100.8306 €</strong></li>
+											<li class="cabinet-confirm-info__list-item">Стоимость за весь срок: <strong>100.8306 €</strong></li>
+										</ul>
 									</div>
+									<div class="cabinet-confirm-cancel"><a href="#">Отменить операцию</a></div>
+									<div class="cabinet-confirm-buy"><a href="#">Купить DID</a></div>
 								</div>
 							</div>
 						</div>

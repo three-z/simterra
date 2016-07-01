@@ -1,0 +1,137 @@
+body {
+  direction: rtl;
+}
+
+.header-top__layout-left {
+  float: right;
+}
+
+.header-top__layout-right {
+  float: left;
+  text-align: left;
+}
+
+.header-top-menu__list-item {
+  float: right;
+  margin-right: 0;
+  margin-left: 48px;
+}
+
+.header-top-menu__list-item a .icon {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.header-bottom__layout-left {
+  float: right;
+}
+
+.header-bottom__layout-right {
+  float: left;
+  text-align: left;
+}
+
+.header-navigation__list-item {
+  margin-left: 0;
+  margin-right: 61px;
+}
+
+.header-navigation__list-item:first-child {
+  margin-right: 0;
+}
+
+.bottom__layout-left {
+  float: right;
+}
+
+.bottom__layout-right {
+  float: left;
+  border-left: none;
+  border-right: 1px solid #e2e2e2;
+}
+
+.bottom-time {
+  padding-left: 0;
+  padding-right: 57px;
+  margin-left: 0;
+  margin-right: 62px;
+}
+
+.bottom-time:before {
+  left: auto;
+  right: 0;
+}
+
+.bottom-phones {
+  float: right;
+  padding-left: 0;
+  padding-right: 58px;
+  margin-left: 0;
+  margin-right: 42px;
+}
+
+.bottom-phones:before {
+  left: auto;
+  right: 0;
+}
+
+.bottom-contacts {
+  float: left;
+  margin-right: 0;
+  margin-left: 36px;
+}
+
+.bottom-contacts a:before {
+  left: auto;
+  right: 50%;
+  margin-left: 0;
+  margin-right: -23px;
+  background: url(../img/bottom/contacts-button-rtl.png);
+}
+
+.footer-navigation__list-item {
+  margin-left: 0;
+  margin-right: 43px;
+}
+
+.footer-navigation__list-item:before {
+  left: auto;
+  right: -23px;
+}
+
+.footer-navigation__list-item:first-child {
+  margin-right: 0;
+}
+
+.footer-navigation__list-item:first-child:before {
+  display: none;
+}
+
+.home-slider-list {
+  direction: ltr;
+}
+
+.home-slider-list .slick-dots {
+  left: auto;
+  right: 50%;
+  margin-left: 0;
+  margin-right: -620px;
+}
+
+.home-slider-list .slick-dots li {
+  float: right;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.home-slider-text {
+  left: auto;
+  right: 50%;
+  margin-left: 0;
+  margin-right: -620px;
+}
+
+.home-slider-text__button a .icon {
+  margin-right: 0;
+  margin-left: 8px;
+}

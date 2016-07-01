@@ -369,11 +369,20 @@ a {
 }
 
 .bottom-time {
+	position: relative;
 	padding-left: 57px;
-	background: url(../img/bottom/work-icon.png) 0 6px no-repeat;
 	margin-top: 29px;
 	margin-left: 62px;
 	width: 530px;
+
+	&:before {
+		@include null-pseudo;
+		top: 6px;
+		left: 0;
+		width: 40px;
+		height: 35px;
+		background: url(../img/bottom/work-icon.png);
+	}
 
 	&__days {
 
@@ -406,13 +415,22 @@ a {
 }
 
 .bottom-phones {
+	position: relative;
 	float: left;
 	padding-left: 58px;
-	background: url(../img/bottom/phones-icon.png) 0 0 no-repeat;
 	margin-top: 35px;
 	margin-left: 42px;
 	padding-top: 3px;
 	padding-bottom: 3px;
+
+	&:before {
+		@include null-pseudo;
+		top: 0;
+		left: 0;
+		width: 39px;
+		height: 67px;
+		background: url(../img/bottom/phones-icon.png);
+	}
 
 	ul {
 		@include null-list;
@@ -435,14 +453,24 @@ a {
 	margin-right: 36px;
 
 	a {
+		position: relative;
 		display: block;
 		width: 70px;
 		padding-top: 51px;
-		background: url(../img/bottom/contacts-button.png) 50% 0 no-repeat;
 		text-align: center;
 		color: #717171;
 		font-size: 12px;
 		text-decoration: none;
+
+		&:before {
+			@include null-pseudo;
+			top: 0;
+			left: 50%;
+			margin-left: -23px;
+			width: 46px;
+			height: 46px;
+			background: url(../img/bottom/contacts-button.png);
+		}
 	}
 }
 
@@ -1614,7 +1642,7 @@ a {
 			}
 
 			&__dropdown {
-				border-radius: 0px;
+				border-radius: 0;
 			}
 		}
 
@@ -1703,7 +1731,7 @@ a {
 		text-transform: uppercase;
 		white-space: nowrap;
 		-webkit-appearance: none;
-		padding-top: 0px;
+		padding-top: 0;
 		padding-left: 32px;
 		padding-bottom: 5px;
 		background: url(../img/icons/eye.png) 4px 4px no-repeat;
@@ -4347,6 +4375,12 @@ a {
 			border-bottom-color: #000;
 			top: -5px;
 		}
+	}
+
+	&__show-text-open {}
+
+	&__show-text-close {
+		display: none;
 	}
 
 	&__answer {
