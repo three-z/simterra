@@ -230,7 +230,201 @@
 												{
 													block : 'home-calculator',
 													content : [
-
+														{
+															elem: 'layout',
+															content: [
+																{
+																	elem: 'layout-left',
+																	content: [
+																		{
+																			block: 'calculator-calls-select',
+																			content: [
+																				{
+																					elem: 'from',
+																					content: [
+																						{
+																							elem: 'label',
+																							tag: 'label',
+																							content: 'Откуда'
+																						},
+																						{
+																							elem: 'select',
+																							tag: 'select',
+																							mods: {'location': true},
+																							content: [
+																								{
+																									tag: 'option',
+																									attrs: {'value': '0'},
+																									content: 'Таджикистан'
+																								},
+																								{
+																									tag: 'option',
+																									attrs: {'value': '1'},
+																									content: 'Россия'
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'to',
+																					content: [
+																						{
+																							elem: 'label',
+																							tag: 'label',
+																							content: 'Куда'
+																						},
+																						{
+																							elem: 'select',
+																							tag: 'select',
+																							mods: {'location': true},
+																							content: [
+																								{
+																									tag: 'option',
+																									attrs: {'value': '0'},
+																									content: 'Доминиканская республика'
+																								},
+																								{
+																									tag: 'option',
+																									attrs: {'value': '1'},
+																									content: 'Россия'
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					elem: 'switch',
+																					content: [
+																						{
+																							tag: 'a',
+																							attrs: {'href': '#'},
+																							content: 'Поменять местами'
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			block: 'calculator-price',
+																			content: [
+																				{
+																					elem: 'range',
+																					content: [
+																						{
+																							tag: 'input',
+																							attrs: {'type': 'text', 'value': ''}
+																						}
+																					]
+																				},
+																				{
+																					elem: 'title',
+																					content: 'буду платить'
+																				}
+																			]
+																		},
+																		{
+																			block: 'home-calculator-go',
+																			content: [
+																				{
+																					tag: 'a',
+																					attrs: {'href': '#'},
+																					content: 'Перейти к калькулятору'
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	elem: 'layout-right',
+																	content: [
+																		{
+																			block: 'home-calculator-list',
+																			content: [
+																				{
+																					block: 'home-calculator-list-item',
+																					content: [
+																						{
+																							elem: 'type',
+																							content: [
+																								{
+																									tag: 'img',
+																									attrs: {'src': 'img/calculator-calls-list/icons/minutes.png'}
+																								},
+																								'Минуты'
+																							]
+																						},
+																						{
+																							elem: 'info',
+																							content: [
+																								{
+																									elem: 'list',
+																									content: [
+																										{
+																											elem: 'list-item',
+																											content: [
+																												'<strong>244</strong> Для клиентов VISA CAl<br>',
+																												'<small>0.2044 €/min</small><br>'
+																											]
+																										},
+																										{
+																											elem: 'list-item',
+																											content: [
+																												'<strong>195</strong> Для клиентов<br>',
+																												'<small>0.2044 €/min</small><br>'
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					block: 'home-calculator-list-item',
+																					content: [
+																						{
+																							elem: 'type',
+																							content: [
+																								{
+																									tag: 'img',
+																									attrs: {'src': 'img/calculator-internet-list/icons/traffic.png'}
+																								},
+																								'Трафик'
+																							]
+																						},
+																						{
+																							elem: 'info',
+																							content: [
+																								{
+																									elem: 'list',
+																									content: [
+																										{
+																											elem: 'list-item',
+																											content: [
+																												'<strong>244</strong> Для клиентов VISA CAl<br>',
+																												'<small>0.2044 €/min</small><br>'
+																											]
+																										},
+																										{
+																											elem: 'list-item',
+																											content: [
+																												'<strong>195</strong> Для клиентов<br>',
+																												'<small>0.2044 €/min</small><br>'
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
 													]
 												}
 											]
