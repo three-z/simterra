@@ -122,4 +122,14 @@ $(document).ready(function() {
 			$(this).find('.cabinet-questions-list-item__show-text-open').show();
 		}
 	});
+
+	$('.calculator-calls-select__switch a').on('click', function(e) {
+		e.preventDefault();
+
+		var from = $('.calculator-calls-select__from select').val();
+		var to = $('.calculator-calls-select__to select').val();
+
+		$('.calculator-calls-select__from select').val(to).trigger('refresh');;
+		$('.calculator-calls-select__to select').val(from).trigger('refresh');;
+	});
 });

@@ -255,12 +255,17 @@
 																								{
 																									tag: 'option',
 																									attrs: {'value': '0'},
-																									content: 'Таджикистан'
+																									content: 'Россия'
 																								},
 																								{
 																									tag: 'option',
 																									attrs: {'value': '1'},
-																									content: 'Россия'
+																									content: 'Таджикистан'
+																								},
+																								{
+																									tag: 'option',
+																									attrs: {'value': '2'},
+																									content: 'Доминиканская республика'
 																								}
 																							]
 																						}
@@ -282,12 +287,17 @@
 																								{
 																									tag: 'option',
 																									attrs: {'value': '0'},
-																									content: 'Доминиканская республика'
+																									content: 'Россия'
 																								},
 																								{
 																									tag: 'option',
 																									attrs: {'value': '1'},
-																									content: 'Россия'
+																									content: 'Таджикистан'
+																								},
+																								{
+																									tag: 'option',
+																									attrs: {'value': '2'},
+																									content: 'Доминиканская республика'
 																								}
 																							]
 																						}

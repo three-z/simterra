@@ -1,6 +1,8 @@
 ({
 	block: 'template-page',
-	title: 'Пополнить баланс',
+	title: 'מלאו את האיזון',
+	rtl: true,
+	lang: 'he',
 	content: [
 		{
 			block: 'content',
@@ -21,7 +23,7 @@
 											content : [
 												{
 													elem : 'description',
-													content : '<strong style="color: #dd004e;">*</strong> В личном кабинете вы можете узнать все подробности о вашей симкарте'
+													content : 'כדי לטעון עם האתר נא להתחבר <strong style="color: #dd004e;">*</strong>'
 												},
 												{
 													block : 'sidebar-auth-form',
@@ -37,7 +39,7 @@
 																			elem : 'input',
 																			tag: 'input',
 																			mods : { 'login' : true },
-																			attrs: { type: 'text', placeholder: 'Введите логин' }
+																			attrs: { type: 'text', placeholder: 'הכנס את שם המשתמש שלך' }
 																		}
 																	]
 																},
@@ -48,14 +50,14 @@
 																			elem : 'input',
 																			tag: 'input',
 																			mods : { 'password' : true },
-																			attrs: { type: 'password', placeholder: 'Введите пароль' }
+																			attrs: { type: 'password', placeholder: 'הזן את הסיסמה שלך' }
 																		},
 																		{
 																			elem : 'show-password',
 																			tag: 'a',
 																			attrs: { href: '#' },
 																			content: [
-																				'Показать пароль'
+																				'צג סיסמא'
 																			]
 																		}
 																	]
@@ -66,7 +68,7 @@
 																		{
 																			tag: 'button',
 																			attrs: { type: 'submit' },
-																			content : 'Войти в личный кабинет'
+																			content : 'התחבר לחשבון שלך'
 																		}
 																	]
 																}
@@ -76,7 +78,7 @@
 												},
 												{
 													elem : 'register',
-													content : '<strong style="color: #dd004e;">*</strong> Если у вас нет логина и пароля Вы можете <br><a href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a> на сайте'
+													content : '<strong style="color: #dd004e;">*</strong> אם אין לך שם משתמש וסיסמה, תוכל להירשם באתר'
 												}
 											]
 										}
@@ -99,11 +101,11 @@
 													mods: { item: 'balance' },
 													content : ''
 												},
-												' Баланс общий'
+												' סך כל המאזן'
 											]
 										},
-										'- Ваш баланс в личном кабинете распространяется на все купленные вами номера.<br>',
-										'- Вам не надо беспокоиться что на каком то номере внезапно закончатся деньги.<br>',
+										'- יתרתך בחשבון שלך חלה על כל המספרים שרכשת.<br>',
+										'- אתה לא צריך לדאוג שמה בחדר פתאום נגמר הכסף.<br>',
 										'<br><br>',
 										{
 											tag : 'h3',
@@ -114,7 +116,7 @@
 													mods: { item: 'ussd' },
 													content : ''
 												},
-												' USSD меню'
+												' תפריט USSD '
 											]
 										},
 										{
@@ -137,7 +139,7 @@
 											mods: { item: 'call' },
 											content : ''
 										},
-										' - Активация стартовой суммы.<br>',
+										' - הפעלה מסכום ההתחלה.<br>',
 										{
 											block : 'icon',
 											tag: 'i',
@@ -158,7 +160,7 @@
 											mods: { item: 'call' },
 											content : ''
 										},
-										' - Подробнее о вашем тарифе<br>',
+										' - למידע נוסף על התעריף שלך<br>',
 										{
 											block : 'icon',
 											tag: 'i',
@@ -179,14 +181,14 @@
 											mods: { item: 'call' },
 											content : ''
 										},
-										' - Активация стартовой суммы<br>',
+										' - הפעלה של הסכום ההתחלתי<br>',
 										{
 											elem : 'go',
 											content : [
 												{
 													tag: 'a',
 													attrs: { href: '#' },
-													content: 'Перейти в раздел помощь и узнать все команды USSD меню'
+													content: 'עבור לסעיף העזרה וללמוד את כל הפקודות בתפריט USSD'
 												}
 											]
 										}

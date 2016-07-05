@@ -2,48 +2,56 @@ body {
   direction: rtl;
 }
 
-.button-forward, .home-events-list-item__more a {
+.button-forward, .calculator-buy a, .home-events-list-item__more a, .cabinet-confirm-buy a, .cabinet-did-buy a, .cabinet-done-go a {
   padding-right: 17px;
   padding-left: 35px;
 }
 
-.button-forward:after, .home-events-list-item__more a:after, .button-forward:before, .home-events-list-item__more a:before {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after, .button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before {
   right: auto;
   left: 10px;
 }
 
-.button-forward:after, .home-events-list-item__more a:after {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after {
   border-left-color: transparent;
   border-right-color: #ffffff;
   margin-right: 0;
   margin-left: 2px;
 }
 
-.button-forward:before, .home-events-list-item__more a:before {
+.button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before {
   border-left-color: transparent;
   border-right-color: #000000;
 }
 
-.button-back {
+.button-back, .cabinet-confirm-cancel a {
   padding-left: 17px;
   padding-right: 35px;
 }
 
-.button-back:after, .button-back:before {
+.button-back:after, .cabinet-confirm-cancel a:after, .button-back:before, .cabinet-confirm-cancel a:before {
   left: auto;
   right: 10px;
 }
 
-.button-back:after {
+.button-back:after, .cabinet-confirm-cancel a:after {
   border-right-color: transparent;
   border-left-color: #ffffff;
   margin-left: 0;
   margin-right: 2px;
 }
 
-.button-back:before {
+.button-back:before, .cabinet-confirm-cancel a:before {
   border-right-color: transparent;
   border-left-color: #000000;
+}
+
+.content__layout-left {
+  float: right;
+}
+
+.content__layout-right {
+  float: left;
 }
 
 .header-top__layout-left {
@@ -492,4 +500,83 @@ body {
 .home-balance-content__go a:before {
   left: auto;
   right: 5px;
+}
+
+.about-list-item__icon {
+  float: right;
+  padding-left: auto;
+  padding-right: 10px;
+}
+
+.about-list-item__text {
+  margin-left: 0;
+  margin-right: 127px;
+}
+
+.balance__go a:before {
+  margin-right: 0;
+  margin-left: 4px;
+}
+
+.cabinet-imsi {
+  float: right;
+}
+
+.cabinet-navigation {
+  float: left;
+}
+
+.cabinet-navigation__list-item {
+  float: right;
+  margin-left: 0;
+  margin-right: 48px;
+}
+
+.cabinet-navigation__list-item:first-child {
+  margin-right: 0;
+}
+
+.cabinet-balance-info {
+  line-height: 37px;
+}
+
+.cabinet-balance-info__text strong {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.cabinet-balance-info__refill {
+  margin-left: 0;
+  margin-right: 9px;
+}
+
+.cabinet-calculator .calculator-tabs__list {
+  text-align: right;
+}
+
+.cabinet-confirm-cancel {
+  margin-right: 0;
+  margin-left: 37px;
+}
+
+.cabinet-did__layout-left {
+  float: right;
+}
+
+.cabinet-did__layout-right {
+  float: left;
+}
+
+.cabinet-did-select__field .jq-selectbox__trigger {
+  right: auto;
+  left: 0;
+}
+
+.cabinet-did-select__field .jq-selectbox__trigger-arrow {
+  right: auto;
+  left: 10px;
+}
+
+.cabinet-did-buy {
+  text-align: left;
 }

@@ -126,7 +126,7 @@ a:hover {
   background-image: url(../img/icons/question.png);
 }
 
-.button, .button-forward, .home-events-list-item__more a, .button-back {
+.button, .button-forward, .calculator-buy a, .home-events-list-item__more a, .cabinet-did-buy a, .cabinet-confirm-buy a, .cabinet-done-go a, .button-back, .cabinet-confirm-cancel a, .cabinet-balance-info__refill a {
   margin: 0;
   padding: 0;
   background: none;
@@ -155,15 +155,15 @@ a:hover {
   text-decoration: none;
 }
 
-.button:hover, .button-forward:hover, .home-events-list-item__more a:hover, .button-back:hover {
+.button:hover, .button-forward:hover, .calculator-buy a:hover, .home-events-list-item__more a:hover, .cabinet-did-buy a:hover, .cabinet-confirm-buy a:hover, .cabinet-done-go a:hover, .button-back:hover, .cabinet-confirm-cancel a:hover, .cabinet-balance-info__refill a:hover {
   opacity: .8;
 }
 
-.button-forward, .home-events-list-item__more a {
+.button-forward, .calculator-buy a, .home-events-list-item__more a, .cabinet-did-buy a, .cabinet-confirm-buy a, .cabinet-done-go a {
   padding-right: 35px;
 }
 
-.button-forward:after, .home-events-list-item__more a:after, .button-forward:before, .home-events-list-item__more a:before {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-did-buy a:after, .cabinet-confirm-buy a:after, .cabinet-done-go a:after, .button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-did-buy a:before, .cabinet-confirm-buy a:before, .cabinet-done-go a:before {
   margin: 0;
   padding: 0;
   background: none;
@@ -186,24 +186,24 @@ a:hover {
   pointer-events: none;
 }
 
-.button-forward:after, .home-events-list-item__more a:after {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-did-buy a:after, .cabinet-confirm-buy a:after, .cabinet-done-go a:after {
   border-left-color: #ffffff;
   border-width: 5px;
   margin-top: -5px;
   margin-right: 2px;
 }
 
-.button-forward:before, .home-events-list-item__more a:before {
+.button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-did-buy a:before, .cabinet-confirm-buy a:before, .cabinet-done-go a:before {
   border-left-color: #000000;
   border-width: 6px;
   margin-top: -6px;
 }
 
-.button-back {
+.button-back, .cabinet-confirm-cancel a {
   padding-left: 35px;
 }
 
-.button-back:after, .button-back:before {
+.button-back:after, .cabinet-confirm-cancel a:after, .button-back:before, .cabinet-confirm-cancel a:before {
   margin: 0;
   padding: 0;
   background: none;
@@ -226,14 +226,14 @@ a:hover {
   pointer-events: none;
 }
 
-.button-back:after {
+.button-back:after, .cabinet-confirm-cancel a:after {
   border-right-color: #ffffff;
   border-width: 5px;
   margin-top: -5px;
   margin-left: 2px;
 }
 
-.button-back:before {
+.button-back:before, .cabinet-confirm-cancel a:before {
   border-right-color: #000000;
   border-width: 6px;
   margin-top: -6px;
@@ -1355,58 +1355,6 @@ a:hover {
   text-align: center;
 }
 
-.calculator-buy a {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 141px;
-  height: 37px;
-  line-height: 35px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-left: 17px;
-  text-align: left;
-}
-
-.calculator-buy a:after, .calculator-buy a:before {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  list-style: none;
-  box-shadow: none;
-  position: static;
-  clip: auto;
-  width: auto;
-  height: auto;
-  display: block;
-  float: none;
-  content: "";
-  position: absolute;
-  left: 87%;
-  top: 50%;
-  border: solid transparent;
-  pointer-events: none;
-}
-
-.calculator-buy a:after {
-  border-left-color: #ffffff;
-  border-width: 5px;
-  margin-top: -5px;
-}
-
-.calculator-buy a:before {
-  border-left-color: #000000;
-  border-width: 6px;
-  margin-top: -6px;
-}
-
 .calculator-calls-select {
   position: relative;
 }
@@ -1732,7 +1680,7 @@ a:hover {
 
 .calculator-internet-list-item__type {
   float: left;
-  width: 112px;
+  width: 90px;
   text-align: center;
   color: #0bac5b;
   font-size: 18px;
@@ -2275,6 +2223,10 @@ a:hover {
   background: #f2f2f2;
   padding-top: 25px;
   padding-bottom: 26px;
+}
+
+.home-elements a {
+  outline: none;
 }
 
 .home-elements__layout {
@@ -5151,21 +5103,6 @@ a:hover .help-list-item__text {
   margin-left: 9px;
 }
 
-.cabinet-balance-info__refill a {
-  display: inline-block;
-  vertical-align: top;
-  width: 125px;
-  height: 37px;
-  line-height: 35px;
-  text-align: center;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 .cabinet-params h3 {
   margin: 0;
   padding: 0;
@@ -5589,57 +5526,6 @@ a:hover .help-list-item__text {
   text-align: right;
 }
 
-.cabinet-did-buy a {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 141px;
-  height: 37px;
-  line-height: 35px;
-  padding-right: 35px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.cabinet-did-buy a:after, .cabinet-did-buy a:before {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  list-style: none;
-  box-shadow: none;
-  position: static;
-  clip: auto;
-  width: auto;
-  height: auto;
-  display: block;
-  float: none;
-  content: "";
-  position: absolute;
-  left: 82%;
-  top: 50%;
-  border: solid transparent;
-  pointer-events: none;
-}
-
-.cabinet-did-buy a:after {
-  border-left-color: #ffffff;
-  border-width: 5px;
-  margin-top: -5px;
-}
-
-.cabinet-did-buy a:before {
-  border-left-color: #000000;
-  border-width: 6px;
-  margin-top: -6px;
-}
-
 .cabinet-confirm h3 {
   margin: 0;
   padding: 0;
@@ -5780,111 +5666,9 @@ a:hover .help-list-item__text {
   margin-right: 37px;
 }
 
-.cabinet-confirm-cancel a {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 37px;
-  line-height: 35px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-left: 30px;
-  width: 211px;
-}
-
-.cabinet-confirm-cancel a:after, .cabinet-confirm-cancel a:before {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  list-style: none;
-  box-shadow: none;
-  position: static;
-  clip: auto;
-  width: auto;
-  height: auto;
-  display: block;
-  float: none;
-  content: "";
-  position: absolute;
-  right: 90%;
-  top: 50%;
-  border: solid transparent;
-  pointer-events: none;
-}
-
-.cabinet-confirm-cancel a:after {
-  border-right-color: #ffffff;
-  border-width: 5px;
-  margin-top: -5px;
-}
-
-.cabinet-confirm-cancel a:before {
-  border-right-color: #000000;
-  border-width: 6px;
-  margin-top: -6px;
-}
-
 .cabinet-confirm-buy {
   display: inline-block;
   vertical-align: top;
-}
-
-.cabinet-confirm-buy a {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 141px;
-  height: 37px;
-  line-height: 35px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-left: 16px;
-}
-
-.cabinet-confirm-buy a:after, .cabinet-confirm-buy a:before {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  list-style: none;
-  box-shadow: none;
-  position: static;
-  clip: auto;
-  width: auto;
-  height: auto;
-  display: block;
-  float: none;
-  content: "";
-  position: absolute;
-  left: 82%;
-  top: 50%;
-  border: solid transparent;
-  pointer-events: none;
-}
-
-.cabinet-confirm-buy a:after {
-  border-left-color: #ffffff;
-  border-width: 5px;
-  margin-top: -5px;
-}
-
-.cabinet-confirm-buy a:before {
-  border-left-color: #000000;
-  border-width: 6px;
-  margin-top: -6px;
 }
 
 .cabinet-done h3 {
@@ -6033,57 +5817,6 @@ a:hover .help-list-item__text {
 .cabinet-done-go {
   display: inline-block;
   vertical-align: top;
-}
-
-.cabinet-done-go a {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 260px;
-  height: 37px;
-  line-height: 35px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-left: 16px;
-}
-
-.cabinet-done-go a:after, .cabinet-done-go a:before {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  list-style: none;
-  box-shadow: none;
-  position: static;
-  clip: auto;
-  width: auto;
-  height: auto;
-  display: block;
-  float: none;
-  content: "";
-  position: absolute;
-  left: 91%;
-  top: 50%;
-  border: solid transparent;
-  pointer-events: none;
-}
-
-.cabinet-done-go a:after {
-  border-left-color: #ffffff;
-  border-width: 5px;
-  margin-top: -5px;
-}
-
-.cabinet-done-go a:before {
-  border-left-color: #000000;
-  border-width: 6px;
-  margin-top: -6px;
 }
 
 .cabinet-calculator .calculator-tabs__list {

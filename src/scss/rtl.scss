@@ -53,6 +53,17 @@ body {
 	}
 }
 
+.content {
+
+	&__layout-left {
+		float: right;
+	}
+
+	&__layout-right {
+		float: left;
+	}
+}
+
 .header-top {
 
 	&__layout-left {
@@ -249,6 +260,13 @@ body {
 		&:first-child {
 			margin-right: 0;
 		}
+	}
+}
+
+.calculator-buy {
+
+	a {
+		@extend .button-forward;
 	}
 }
 
@@ -628,5 +646,159 @@ body {
 				right: 5px;
 			}
 		}
+	}
+}
+
+// about
+
+.about-list-item {
+
+	&__icon {
+		float: right;
+		padding-left: auto;
+		padding-right: 10px;
+	}
+
+	&__text {
+		margin-left: 0;
+		margin-right: 127px;
+	}
+}
+
+// balance
+
+.balance {
+
+	&__go {
+
+		a {
+
+			&:before {
+				margin-right: 0;
+				margin-left: 4px;
+			}
+		}
+	}
+}
+
+// cabinet-top
+
+.cabinet-imsi {
+	float: right;
+}
+
+.cabinet-navigation {
+	float: left;
+
+	&__list-item {
+		float: right;
+		margin-left: 0;
+		margin-right: 48px;
+
+		&:first-child {
+			margin-right: 0;
+		}
+	}
+}
+
+// cabinet-balance
+
+.cabinet-balance-info {
+	line-height: 37px;
+
+	&__text {
+
+		strong {
+			margin-left: 0;
+			margin-right: 8px;
+		}
+	}
+
+	&__refill {
+		margin-left: 0;
+		margin-right: 9px;
+	}
+}
+
+// cabinet-calculator
+
+.cabinet-calculator {
+
+	.calculator-tabs {
+
+		&__list {
+			text-align: right;
+		}
+	}
+}
+
+
+// cabinet-confirm
+
+.cabinet-confirm-cancel {
+	margin-right: 0;
+	margin-left: 37px;
+
+	a {
+		@extend .button-back;
+	}
+}
+
+.cabinet-confirm-buy {
+
+	a {
+		@extend .button-forward;
+	}
+}
+
+// cabinet-did
+
+.cabinet-did {
+
+	&__layout-left {
+		float: right;
+	}
+
+	&__layout-right {
+		float: left;
+	}
+}
+
+.cabinet-did-select {
+
+	&__form {}
+
+	&__field {
+
+		.jq-selectbox {
+
+
+			&__trigger {
+				right: auto;
+				left: 0;
+			}
+
+			&__trigger-arrow {
+				right: auto;
+				left: 10px;
+			}
+		}
+	}
+}
+
+.cabinet-did-buy {
+	text-align: left;
+
+	a {
+		@extend .button-forward;
+	}
+}
+
+// cabinet-done
+
+.cabinet-done-go {
+
+	a {
+		@extend .button-forward;
 	}
 }

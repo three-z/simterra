@@ -257,11 +257,17 @@
 																								{
 																									tag: 'option',
 																									attrs: {'value': '0'},
-																									content: 'טג\'יקיסטן'														},
+																									content: 'רוסיה'
+																								},
 																								{
 																									tag: 'option',
 																									attrs: {'value': '1'},
-																									content: 'רוסיה'
+																									content: 'טג\'יקיסטן'
+																								},
+																								{
+																									tag: 'option',
+																									attrs: {'value': '2'},
+																									content: 'הרפובליקה הדומיניקנית'
 																								}
 																							]
 																						}
@@ -283,12 +289,17 @@
 																								{
 																									tag: 'option',
 																									attrs: {'value': '0'},
-																									content: 'הרפובליקה הדומיניקנית'
+																									content: 'רוסיה'
 																								},
 																								{
 																									tag: 'option',
 																									attrs: {'value': '1'},
-																									content: 'רוסיה'
+																									content: 'טג\'יקיסטן'
+																								},
+																								{
+																									tag: 'option',
+																									attrs: {'value': '2'},
+																									content: 'הרפובליקה הדומיניקנית'
 																								}
 																							]
 																						}
@@ -300,7 +311,7 @@
 																						{
 																							tag: 'a',
 																							attrs: {'href': '#'},
-																							content: 'Поменять местами'
+																							content: 'החלפה'
 																						}
 																					]
 																				}

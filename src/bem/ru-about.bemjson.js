@@ -52,7 +52,7 @@
 															content: [
 																{
 																	tag: 'img',
-																	attrs: { src: 'img/about-list/icons/' + item.icon },
+																	attrs: { src: 'img/about-list/icons/' + item.icon }
 																}
 															]
 														},
@@ -73,4 +73,4 @@
 			]
 		}
 	]
-})
+});
