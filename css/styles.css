@@ -126,6 +126,119 @@ a:hover {
   background-image: url(../img/icons/question.png);
 }
 
+.button, .button-forward, .home-events-list-item__more a, .button-back {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-appearance: none;
+  position: relative;
+  height: 37px;
+  line-height: 35px;
+  padding-left: 17px;
+  padding-right: 17px;
+  border: 1px solid #353535;
+  border-radius: 8px;
+  color: #2d2d2d;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button:hover, .button-forward:hover, .home-events-list-item__more a:hover, .button-back:hover {
+  opacity: .8;
+}
+
+.button-forward, .home-events-list-item__more a {
+  padding-right: 35px;
+}
+
+.button-forward:after, .home-events-list-item__more a:after, .button-forward:before, .home-events-list-item__more a:before {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  border: solid transparent;
+  pointer-events: none;
+}
+
+.button-forward:after, .home-events-list-item__more a:after {
+  border-left-color: #ffffff;
+  border-width: 5px;
+  margin-top: -5px;
+  margin-right: 2px;
+}
+
+.button-forward:before, .home-events-list-item__more a:before {
+  border-left-color: #000000;
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.button-back {
+  padding-left: 35px;
+}
+
+.button-back:after, .button-back:before {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  border: solid transparent;
+  pointer-events: none;
+}
+
+.button-back:after {
+  border-right-color: #ffffff;
+  border-width: 5px;
+  margin-top: -5px;
+  margin-left: 2px;
+}
+
+.button-back:before {
+  border-right-color: #000000;
+  border-width: 6px;
+  margin-top: -6px;
+}
+
 .container {
   width: 1280px;
   padding-left: 20px;
@@ -1060,6 +1173,7 @@ a:hover {
   height: auto;
   display: inline-block;
   vertical-align: top;
+  position: relative;
   cursor: pointer;
   color: #2d2d2d;
   font-size: 15px;
@@ -1069,8 +1183,31 @@ a:hover {
   padding-top: 0;
   padding-left: 32px;
   padding-bottom: 5px;
-  background: url(../img/sidebar-auth/icons/enter.png) 0 0 no-repeat;
   border-bottom: 3px solid #d4d4d4;
+}
+
+.sidebar-auth-form__controls button:before {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background: url(../img/sidebar-auth/icons/enter.png);
 }
 
 .calculator-tabs__list {
@@ -2357,6 +2494,7 @@ a:hover {
 }
 
 .home-calculator-go a {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   color: #2d2d2d;
@@ -2367,9 +2505,32 @@ a:hover {
   padding-top: 0;
   padding-left: 32px;
   padding-bottom: 5px;
-  background: url(../img/icons/eye.png) 4px 4px no-repeat;
   border-bottom: 3px solid #d4d4d4;
   text-decoration: none;
+}
+
+.home-calculator-go a:before {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 15px;
+  top: 4px;
+  left: 4px;
+  background: url(../img/icons/eye.png);
 }
 
 .home-calculator-list:after {
@@ -2394,7 +2555,7 @@ a:hover {
 }
 
 .home-calculator-list-item__type {
-  width: 100px;
+  width: 70px;
   margin: 11px auto 0 auto;
   text-align: center;
   color: #0bac5b;
@@ -2495,60 +2656,9 @@ a:hover {
   margin-top: 7px;
 }
 
-.home-events-list-item__more a {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 141px;
-  height: 37px;
-  line-height: 35px;
-  padding-left: 17px;
-  padding-right: 20px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.home-events-list-item__more a:after, .home-events-list-item__more a:before {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  list-style: none;
-  box-shadow: none;
-  position: static;
-  clip: auto;
-  width: auto;
-  height: auto;
-  display: block;
-  float: none;
-  content: "";
-  position: absolute;
-  left: 87%;
-  top: 50%;
-  border: solid transparent;
-  pointer-events: none;
-}
-
-.home-events-list-item__more a:after {
-  border-left-color: #ffffff;
-  border-width: 5px;
-  margin-top: -5px;
-}
-
-.home-events-list-item__more a:before {
-  border-left-color: #000000;
-  border-width: 6px;
-  margin-top: -6px;
-}
-
 .home-events-all {
   margin-top: 11px;
+  padding-right: 7px;
   text-align: right;
 }
 
@@ -2654,6 +2764,7 @@ a:hover {
   height: auto;
   display: inline-block;
   vertical-align: top;
+  position: relative;
   cursor: pointer;
   color: #2d2d2d;
   font-size: 15px;
@@ -2662,10 +2773,33 @@ a:hover {
   white-space: nowrap;
   -webkit-appearance: none;
   padding-top: 0;
-  padding-left: 45px;
+  padding-left: 36px;
   padding-bottom: 7px;
-  background: url(../img/icons/eye.png) 18px 2px no-repeat;
   border-bottom: 3px solid #d4d4d4;
+}
+
+.home-balance-content__go a:before {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 23px;
+  height: 15px;
+  background: url(../img/icons/eye.png);
 }
 
 .about-list-item {

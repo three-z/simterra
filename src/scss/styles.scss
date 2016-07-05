@@ -113,6 +113,80 @@ a {
 	}
 }
 
+.button {
+	@include null-inline-block;
+	-webkit-appearance: none;
+	position: relative;
+	height: 37px;
+	line-height: 35px;
+	padding-left: 17px;
+	padding-right: 17px;
+	border: 1px solid #353535;
+	border-radius: 8px;
+	color: #2d2d2d;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.button-forward {
+	@extend .button;
+	padding-right: 35px;
+
+	&:after,
+	&:before {
+		@include null-pseudo;
+		right: 10px;
+		top: 50%;
+		border: solid transparent;
+		pointer-events: none;
+	}
+
+	&:after {
+		border-left-color: #ffffff;
+		border-width: 5px;
+		margin-top: -5px;
+		margin-right: 2px;
+	}
+
+	&:before {
+		border-left-color: #000000;
+		border-width: 6px;
+		margin-top: -6px;
+	}
+}
+
+.button-back {
+	@extend .button;
+	padding-left: 35px;
+
+	&:after,
+	&:before {
+		@include null-pseudo;
+		left: 10px;
+		top: 50%;
+		border: solid transparent;
+		pointer-events: none;
+	}
+
+	&:after {
+		border-right-color: #ffffff;
+		border-width: 5px;
+		margin-top: -5px;
+		margin-left: 2px;
+	}
+
+	&:before {
+		border-right-color: #000000;
+		border-width: 6px;
+		margin-top: -6px;
+	}
+}
+
 .container {
 	width: 1280px;
 	padding-left: 20px;
@@ -662,6 +736,7 @@ a {
 
 		button {
 			@include null-inline-block;
+			position: relative;
 			cursor: pointer;
 			color: #2d2d2d;
 			font-size: 15px;
@@ -671,8 +746,16 @@ a {
 			padding-top: 0;
 			padding-left: 32px;
 			padding-bottom: 5px;
-			background: url(../img/sidebar-auth/icons/enter.png) 0 0 no-repeat;
 			border-bottom: 3px solid #d4d4d4;
+
+			&:before {
+				@include null-pseudo;
+				top: 0;
+				left: 0;
+				width: 21px;
+				height: 21px;
+				background: url(../img/sidebar-auth/icons/enter.png);
+			}
 		}
 	}
 }
@@ -1724,6 +1807,7 @@ a {
 	text-align: center;
 
 	a {
+		position: relative;
 		display: inline-block;
 		vertical-align: top;
 		color: #2d2d2d;
@@ -1734,9 +1818,17 @@ a {
 		padding-top: 0;
 		padding-left: 32px;
 		padding-bottom: 5px;
-		background: url(../img/icons/eye.png) 4px 4px no-repeat;
 		border-bottom: 3px solid #d4d4d4;
 		text-decoration: none;
+
+		&:before {
+			@include null-pseudo;
+			width: 23px;
+			height: 15px;
+			top: 4px;
+			left: 4px;
+			background: url(../img/icons/eye.png);
+		}
 	}
 }
 
@@ -1759,7 +1851,7 @@ a {
 	}
 
 	&__type {
-		width: 100px;
+		width: 70px;
 		margin: 11px auto 0 auto;
 		text-align: center;
 		color: #0bac5b;
@@ -1859,47 +1951,14 @@ a {
 		margin-top: 7px;
 
 		a {
-			position: relative;
-			display: inline-block;
-			vertical-align: top;
-			width: 141px;
-			height: 37px;
-			line-height: 35px;
-			padding-left: 17px;
-			padding-right: 20px;
-			border: 1px solid #353535;
-			border-radius: 8px;
-			color: #2d2d2d;
-			font-size: 15px;
-			text-transform: uppercase;
-			text-decoration: none;
-
-			&:after,
-			&:before {
-				@include null-pseudo;
-				left: 87%;
-				top: 50%;
-				border: solid transparent;
-				pointer-events: none;
-			}
-
-			&:after {
-				border-left-color: #ffffff;
-				border-width: 5px;
-				margin-top: -5px;
-			}
-
-			&:before {
-				border-left-color: #000000;
-				border-width: 6px;
-				margin-top: -6px;
-			}
+			@extend .button-forward;
 		}
 	}
 }
 
 .home-events-all {
 	margin-top: 11px;
+	padding-right: 7px;
 	text-align: right;
 
 	a {
@@ -1987,6 +2046,7 @@ a {
 
 		a {
 			@include null-inline-block;
+			position: relative;
 			cursor: pointer;
 			color: #2d2d2d;
 			font-size: 15px;
@@ -1995,10 +2055,18 @@ a {
 			white-space: nowrap;
 			-webkit-appearance: none;
 			padding-top: 0;
-			padding-left: 45px;
+			padding-left: 36px;
 			padding-bottom: 7px;
-			background: url(../img/icons/eye.png) 18px 2px no-repeat;
 			border-bottom: 3px solid #d4d4d4;
+
+			&:before {
+				@include null-pseudo;
+				top: 2px;
+				left: 5px;
+				width: 23px;
+				height: 15px;
+				background: url(../img/icons/eye.png);
+			}
 		}
 	}
 }

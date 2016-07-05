@@ -1,4 +1,4 @@
-block('template-header').replace()(function() {
+block('template-header-he').replace()(function() {
 	return [
 		{
 			block : 'header',
@@ -34,7 +34,7 @@ block('template-header').replace()(function() {
 																			mods: { item: 'calculator' },
 																			content : ''
 																		},
-																		'Калькулятор'
+																		'מחשבון'
 																	]
 																}
 															]
@@ -53,7 +53,7 @@ block('template-header').replace()(function() {
 																			mods: { item: 'molecule' },
 																			content : ''
 																		},
-																		'Заказать сим карту'
+																		'הזמן סים'
 																	]
 																}
 															]
@@ -72,7 +72,7 @@ block('template-header').replace()(function() {
 																			mods: { item: 'money' },
 																			content : ''
 																		},
-																		'Пополнить баланс'
+																		'טעינת כרטיס'
 																	]
 																}
 															]
@@ -91,7 +91,7 @@ block('template-header').replace()(function() {
 																			mods: { item: 'user' },
 																			content : ''
 																		},
-																		'Личный кабинет'
+																		'אזור אישי'
 																	]
 																}
 															]
@@ -200,7 +200,7 @@ block('template-header').replace()(function() {
 																{
 																	tag: 'a',
 																	attrs: { href: '#' },
-																	content: 'Главная'
+																	content: 'ראשי'
 																}
 															]
 														},
@@ -211,7 +211,7 @@ block('template-header').replace()(function() {
 																{
 																	tag: 'a',
 																	attrs: { href: '#' },
-																	content: 'О нас'
+																	content: 'אודות'
 																}
 															]
 														},
@@ -222,7 +222,7 @@ block('template-header').replace()(function() {
 																{
 																	tag: 'a',
 																	attrs: { href: '#' },
-																	content: 'Продукты'
+																	content: 'מוצרים'
 																}
 															]
 														},
@@ -233,7 +233,7 @@ block('template-header').replace()(function() {
 																{
 																	tag: 'a',
 																	attrs: { href: '#' },
-																	content: 'Мероприятия'
+																	content: 'הנחות ומבצעים'
 																}
 															]
 														},
@@ -244,7 +244,7 @@ block('template-header').replace()(function() {
 																{
 																	tag: 'a',
 																	attrs: { href: '#' },
-																	content: 'Помощь'
+																	content: 'עזרה'
 																}
 															]
 														},
@@ -255,7 +255,7 @@ block('template-header').replace()(function() {
 																{
 																	tag: 'a',
 																	attrs: { href: '#' },
-																	content: 'Контакты'
+																	content: 'צור קשר'
 																}
 															]
 														}

@@ -1,4 +1,4 @@
-block('template-footer').replace()(function() {
+block('template-footer-he').replace()(function() {
 	return [
 		{
 			block : 'bottom',
@@ -21,31 +21,31 @@ block('template-footer').replace()(function() {
 													content: [
 														{
 															tag : 'li',
-															content: 'Пн.'
+															content: 'א'
 														},
 														{
 															tag : 'li',
-															content: 'Вт.'
+															content: 'ב'
 														},
 														{
 															tag : 'li',
-															content: 'Ср.'
+															content: 'ג'
 														},
 														{
 															tag : 'li',
-															content: 'Чт.'
+															content: 'ד'
 														},
 														{
 															tag : 'li',
-															content: 'Пт.'
+															content: 'ה'
 														},
 														{
 															tag : 'li',
-															content: 'Сб.'
+															content: 'ו'
 														},
 														{
 															tag : 'li',
-															content: 'Вс.'
+															content: 'ש'
 														}
 													]
 												}
@@ -53,7 +53,7 @@ block('template-footer').replace()(function() {
 										},
 										{
 											elem : 'time',
-											content : 'Круглосуточно'
+											content : 'מסביב לשעון'
 										}
 									]
 								}
@@ -86,7 +86,7 @@ block('template-footer').replace()(function() {
 										{
 											tag: 'a',
 											attrs: { href: '#' },
-											content: 'Контакты'
+											content: 'קשר'
 										}
 									]
 								}
@@ -112,7 +112,7 @@ block('template-footer').replace()(function() {
 									content: [
 										{
 											tag: 'img',
-											attrs: { src: 'img/footer/logo.png' },
+											attrs: { src: 'img/footer/logo.png' }
 										}
 									]
 								}
@@ -132,7 +132,7 @@ block('template-footer').replace()(function() {
 												{
 													tag: 'a',
 													attrs: { href: '#' },
-													content: 'Главная'
+													content: 'ראשי'
 												}
 											]
 										},
@@ -143,7 +143,7 @@ block('template-footer').replace()(function() {
 												{
 													tag: 'a',
 													attrs: { href: '#' },
-													content: 'Мероприятия'
+													content: 'הנחות ומבצעים'
 												}
 											]
 										},
@@ -154,7 +154,7 @@ block('template-footer').replace()(function() {
 												{
 													tag: 'a',
 													attrs: { href: '#' },
-													content: 'Помощь'
+													content: 'עזרה'
 												}
 											]
 										},
@@ -165,7 +165,7 @@ block('template-footer').replace()(function() {
 												{
 													tag: 'a',
 													attrs: { href: '#' },
-													content: 'Контакты'
+													content: 'צור קשר'
 												}
 											]
 										},
@@ -176,7 +176,7 @@ block('template-footer').replace()(function() {
 												{
 													tag: 'a',
 													attrs: { href: '#' },
-													content: 'Личный кабинет'
+													content: 'אזור אישי'
 												}
 											]
 										},
@@ -187,7 +187,7 @@ block('template-footer').replace()(function() {
 												{
 													tag: 'a',
 													attrs: { href: '#' },
-													content: 'Пополнить баланс'
+													content: 'טעינת כרטיס'
 												}
 											]
 										},
@@ -198,7 +198,7 @@ block('template-footer').replace()(function() {
 												{
 													tag: 'a',
 													attrs: { href: '#' },
-													content: 'Заказать сим карту'
+													content: 'הזמן סים'
 												}
 											]
 										},
@@ -209,7 +209,7 @@ block('template-footer').replace()(function() {
 												{
 													tag: 'a',
 													attrs: { href: '#' },
-													content: 'Калькулятор'
+													content: 'מחשבון'
 												}
 											]
 										}
@@ -219,7 +219,7 @@ block('template-footer').replace()(function() {
 						},
 						{
 							block: 'footer-copyright',
-							content: '2015- 2016 гг. All rights SimTerra reserved (c) - Разработка компании - <a href="#">Leeft</a>'
+							content: '2015- 2016 All rights SimTerra reserved - חברת פיתוח - <a href="#">Leeft</a>'
 						}
 					]
 				}

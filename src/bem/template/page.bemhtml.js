@@ -1,4 +1,5 @@
 block('template-page').replace()(function() {
+	this.ctx.lang = this.ctx.lang ? this.ctx.lang : 'ru';
 	var rtlStyle = {};
 	if (this.ctx.rtl) {
 		rtlStyle = {
@@ -80,12 +81,12 @@ block('template-page').replace()(function() {
 							},
 							content: [
 								{
-									block: 'template-header'
+									block: 'template-header-' + this.ctx.lang
 								},
 								pageTitle,
 								this.ctx.content,
 								{
-									block: 'template-footer'
+									block: 'template-footer-' + this.ctx.lang
 								},
 								{
 									block: 'template-popups'
