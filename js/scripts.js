@@ -100,7 +100,11 @@ $(document).ready(function() {
 		type: 'single',
 		min: 0,
 		max: 90,
-		from: 45
+		from: 45,
+		onFinish: function (data) {
+			if (typeof bindIonRangeSliderAjax === 'function')
+				bindIonRangeSliderAjax(data.input[0]);
+		}
 	});
 
 	$('.calculator-tabs__list-item a').on('click', function(e) {
@@ -108,6 +112,7 @@ $(document).ready(function() {
 
 		$(this).closest('.calculator-tabs__list-item').addClass('calculator-tabs__list-item_active').siblings().removeClass('calculator-tabs__list-item_active');
 		$($(this).attr('href')).addClass('calculator-content__list-item_active').siblings().removeClass('calculator-content__list-item_active');
+		$('.calculator-calls-select select, .calculator-internet-select select').trigger('refresh');
 	});
 
 	$('.cabinet-questions-list-item__show a').on('click', function(e) {

@@ -251,6 +251,10 @@ a:hover {
   padding-right: 0;
 }
 
+.page {
+  overflow: hidden;
+}
+
 .content__layout:after {
   content: " ";
   display: table;
@@ -2232,6 +2236,11 @@ a:hover {
 .home-elements__layout {
   border: 1px solid #b5b5b5;
   padding: 65px 26px 8px 36px;
+}
+
+.home-elements-list .slick-list {
+  overflow: visible;
+  z-index: 10;
 }
 
 .home-elements-list .slick-dots {
