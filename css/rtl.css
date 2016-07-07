@@ -2,24 +2,24 @@ body {
   direction: rtl;
 }
 
-.button-forward, .calculator-buy a, .home-events-list-item__more a, .cabinet-info-cards-add a, .cabinet-info-security__edit a, .cabinet-confirm-buy a, .cabinet-did-buy a, .cabinet-done-go a, .cabinet-questions-item-form__controls button, .order-info-pay a {
+.button-forward, .calculator-buy a, .home-events-list-item__more a, .cabinet-info-cards-add a, .cabinet-info-security__edit a, .cabinet-confirm-buy a, .cabinet-did-buy a, .cabinet-done-go a, .cabinet-questions-item-form__controls button, .order-info-pay a, .cabinet-history-controls a {
   padding-right: 17px;
   padding-left: 35px;
 }
 
-.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .order-info-pay a:after, .button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before, .order-info-pay a:before {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .order-info-pay a:after, .cabinet-history-controls a:after, .button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before, .order-info-pay a:before, .cabinet-history-controls a:before {
   right: auto;
   left: 10px;
 }
 
-.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .order-info-pay a:after {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .order-info-pay a:after, .cabinet-history-controls a:after {
   border-left-color: transparent;
   border-right-color: #ffffff;
   margin-right: 0;
   margin-left: 2px;
 }
 
-.button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before, .order-info-pay a:before {
+.button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before, .order-info-pay a:before, .cabinet-history-controls a:before {
   border-left-color: transparent;
   border-right-color: #000000;
 }
@@ -825,4 +825,83 @@ body {
 .order-info-delivery__placeholder {
   padding-right: 0;
   padding-left: 27px;
+}
+
+.cabinet-history-tabs__list-item {
+  margin-left: 0;
+  margin-right: 12px;
+}
+
+.cabinet-history-tabs__list-item:first-child {
+  margin-right: 0;
+}
+
+.cabinet-history-phone {
+  float: right;
+}
+
+.cabinet-history-phone .jq-selectbox {
+  direction: ltr;
+}
+
+.cabinet-history-phone .jq-selectbox__select {
+  padding-left: 34px;
+  padding-right: 0;
+}
+
+.cabinet-history-phone .jq-selectbox__trigger {
+  right: auto;
+  left: 0;
+}
+
+.cabinet-history-phone .jq-selectbox__trigger-arrow {
+  right: auto;
+  left: 10px;
+}
+
+.cabinet-history-dates {
+  float: left;
+}
+
+.cabinet-history-dates__from {
+  float: right;
+}
+
+.cabinet-history-dates__to {
+  float: left;
+}
+
+.cabinet-history-dates__to:before {
+  left: auto;
+  right: -41px;
+}
+
+.cabinet-history-dates .icon {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.cabinet-history-controls div {
+  margin-right: 0;
+  margin-left: 17px;
+}
+
+.cabinet-history-controls a .icon {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.cabinet-history-use-table-header__list-item {
+  float: right;
+}
+
+.cabinet-history-use-table-body__list-cell {
+  float: right;
+}
+
+.cabinet-history-use-table-body__list-cell:before {
+  left: auto;
+  right: 0;
+  border-left: none;
+  border-right: 2px solid #000000;
 }

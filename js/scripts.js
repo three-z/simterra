@@ -4,7 +4,7 @@ $(document).ready(function() {
 		'fitToView': false
 	});
 
-	$('.order-info-delivery__switch input[type="radio"], .cabinet-did-select__field select, .calculator-calls-select select, .calculator-internet-select select').styler();
+	$('.order-info-delivery__switch input[type="radio"], .cabinet-did-select__field select, .calculator-calls-select select, .calculator-internet-select select, .cabinet-history-phone select').styler();
 
 	$('.home-slider-list').slick({
 		autoplay: true,

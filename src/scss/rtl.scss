@@ -1207,3 +1207,102 @@ body {
 		@extend .button-forward;
 	}
 }
+
+// cabinet-history
+
+.cabinet-history-tabs {
+
+	&__list-item {
+		margin-left: 0;
+		margin-right: 12px;
+
+		&:first-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.cabinet-history-phone {
+	float: right;
+
+	.jq-selectbox {
+		direction: ltr;
+
+		&__select {
+			padding-left: 34px;
+			padding-right: 0;
+		}
+
+		&__trigger {
+			right: auto;
+			left: 0;
+		}
+
+		&__trigger-arrow {
+			right: auto;
+			left: 10px;
+		}
+	}
+}
+
+.cabinet-history-dates {
+	float: left;
+
+	&__from {
+		float: right;
+	}
+
+	&__to {
+		float: left;
+
+		&:before {
+			left: auto;
+			right: -41px;
+		}
+	}
+
+	.icon {
+		margin-left: 0;
+		margin-right: 6px;
+	}
+}
+
+.cabinet-history-controls {
+
+	div {
+		margin-right: 0;
+		margin-left: 17px;
+	}
+
+	a {
+		@extend .button-forward;
+
+		.icon {
+			margin-right: 0;
+			margin-left: 5px;
+		}
+	}
+}
+
+// cabinet-history-use
+
+.cabinet-history-use-table-header {
+
+	&__list-item {
+		float: right;
+	}
+}
+
+.cabinet-history-use-table-body {
+
+	&__list-cell {
+		float: right;
+
+		&:before {
+			left: auto;
+			right: 0;
+			border-left: none;
+			border-right: 2px solid #000000;
+		}
+	}
+}
