@@ -1,6 +1,8 @@
 ({
 	block: 'template-page',
-	title: 'Заказать СИМ карту',
+	title: 'כרטיס SIM להזמין',
+	rtl: true,
+	lang: 'he',
 	content: [
 		{
 			block: 'content',
@@ -20,16 +22,16 @@
 											content : [
 												{
 													elem : 'list-item',
-													content : 'Выбери продукт'
+													content : 'בחר מוצר'
 												},
 												{
 													elem : 'list-item',
-													content : 'Оформить заказ'
+													content : 'לקופה'
 												},
 												{
 													elem : 'list-item',
 													mods : { 'active' : true },
-													content : 'Завершить заказ'
+													content : 'כדי להשלים'
 												}
 											]
 										}
@@ -40,11 +42,11 @@
 									content : [
 										{
 											tag : 'h2',
-											content : 'Ваш заказ успешно завершен'
+											content : 'ההזמנה שלך הושלמה בהצלחה'
 										},
 										{
 											tag : 'h3',
-											content : 'Вы заказали'
+											content : 'לקוחות שקנו'
 										},
 										{
 											block : 'order-end-list',
@@ -54,7 +56,7 @@
 													content : [
 														{
 															elem : 'price',
-															content : 'Симкарта - 20 € ; На балансе - 10 €'
+															content : 'SIM - 20 €; על היתרה - 10 €'
 														}
 													]
 												}
@@ -62,30 +64,30 @@
 										},
 										{
 											tag : 'h3',
-											content : 'Ваши персональные данные'
+											content : 'הנתונים האישיים שלך'
 										},
 										{
 											block : 'order-end-personal',
 											content : [
 												{
 													elem : 'confidentiality',
-													content : '* Внимание! Мы соблюдаем политику конфиденциальности и не передадим ваши данные третьим лицам'
+													content : '* אזהרה! אנחנו עולים בקנה אחד עם מדיניות הפרטיות ולא נשתף את המידע שלך עם צדדי שלישיים'
 												},
 												{
 													elem : 'text',
 													content : [
-														'Ф.И.О.: <strong>Малышев Виктор Сергевич</strong><br>',
-														'Мобильный телефон: <strong>+7 (753) 456-78-23</strong><br>',
-														'Email: <strong>malyha@mail.ru</strong><br>',
-														'№ удоставерения личности: <strong>123-456</strong><br>',
-														'Адрес места жительства: <strong>163044, Россия, Архангельская область, г.Архангельск, Ул.Урицкого, д.17, кв.408</strong><br>'
+														'שם מלא.: <strong>Малышев Виктор Сергевич</strong><br>',
+														'טלפון נייד: <strong>+7 (753) 456-78-23</strong><br>',
+														'דואר אלקטרוני: <strong>malyha@mail.ru</strong><br>',
+														'מספר תעודת זהות: <strong>123-456</strong><br>',
+														'כתובת קבועה: <strong>163044, Россия, Архангельская область, г.Архангельск, Ул.Урицкого, д.17, кв.408</strong><br>'
 													]
 												}
 											]
 										},
 										{
 											tag : 'h3',
-											content : 'ДОставка почтой на указанный адрес'
+											content : 'מסירת דואר אלקטרוני לכתובת שצוינה'
 										},
 										{
 											block : 'order-end-delivery',
@@ -93,15 +95,15 @@
 												{
 													elem : 'text',
 													content : [
-														'Адрес доставки: <strong>163044, Россия, Архангельская область, г.Архангельск, Ул.Урицкого, д.17, кв.408</strong><br>',
-														'Стоимость доставки: <strong>10 €</strong><br>'
+														'כתובת משלוח: <strong>163044, Россия, Архангельская область, г.Архангельск, Ул.Урицкого, д.17, кв.408</strong><br>',
+														'עלות משלוח: <strong>10 €</strong><br>'
 													]
 												}
 											]
 										},
 										{
 											block : 'order-end-total',
-											content : 'Сумма заказа: <strong>40 €</strong>'
+											content : 'סכום: <strong>40 €</strong>'
 										}
 									]
 								}

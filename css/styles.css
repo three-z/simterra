@@ -126,7 +126,7 @@ a:hover {
   background-image: url(../img/icons/question.png);
 }
 
-.button, .button-forward, .calculator-buy a, .home-events-list-item__more a, .cabinet-info-cards-add a, .cabinet-info-security__edit a, .cabinet-did-buy a, .cabinet-confirm-buy a, .cabinet-done-go a, .cabinet-questions-item-form__controls button, .button-back, .special-events-item__back a, .cabinet-confirm-cancel a, .cabinet-balance-info__refill a {
+.button, .button-forward, .calculator-buy a, .home-events-list-item__more a, .order-info-pay a, .cabinet-info-cards-add a, .cabinet-info-security__edit a, .cabinet-did-buy a, .cabinet-confirm-buy a, .cabinet-done-go a, .cabinet-questions-item-form__controls button, .button-back, .special-events-item__back a, .help-item__back a, .cabinet-confirm-cancel a, .order-info-list-item__delete a, .cabinet-balance-info__refill a {
   margin: 0;
   padding: 0;
   background: none;
@@ -155,15 +155,15 @@ a:hover {
   text-decoration: none;
 }
 
-.button:hover, .button-forward:hover, .calculator-buy a:hover, .home-events-list-item__more a:hover, .cabinet-info-cards-add a:hover, .cabinet-info-security__edit a:hover, .cabinet-did-buy a:hover, .cabinet-confirm-buy a:hover, .cabinet-done-go a:hover, .cabinet-questions-item-form__controls button:hover, .button-back:hover, .special-events-item__back a:hover, .cabinet-confirm-cancel a:hover, .cabinet-balance-info__refill a:hover {
+.button:hover, .button-forward:hover, .calculator-buy a:hover, .home-events-list-item__more a:hover, .order-info-pay a:hover, .cabinet-info-cards-add a:hover, .cabinet-info-security__edit a:hover, .cabinet-did-buy a:hover, .cabinet-confirm-buy a:hover, .cabinet-done-go a:hover, .cabinet-questions-item-form__controls button:hover, .button-back:hover, .special-events-item__back a:hover, .help-item__back a:hover, .cabinet-confirm-cancel a:hover, .order-info-list-item__delete a:hover, .cabinet-balance-info__refill a:hover {
   opacity: .8;
 }
 
-.button-forward, .calculator-buy a, .home-events-list-item__more a, .cabinet-info-cards-add a, .cabinet-info-security__edit a, .cabinet-did-buy a, .cabinet-confirm-buy a, .cabinet-done-go a, .cabinet-questions-item-form__controls button {
+.button-forward, .calculator-buy a, .home-events-list-item__more a, .order-info-pay a, .cabinet-info-cards-add a, .cabinet-info-security__edit a, .cabinet-did-buy a, .cabinet-confirm-buy a, .cabinet-done-go a, .cabinet-questions-item-form__controls button {
   padding-right: 35px;
 }
 
-.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-did-buy a:after, .cabinet-confirm-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-did-buy a:before, .cabinet-confirm-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .order-info-pay a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-did-buy a:after, .cabinet-confirm-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .order-info-pay a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-did-buy a:before, .cabinet-confirm-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before {
   margin: 0;
   padding: 0;
   background: none;
@@ -186,24 +186,24 @@ a:hover {
   pointer-events: none;
 }
 
-.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-did-buy a:after, .cabinet-confirm-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .order-info-pay a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-did-buy a:after, .cabinet-confirm-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after {
   border-left-color: #ffffff;
   border-width: 5px;
   margin-top: -5px;
   margin-right: 2px;
 }
 
-.button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-did-buy a:before, .cabinet-confirm-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before {
+.button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .order-info-pay a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-did-buy a:before, .cabinet-confirm-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before {
   border-left-color: #000000;
   border-width: 6px;
   margin-top: -6px;
 }
 
-.button-back, .special-events-item__back a, .cabinet-confirm-cancel a {
+.button-back, .special-events-item__back a, .help-item__back a, .cabinet-confirm-cancel a {
   padding-left: 35px;
 }
 
-.button-back:after, .special-events-item__back a:after, .cabinet-confirm-cancel a:after, .button-back:before, .special-events-item__back a:before, .cabinet-confirm-cancel a:before {
+.button-back:after, .special-events-item__back a:after, .help-item__back a:after, .cabinet-confirm-cancel a:after, .button-back:before, .special-events-item__back a:before, .help-item__back a:before, .cabinet-confirm-cancel a:before {
   margin: 0;
   padding: 0;
   background: none;
@@ -226,14 +226,14 @@ a:hover {
   pointer-events: none;
 }
 
-.button-back:after, .special-events-item__back a:after, .cabinet-confirm-cancel a:after {
+.button-back:after, .special-events-item__back a:after, .help-item__back a:after, .cabinet-confirm-cancel a:after {
   border-right-color: #ffffff;
   border-width: 5px;
   margin-top: -5px;
   margin-left: 2px;
 }
 
-.button-back:before, .special-events-item__back a:before, .cabinet-confirm-cancel a:before {
+.button-back:before, .special-events-item__back a:before, .help-item__back a:before, .cabinet-confirm-cancel a:before {
   border-right-color: #000000;
   border-width: 6px;
   margin-top: -6px;
@@ -3334,57 +3334,6 @@ a:hover .help-list-item__text {
   margin-top: 28px;
 }
 
-.help-item__back a {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 37px;
-  line-height: 35px;
-  padding-left: 43px;
-  padding-right: 20px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.help-item__back a:after, .help-item__back a:before {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  list-style: none;
-  box-shadow: none;
-  position: static;
-  clip: auto;
-  width: auto;
-  height: auto;
-  display: block;
-  float: none;
-  content: "";
-  position: absolute;
-  right: 78%;
-  top: 50%;
-  border: solid transparent;
-  pointer-events: none;
-}
-
-.help-item__back a:after {
-  border-right-color: #ffffff;
-  border-width: 5px;
-  margin-top: -5px;
-}
-
-.help-item__back a:before {
-  border-right-color: #000000;
-  border-width: 6px;
-  margin-top: -6px;
-}
-
 .balance {
   color: #515151;
   font-size: 14px;
@@ -3889,21 +3838,6 @@ a:hover .help-list-item__text {
   padding-bottom: 20px;
 }
 
-.order-info-list-item__delete a {
-  display: inline-block;
-  vertical-align: top;
-  width: 141px;
-  height: 37px;
-  line-height: 37px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-
 .order-info-form {
   margin-top: 13px;
   margin-bottom: 64px;
@@ -4251,58 +4185,6 @@ a:hover .help-list-item__text {
 .order-info-pay {
   margin-top: 39px;
   text-align: center;
-}
-
-.order-info-pay a {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 137px;
-  height: 37px;
-  line-height: 35px;
-  padding-left: 17px;
-  padding-right: 20px;
-  border: 1px solid #353535;
-  border-radius: 8px;
-  color: #2d2d2d;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.order-info-pay a:after, .order-info-pay a:before {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  list-style: none;
-  box-shadow: none;
-  position: static;
-  clip: auto;
-  width: auto;
-  height: auto;
-  display: block;
-  float: none;
-  content: "";
-  position: absolute;
-  left: 89%;
-  top: 50%;
-  border: solid transparent;
-  pointer-events: none;
-}
-
-.order-info-pay a:after {
-  border-left-color: #ffffff;
-  border-width: 5px;
-  margin-top: -5px;
-}
-
-.order-info-pay a:before {
-  border-left-color: #000000;
-  border-width: 6px;
-  margin-top: -6px;
 }
 
 .order-end {

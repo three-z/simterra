@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic" />
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic" />
+		<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+		<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
+		<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css" />
+		<link rel="stylesheet" href="bower_components/jquery.form-styler/jquery.formstyler.css" />
+		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.css" />
+		<link rel="stylesheet" href="bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/rtl.css" />
+	</head>
+
+	<body>
+		<div class="page">
+			<div class="header">
+				<div class="header-top">
+					<div class="header-top__layout container">
+						<div class="header-top__layout-left">
+							<div class="header-top-menu">
+								<ul class="header-top-menu__list">
+									<li class="header-top-menu__list-item"><a href="#"><i class="icon icon_item_calculator"></i>מחשבון</a></li>
+									<li class="header-top-menu__list-item"><a href="#"><i class="icon icon_item_molecule"></i>הזמן סים</a></li>
+									<li class="header-top-menu__list-item"><a href="#"><i class="icon icon_item_money"></i>טעינת כרטיס</a></li>
+									<li class="header-top-menu__list-item"><a href="#"><i class="icon icon_item_user"></i>אזור אישי</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-top__layout-right">
+							<div class="header-lang">
+								<ul class="header-lang__list">
+									<li class="header-lang__list-item header-lang__list-item_active"><a href="#">RU</a></li>
+									<li class="header-lang__list-item"><a href="#">EN</a></li>
+									<li class="header-lang__list-item"><a href="#">HE</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<div class="header-bottom__layout container">
+						<div class="header-bottom__layout-left">
+							<div class="header-logo">
+								<a href="#"><img src="img/header/logo.png" /></a>
+							</div>
+						</div>
+						<div class="header-bottom__layout-right">
+							<div class="header-navigation">
+								<ul class="header-navigation__list">
+									<li class="header-navigation__list-item"><a href="#">ראשי</a></li>
+									<li class="header-navigation__list-item"><a href="#">אודות</a></li>
+									<li class="header-navigation__list-item"><a href="#">מוצרים</a></li>
+									<li class="header-navigation__list-item"><a href="#">הנחות ומבצעים</a></li>
+									<li class="header-navigation__list-item"><a href="#">עזרה</a></li>
+									<li class="header-navigation__list-item"><a href="#">צור קשר</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h1 class="page-title container">כרטיס SIM להזמין</h1>
+			<div class="content">
+				<div class="content__layout container">
+					<div class="order">
+						<div class="order-steps">
+							<div class="order-steps__list">
+								<div class="order-steps__list-item">בחר מוצר</div>
+								<div class="order-steps__list-item order-steps__list-item_active">לקופה</div>
+								<div class="order-steps__list-item">כדי להשלים</div>
+							</div>
+						</div>
+						<div class="order-info">
+							<h3>ההזמנה שלך</h3>
+							<div class="order-info-list">
+								<div class="order-info-list-item">
+									<div class="order-info-list-item__image"><img src="img/order-info-list/items/1.png" /></div>
+									<div class="order-info-list-item__price">SIM - 20 €; על היתרה - 10 €</div>
+									<div class="order-info-list-item__delete"><a href="#">מחק</a></div>
+								</div>
+							</div>
+							<h4><span>1</span></h4>
+							<h3>הנתונים האישיים שלך</h3>
+							<div class="order-info-form">
+								<div class="order-info-form__confidentiality">* אזהרה! אנחנו עולים בקנה אחד עם מדיניות הפרטיות ולא נשתף את המידע שלך עם צדדי שלישיים</div>
+								<form class="order-info-form__form">
+									<div class="order-info-form__row">
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">שם מלא.:</div><input class="order-info-form__input" type="text"/></label></div>
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">טלפון נייד:</div><input class="order-info-form__input" type="text"/></label></div>
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">דואר אלקטרוני:</div><input class="order-info-form__input" type="text"/></label></div>
+									</div>
+									<div class="order-info-form__row">
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">מספר תעודת זהות:</div><input class="order-info-form__input" type="text"/></label></div>
+										<div class="order-info-form__field order-info-form__field_columns_2"><label class="order-info-form__label"><div class="order-info-form__placeholder">כתובת קבועה:</div><input class="order-info-form__input" type="text" placeholder="(индекс, страна, область, город, район, улица, дом, квартира)"/></label></div>
+									</div>
+									<div class="order-info-form__row">
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">תאריך יציאה:</div><input class="order-info-form__input" type="text" placeholder="__.__.____"/></label></div>
+										<div class="order-info-form__field"><label class="order-info-form__label"><div class="order-info-form__placeholder">חזור:</div><input class="order-info-form__input" type="text" placeholder="__.__.____"/></label></div>
+										<div class="order-info-form__field">
+											<div class="order-info-form__note"><span style="color: #f80000;">*</span> אם אתה לא יודע את התאריכים המדויקים, ניתן לציין את לכאורה</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<h4><span>2</span></h4>
+							<h3>בחר באפשרות משלוח</h3>
+							<div class="order-info-delivery">
+								<form class="order-info-delivery__form">
+									<div class="order-info-delivery__switch"><label class="order-info-delivery__label"><input class="order-info-delivery__radio" type="radio" name="delivery" checked="checked"/>שליחת דואר לכתובת שצוינה</label><label class="order-info-delivery__label"><input class="order-info-delivery__radio" type="radio" name="delivery"/>מִשׁלוֹחַ מָהִיר</label>
+										<label
+											class="order-info-delivery__label"><input class="order-info-delivery__radio" type="radio" name="delivery" />להגיע לשדה התעופה בנקודת ההנפקה</label>
+									</div>
+									<div class="order-info-delivery__address"><label class="order-info-delivery__field"><div class="order-info-delivery__placeholder">כתובת משלוח:</div><input class="order-info-delivery__input" type="text" placeholder="(קוד, ארץ, אזור, עיר, מחוז, רחוב, בית, דירה)"/></label></div>
+								</form>
+								<div class="order-info-delivery__price">עלות משלוח: <strong>10 €</strong></div>
+							</div>
+							<h4><span>3</span></h4>
+							<div class="order-info-total">סכום: <strong>10 €</strong></div>
+							<div class="order-info-pay"><a href="#">לשלם</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="bottom__layout container container_no-padding">
+					<div class="bottom__layout-left">
+						<div class="bottom-time">
+							<div class="bottom-time__days">
+								<ul>
+									<li>א</li>
+									<li>ב</li>
+									<li>ג</li>
+									<li>ד</li>
+									<li>ה</li>
+									<li>ו</li>
+									<li>ש</li>
+								</ul>
+							</div>
+							<div class="bottom-time__time">מסביב לשעון</div>
+						</div>
+					</div>
+					<div class="bottom__layout-right">
+						<div class="bottom-phones">
+							<ul>
+								<li>+7 (888) - 55-70-240</li>
+								<li>+7 (888) - 53-74-242</li>
+							</ul>
+						</div>
+						<div class="bottom-contacts"><a href="#">קשר</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer__layout container">
+					<div class="footer-logo">
+						<a href="#"><img src="img/footer/logo.png" /></a>
+					</div>
+					<div class="footer-navigation">
+						<ul class="footer-navigation__list">
+							<li class="footer-navigation__list-item"><a href="#">ראשי</a></li>
+							<li class="footer-navigation__list-item"><a href="#">הנחות ומבצעים</a></li>
+							<li class="footer-navigation__list-item"><a href="#">עזרה</a></li>
+							<li class="footer-navigation__list-item"><a href="#">צור קשר</a></li>
+							<li class="footer-navigation__list-item"><a href="#">אזור אישי</a></li>
+							<li class="footer-navigation__list-item"><a href="#">טעינת כרטיס</a></li>
+							<li class="footer-navigation__list-item"><a href="#">הזמן סים</a></li>
+							<li class="footer-navigation__list-item"><a href="#">מחשבון</a></li>
+						</ul>
+					</div>
+					<div class="footer-copyright">2015- 2016 All rights SimTerra reserved - חברת פיתוח - <a href="#">Leeft</a></div>
+				</div>
+			</div>
+		</div>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/slick.js/slick/slick.min.js"></script>
+		<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+		<script src="bower_components/circular-carousel/jquery.circular-carousel.js"></script>
+		<script src="bower_components/jquery.form-styler/jquery.formstyler.min.js"></script>
+		<script src="bower_components/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+
+</html>

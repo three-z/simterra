@@ -1,6 +1,8 @@
 ({
 	block: 'template-page',
-	title: 'Калькулятор',
+	title: 'מחשבון',
+	rtl: true,
+	lang: 'he',
 	content: [
 		{
 			block: 'content',
@@ -27,7 +29,7 @@
 														{
 															tag: 'a',
 															attrs: {'href': '#calculator-content-1'},
-															content: 'Вызовы'
+															content: 'שיחה'
 														}
 													]
 												},
@@ -38,7 +40,7 @@
 														{
 															tag: 'a',
 															attrs: {'href': '#calculator-content-2'},
-															content: 'Интернет'
+															content: 'אינטרנט'
 														}
 													]
 												}
@@ -69,7 +71,7 @@
 																				{
 																					elem: 'label',
 																					tag: 'label',
-																					content: 'Откуда'
+																					content: 'מהיכן'
 																				},
 																				{
 																					elem: 'select',
@@ -79,12 +81,17 @@
 																						{
 																							tag: 'option',
 																							attrs: {'value': '0'},
-																							content: 'Таджикистан'
+																							content: 'רוסיה'
 																						},
 																						{
 																							tag: 'option',
 																							attrs: {'value': '1'},
-																							content: 'Россия'
+																							content: 'טג\'יקיסטן'
+																						},
+																						{
+																							tag: 'option',
+																							attrs: {'value': '2'},
+																							content: 'הרפובליקה הדומיניקנית'
 																						}
 																					]
 																				}
@@ -96,7 +103,7 @@
 																				{
 																					elem: 'label',
 																					tag: 'label',
-																					content: 'Куда'
+																					content: 'שם'
 																				},
 																				{
 																					elem: 'select',
@@ -106,12 +113,17 @@
 																						{
 																							tag: 'option',
 																							attrs: {'value': '0'},
-																							content: 'Доминиканская республика'
+																							content: 'רוסיה'
 																						},
 																						{
 																							tag: 'option',
 																							attrs: {'value': '1'},
-																							content: 'Россия'
+																							content: 'טג\'יקיסטן'
+																						},
+																						{
+																							tag: 'option',
+																							attrs: {'value': '2'},
+																							content: 'הרפובליקה הדומיניקנית'
 																						}
 																					]
 																				}
@@ -123,7 +135,7 @@
 																				{
 																					tag: 'a',
 																					attrs: {'href': '#'},
-																					content: 'Поменять местами'
+																					content: 'החלפה'
 																				}
 																			]
 																		}
@@ -143,7 +155,7 @@
 																		},
 																		{
 																			elem: 'title',
-																			content: 'буду платить'
+																			content: 'אני אשלם'
 																		}
 																	]
 																},
@@ -160,7 +172,7 @@
 																							tag: 'img',
 																							attrs: {'src': 'img/calculator-calls-list/icons/minutes.png'}
 																						},
-																						'Минуты'
+																						'דקות'
 																					]
 																				},
 																				{
@@ -172,14 +184,14 @@
 																								{
 																									elem: 'list-item',
 																									content: [
-																										'Для клиентов VISA CAl <strong>244</strong><br>',
+																										'עבור לקוחות ויזה כאל <strong>244</strong><br>',
 																										'<small>0.2044 €/min</small><br>'
 																									]
 																								},
 																								{
 																									elem: 'list-item',
 																									content: [
-																										'Для клиентов <strong>195</strong><br>',
+																										'עבור לקוחות <strong>195</strong><br>',
 																										'<small>0.2044 €/min</small><br>'
 																									]
 																								}
@@ -197,7 +209,7 @@
 																		{
 																			tag: 'a',
 																			attrs: {'href': '#'},
-																			content: 'Приобрести'
+																			content: 'לרכוש'
 																		}
 																	]
 																}
@@ -218,7 +230,7 @@
 																		{
 																			elem: 'label',
 																			tag: 'label',
-																			content: 'Выберите страну'
+																			content: 'בחר מדינה'
 																		},
 																		{
 																			elem: 'select',
@@ -228,12 +240,17 @@
 																				{
 																					tag: 'option',
 																					attrs: {'value': '0'},
-																					content: 'Таджикистан'
+																					content: 'רוסיה'
 																				},
 																				{
 																					tag: 'option',
 																					attrs: {'value': '1'},
-																					content: 'Россия'
+																					content: 'טג\'יקיסטן'
+																				},
+																				{
+																					tag: 'option',
+																					attrs: {'value': '2'},
+																					content: 'הרפובליקה הדומיניקנית'
 																				}
 																			]
 																		}
@@ -253,7 +270,7 @@
 																		},
 																		{
 																			elem: 'title',
-																			content: 'буду платить'
+																			content: 'אני אשלם'
 																		}
 																	]
 																},
@@ -270,7 +287,7 @@
 																							tag: 'img',
 																							attrs: {'src': 'img/calculator-internet-list/icons/traffic.png'}
 																						},
-																						'Трафик'
+																						'תנועה'
 																					]
 																				},
 																				{
@@ -282,14 +299,14 @@
 																								{
 																									elem: 'list-item',
 																									content: [
-																										'Для клиентов VISA CAl <strong>244</strong><br>',
+																										'עבור לקוחות ויזה כאל <strong>244</strong><br>',
 																										'<small>0.2044 €/min</small><br>'
 																									]
 																								},
 																								{
 																									elem: 'list-item',
 																									content: [
-																										'Для клиентов <strong>195</strong><br>',
+																										'עבור לקוחות <strong>195</strong><br>',
 																										'<small>0.2044 €/min</small><br>'
 																									]
 																								}
@@ -299,7 +316,7 @@
 																				},
 																				{
 																					elem: 'operator',
-																					content: 'Оператор:  Grand BUSINESS'
+																					content: 'מפעיל:  Grand BUSINESS'
 																				}
 																			]
 																		},
@@ -313,7 +330,7 @@
 																							tag: 'img',
 																							attrs: {'src': 'img/calculator-internet-list/icons/traffic.png'}
 																						},
-																						'Трафик'
+																						'תנועה'
 																					]
 																				},
 																				{
@@ -325,14 +342,14 @@
 																								{
 																									elem: 'list-item',
 																									content: [
-																										'Для клиентов VISA CAl <strong>244</strong><br>',
+																										'עבור לקוחות ויזה כאל <strong>244</strong><br>',
 																										'<small>0.2044 €/min</small><br>'
 																									]
 																								},
 																								{
 																									elem: 'list-item',
 																									content: [
-																										'Для клиентов <strong>195</strong><br>',
+																										'עבור לקוחות <strong>195</strong><br>',
 																										'<small>0.2044 €/min</small><br>'
 																									]
 																								}
@@ -342,7 +359,7 @@
 																				},
 																				{
 																					elem: 'operator',
-																					content: 'Оператор:  Grand BUSINESS'
+																					content: 'מפעיל:  Grand BUSINESS'
 																				}
 																			]
 																		}
@@ -354,7 +371,7 @@
 																		{
 																			tag: 'a',
 																			attrs: {'href': '#'},
-																			content: 'Приобрести'
+																			content: 'לרכוש'
 																		}
 																	]
 																}

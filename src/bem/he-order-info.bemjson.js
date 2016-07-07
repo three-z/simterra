@@ -1,6 +1,8 @@
 ({
 	block: 'template-page',
-	title: 'Заказать СИМ карту',
+	title: 'כרטיס SIM להזמין',
+	rtl: true,
+	lang: 'he',
 	content: [
 		{
 			block: 'content',
@@ -20,16 +22,16 @@
 											content : [
 												{
 													elem : 'list-item',
-													content : 'Выбери продукт'
+													content : 'בחר מוצר'
 												},
 												{
 													elem : 'list-item',
 													mods : { 'active' : true },
-													content : 'Оформить заказ'
+													content : 'לקופה'
 												},
 												{
 													elem : 'list-item',
-													content : 'Завершить заказ'
+													content : 'כדי להשלים'
 												}
 											]
 										}
@@ -40,7 +42,7 @@
 									content : [
 										{
 											tag : 'h3',
-											content : 'Ваш заказ'
+											content : 'ההזמנה שלך'
 										},
 										{
 											block : 'order-info-list',
@@ -59,7 +61,7 @@
 														},
 														{
 															elem : 'price',
-															content : 'Симкарта - 20 € ; На балансе - 10 €'
+															content : 'SIM - 20 €; על היתרה - 10 €'
 														},
 														{
 															elem : 'delete',
@@ -67,7 +69,7 @@
 																{
 																	tag : 'a',
 																	attrs : { 'href' : '#' },
-																	content : 'Удалить'
+																	content : 'מחק'
 																}
 															]
 														}
@@ -86,14 +88,14 @@
 										},
 										{
 											tag : 'h3',
-											content : 'Ваши персональные данные'
+											content : 'הנתונים האישיים שלך'
 										},
 										{
 											block : 'order-info-form',
 											content : [
 												{
 													elem : 'confidentiality',
-													content : '* Внимание! Мы соблюдаем политику конфиденциальности и не передадим ваши данные третьим лицам'
+													content : '* אזהרה! אנחנו עולים בקנה אחד עם מדיניות הפרטיות ולא נשתף את המידע שלך עם צדדי שלישיים'
 												},
 												{
 													elem : 'form',
@@ -111,7 +113,7 @@
 																			content : [
 																				{
 																					elem : 'placeholder',
-																					content : 'Ф.И.О.:'
+																					content : 'שם מלא.:'
 																				},
 																				{
 																					elem : 'input',
@@ -131,7 +133,7 @@
 																			content : [
 																				{
 																					elem : 'placeholder',
-																					content : 'Мобильный телефон:'
+																					content : 'טלפון נייד:'
 																				},
 																				{
 																					elem : 'input',
@@ -151,7 +153,7 @@
 																			content : [
 																				{
 																					elem : 'placeholder',
-																					content : 'Email:'
+																					content : 'דואר אלקטרוני:'
 																				},
 																				{
 																					elem : 'input',
@@ -176,7 +178,7 @@
 																			content : [
 																				{
 																					elem : 'placeholder',
-																					content : '№ удостоверения личности:'
+																					content : 'מספר תעודת זהות:'
 																				},
 																				{
 																					elem : 'input',
@@ -197,7 +199,7 @@
 																			content : [
 																				{
 																					elem : 'placeholder',
-																					content : 'Адрес места жительства:'
+																					content : 'כתובת קבועה:'
 																				},
 																				{
 																					elem : 'input',
@@ -222,7 +224,7 @@
 																			content : [
 																				{
 																					elem : 'placeholder',
-																					content : 'Дата вылета:'
+																					content : 'תאריך יציאה:'
 																				},
 																				{
 																					elem : 'input',
@@ -242,7 +244,7 @@
 																			content : [
 																				{
 																					elem : 'placeholder',
-																					content : 'Дата возвращения:'
+																					content : 'חזור:'
 																				},
 																				{
 																					elem : 'input',
@@ -258,7 +260,7 @@
 																	content : [
 																		{
 																			elem : 'note',
-																			content : '<span style="color: #f80000;">*</span> Если вы не знаете точные даты поездки, то можете указать предполагаемые'
+																			content : '<span style="color: #f80000;">*</span> אם אתה לא יודע את התאריכים המדויקים, ניתן לציין את לכאורה'
 																		}
 																	]
 																}
@@ -279,7 +281,7 @@
 										},
 										{
 											tag : 'h3',
-											content : 'Выберите вариант доставки'
+											content : 'בחר באפשרות משלוח'
 										},
 										{
 											block : 'order-info-delivery',
@@ -300,7 +302,7 @@
 																			tag: 'input',
 																			attrs: { 'type': 'radio', 'name': 'delivery', 'checked': 'checked' }
 																		},
-																		'Отправка почтой на указанный адрес'
+																		'שליחת דואר לכתובת שצוינה'
 																	]
 																},
 																{
@@ -312,7 +314,7 @@
 																			tag: 'input',
 																			attrs: { 'type': 'radio', 'name': 'delivery' }
 																		},
-																		'Курьерская доставка'
+																		'מִשׁלוֹחַ מָהִיר'
 																	]
 																},
 																{
@@ -324,7 +326,7 @@
 																			tag: 'input',
 																			attrs: { 'type': 'radio', 'name': 'delivery' }
 																		},
-																		'Получение в аэропорту в пункте выдачи'
+																		'להגיע לשדה התעופה בנקודת ההנפקה'
 																	]
 																}
 															]
@@ -338,12 +340,12 @@
 																	content : [
 																		{
 																			elem : 'placeholder',
-																			content : 'Адрес доставки:'
+																			content : 'כתובת משלוח:'
 																		},
 																		{
 																			elem : 'input',
 																			tag: 'input',
-																			attrs: { 'type': 'text', 'placeholder': '(индекс, страна, область, город, район, улица, дом, квартира)' }
+																			attrs: { 'type': 'text', 'placeholder': '(קוד, ארץ, אזור, עיר, מחוז, רחוב, בית, דירה)' }
 																		}
 																	]
 																}
@@ -353,7 +355,7 @@
 												},
 												{
 													elem : 'price',
-													content : 'Стоимость доставки: <strong>10 €</strong>'
+													content : 'עלות משלוח: <strong>10 €</strong>'
 												}
 											]
 										},
@@ -368,7 +370,7 @@
 										},
 										{
 											block : 'order-info-total',
-											content : 'Сумма заказа: <strong>10 €</strong>'
+											content : 'סכום: <strong>10 €</strong>'
 										},
 										{
 											block : 'order-info-pay',
@@ -376,7 +378,7 @@
 												{
 													tag : 'a',
 													attrs : { 'href' : '#' },
-													content : 'Оплатить'
+													content : 'לשלם'
 												}
 											]
 										}
