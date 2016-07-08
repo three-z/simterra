@@ -139,7 +139,5 @@ $(document).ready(function() {
 	});
 
 	var dateMask = $('.cabinet-history-dates input[type="text"]').attr('placeholder').replace('_ _ - _ _ - _ _', '9 9 - 9 9 - 9 9');
-	console.log(dateMask);
-
 	$('.cabinet-history-dates input[type="text"]').mask(dateMask);
 });
