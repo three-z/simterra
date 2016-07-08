@@ -836,6 +836,10 @@ body {
   margin-right: 0;
 }
 
+.cabinet-history-title h3 {
+  float: right;
+}
+
 .cabinet-history-phone {
   float: right;
 }
@@ -873,7 +877,7 @@ body {
 
 .cabinet-history-dates__to:before {
   left: auto;
-  right: -41px;
+  right: -30px;
 }
 
 .cabinet-history-dates .icon {
@@ -904,4 +908,31 @@ body {
   right: 0;
   border-left: none;
   border-right: 2px solid #000000;
+}
+
+.cabinet-history-pay-table-header__list-item {
+  float: right;
+}
+
+.cabinet-history-pay-table-header__list-item_type_numbers {
+  padding-left: 0;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.cabinet-history-pay-table-body__list-cell {
+  float: right;
+}
+
+.cabinet-history-pay-table-body__list-cell:before {
+  left: auto;
+  right: 0;
+  border-left: none;
+  border-right: 2px solid #000000;
+}
+
+.cabinet-history-pay-table-body__list-cell_type_numbers {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 15px;
 }

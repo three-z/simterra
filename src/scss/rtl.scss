@@ -1222,6 +1222,13 @@ body {
 	}
 }
 
+.cabinet-history-title {
+
+	h3 {
+		float: right;
+	}
+}
+
 .cabinet-history-phone {
 	float: right;
 
@@ -1257,7 +1264,7 @@ body {
 
 		&:before {
 			left: auto;
-			right: -41px;
+			right: -30px;
 		}
 	}
 
@@ -1303,6 +1310,47 @@ body {
 			right: 0;
 			border-left: none;
 			border-right: 2px solid #000000;
+		}
+	}
+}
+
+// cabinet-history-use
+
+.cabinet-history-pay-table-header {
+
+	&__list-item {
+		float: right;
+
+		&_type {
+
+			&_numbers {
+				padding-left: 0;
+				padding-right: 15px;
+				text-align: right;
+			}
+		}
+	}
+}
+
+.cabinet-history-pay-table-body {
+
+	&__list-cell {
+		float: right;
+
+		&:before {
+			left: auto;
+			right: 0;
+			border-left: none;
+			border-right: 2px solid #000000;
+		}
+
+		&_type {
+
+			&_numbers {
+				text-align: right;
+				padding-left: 0;
+				padding-right: 15px;
+			}
 		}
 	}
 }

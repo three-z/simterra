@@ -137,4 +137,9 @@ $(document).ready(function() {
 		$('.calculator-calls-select__from select').val(to).trigger('refresh');;
 		$('.calculator-calls-select__to select').val(from).trigger('refresh');;
 	});
+
+	var dateMask = $('.cabinet-history-dates input[type="text"]').attr('placeholder').replace('_ _ - _ _ - _ _', '9 9 - 9 9 - 9 9');
+	console.log(dateMask);
+
+	$('.cabinet-history-dates input[type="text"]').mask(dateMask);
 });

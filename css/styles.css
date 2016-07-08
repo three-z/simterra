@@ -6022,6 +6022,29 @@ a:hover .help-list-item__text {
   clear: both;
 }
 
+.cabinet-history-title h3 {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  float: left;
+  margin-top: 7px;
+  color: #3D3D3D;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .cabinet-history-phone {
   float: left;
 }
@@ -6125,7 +6148,7 @@ a:hover .help-list-item__text {
   content: "";
   position: absolute;
   top: 0;
-  left: -41px;
+  left: -30px;
   content: "-";
   color: #2D2D2D;
   font-size: 36px;
@@ -6167,7 +6190,7 @@ a:hover .help-list-item__text {
   height: auto;
   display: inline-block;
   vertical-align: top;
-  width: 118px;
+  width: 130px;
   box-shadow: none;
   height: 38px;
   line-height: 38px;
@@ -6176,6 +6199,8 @@ a:hover .help-list-item__text {
   font-size: 15px;
   border: 1px solid #d8d8d8;
   color: #2D2D2D;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .cabinet-history-dates input[type="text"]:-moz-placeholder {
@@ -6456,4 +6481,199 @@ a:hover .help-list-item__text {
 
 .cabinet-history-use-table-body__list-cell_type_total {
   width: 7%;
+}
+
+.cabinet-history-pay-table {
+  margin-top: 16px;
+}
+
+.cabinet-history-pay-table-header__list {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+}
+
+.cabinet-history-pay-table-header__list > * {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+}
+
+.cabinet-history-pay-table-header__list:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.cabinet-history-pay-table-header__list-item {
+  float: left;
+  text-align: center;
+  color: #2D2D2D;
+  font-size: 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-top: 35px;
+  position: relative;
+}
+
+.cabinet-history-pay-table-header__list-item a {
+  text-decoration: none;
+  color: #2D2D2D;
+}
+
+.cabinet-history-pay-table-header__list-item .icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -9px;
+}
+
+.cabinet-history-pay-table-header__list-item_type_numbers {
+  width: 75%;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.cabinet-history-pay-table-header__list-item_type_date {
+  width: 11%;
+}
+
+.cabinet-history-pay-table-header__list-item_type_top {
+  width: 14%;
+}
+
+.cabinet-history-pay-table-body {
+  margin-top: 4px;
+}
+
+.cabinet-history-pay-table-body__list {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  border-top: 1px solid #c5c5c5;
+}
+
+.cabinet-history-pay-table-body__list > * {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+}
+
+.cabinet-history-pay-table-body__list-item {
+  border: solid #c5c5c5;
+  border-width: 0 1px 1px 1px;
+}
+
+.cabinet-history-pay-table-body__list-item:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.cabinet-history-pay-table-body__list-item:nth-child(even) {
+  background: #f4f4f4;
+}
+
+.cabinet-history-pay-table-body__list-cell {
+  float: left;
+  line-height: 46px;
+  height: 48px;
+  text-align: center;
+  color: #3D3D3D;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cabinet-history-pay-table-body__list-cell:before {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  list-style: none;
+  box-shadow: none;
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  display: block;
+  float: none;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 0;
+  height: 31px;
+  border-left: 2px solid #000000;
+}
+
+.cabinet-history-pay-table-body__list-cell:first-child:before {
+  display: none;
+}
+
+.cabinet-history-pay-table-body__list-cell .icon {
+  vertical-align: middle;
+}
+
+.cabinet-history-pay-table-body__list-cell_type_numbers {
+  width: 75%;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.cabinet-history-pay-table-body__list-cell_type_date {
+  width: 11%;
+}
+
+.cabinet-history-pay-table-body__list-cell_type_top {
+  width: 14%;
 }

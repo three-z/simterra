@@ -4342,6 +4342,16 @@ a {
 	border: 1px solid #E2E2E2;
 	box-shadow: 0.5px 0.9px 10px rgba(0, 0, 0, 0.1);
 	padding: 9px 13px;
+
+	h3 {
+		@include null-block;
+		float: left;
+		margin-top: 7px;
+		color: #3D3D3D;
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
 }
 
 .cabinet-history-phone {
@@ -4431,7 +4441,7 @@ a {
 		&:before {
 			@include null-pseudo;
 			top: 0;
-			left: -41px;
+			left: -30px;
 			content: "-";
 			color: #2D2D2D;
 			font-size: 36px;
@@ -4448,7 +4458,7 @@ a {
 
 	input[type="text"] {
 		@include null-inline-block;
-		width: 118px;
+		width: 130px;
 		box-shadow: none;
 		height: 38px;
 		line-height: 38px;
@@ -4457,6 +4467,8 @@ a {
 		font-size: 15px;
 		border: 1px solid #d8d8d8;
 		color: #2D2D2D;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 
 		@include placeholder {
 			color: #2D2D2D;
@@ -4656,6 +4668,130 @@ a {
 
 			&_total {
 				width: 7%;
+			}
+		}
+	}
+}
+
+// cabinet-history-use
+
+.cabinet-history-pay-table {
+	margin-top: 16px;
+}
+
+.cabinet-history-pay-table-header {
+
+	&__list {
+		@include null-list;
+		@include clearfix;
+	}
+
+	&__list-item {
+		float: left;
+		text-align: center;
+		color: #2D2D2D;
+		font-size: 12px;
+		text-transform: uppercase;
+		white-space: nowrap;
+		padding-top: 35px;
+		position: relative;
+
+		a {
+			text-decoration: none;
+			color: #2D2D2D;
+		}
+
+		.icon {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -9px;
+		}
+
+		&_type {
+
+			&_numbers {
+				width: 75%;
+				padding-left: 15px;
+				text-align: left;
+			}
+
+			&_date {
+				width: 11%;
+			}
+
+			&_top {
+				width: 14%;
+			}
+		}
+	}
+}
+
+.cabinet-history-pay-table-body {
+	margin-top: 4px;
+
+	&__list {
+		@include null-list;
+		border-top: 1px solid #c5c5c5;
+	}
+
+	&__list-item {
+		@include clearfix;
+		border: solid #c5c5c5;
+		border-width: 0 1px 1px 1px;
+
+		&:nth-child(even) {
+			background: #f4f4f4;
+		}
+	}
+
+	&__list-cell {
+		float: left;
+		line-height: 46px;
+		height: 48px;
+		text-align: center;
+		color: #3D3D3D;
+		font-size: 18px;
+		text-transform: uppercase;
+		position: relative;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		&:before {
+			@include null-pseudo;
+			top: 8px;
+			left: 0;
+			width: 0;
+			height: 31px;
+			border-left: 2px solid #000000;
+		}
+
+		&:first-child {
+
+			&:before {
+				display: none;
+			}
+		}
+
+		.icon {
+			vertical-align: middle;
+		}
+
+		&_type {
+
+			&_numbers {
+				width: 75%;
+				text-align: left;
+				padding-left: 15px;
+			}
+
+			&_date {
+				width: 11%;
+			}
+
+			&_top {
+				width: 14%;
 			}
 		}
 	}

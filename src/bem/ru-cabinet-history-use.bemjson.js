@@ -297,7 +297,7 @@
 																					content: [
 																						{
 																							tag: 'input',
-																							attrs: {'type': 'text', 'value': '', 'placeholder': '_ _ - _ _ - _ _ г.'}
+																							attrs: {'type': 'text', 'value': '', 'placeholder': '9 9 - 9 9 - 9 9 г.'}
 																						},
 																						{
 																							block : 'icon',

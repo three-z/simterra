@@ -119,6 +119,10 @@ block('template-page').replace()(function() {
 						},
 						{
 							tag: 'script',
+							attrs: { src: 'bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js' }
+						},
+						{
+							tag: 'script',
 							attrs: { src: 'js/scripts.js' }
 						}
 					]
