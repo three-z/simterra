@@ -69,10 +69,10 @@ $(document).ready(function() {
 	});
 
 	var options = {
-		ovalWidth: 380,
-		ovalHeight: 50,
+		ovalWidth: 520,
+		ovalHeight: 85,
 		offsetX: 100,
-		offsetY: 325,
+		offsetY: 385,
 		angle: 0,
 		activeItem: 0,
 		duration: 350,

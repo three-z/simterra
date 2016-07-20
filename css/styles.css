@@ -3605,7 +3605,7 @@ a:hover .help-list-item__text {
 }
 
 .order-select {
-  margin-top: 13px;
+  margin: 13px -20px 0 -20px;
 }
 
 .order-select-slider {
@@ -3617,11 +3617,11 @@ a:hover .help-list-item__text {
 .order-select-slider__list {
   left: 50%;
   position: absolute;
-  width: 1200px;
-  margin-left: -575px;
+  width: 1280px;
+  margin-left: -640px;
   overflow: hidden;
   height: 710px;
-  top: -130px;
+  top: 10px;
 }
 
 .order-select-slider__list:before, .order-select-slider__list:after {
@@ -3644,35 +3644,35 @@ a:hover .help-list-item__text {
 }
 
 .order-select-slider__list:before {
-  top: 278px;
+  top: 130px;
   left: 50%;
-  margin-left: -347px;
-  width: 586px;
-  height: 23px;
+  margin-left: -309px;
+  width: 575px;
+  height: 31px;
   background: url(../img/order-select-list/line-back.png) 0 0 no-repeat;
 }
 
 .order-select-slider__list:after {
-  top: 278px;
+  top: 138px;
   left: 50%;
-  margin-left: -452px;
+  margin-left: -423px;
   width: 771px;
   height: 145px;
   background: url(../img/order-select-list/line-front.png) 0 0 no-repeat;
-  z-index: 6;
+  z-index: 3;
 }
 
 .order-select-slider__list-item {
   display: block;
   position: absolute;
-  -webkit-transform: scale(0.6);
-  transform: scale(0.6);
-  width: 465px;
-  height: 546px;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  width: 521px;
+  height: 325px;
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 100% 50%;
   vertical-align: middle;
-  line-height: 546px;
+  line-height: 325px;
 }
 
 .order-select-slider__list-item.active {
@@ -3696,21 +3696,21 @@ a:hover .help-list-item__text {
   white-space: nowrap;
   display: block;
   position: absolute;
-  width: 197px;
-  height: 277px;
-  top: 52px;
+  width: 355px;
+  height: 220px;
+  top: 116px;
   z-index: 10;
   cursor: pointer;
 }
 
 .order-select-slider__previous {
   left: 50%;
-  margin-left: -458px;
+  margin-left: -622px;
 }
 
 .order-select-slider__next {
   right: 50%;
-  margin-right: -398px;
+  margin-right: -622px;
 }
 
 .order-select-content {
