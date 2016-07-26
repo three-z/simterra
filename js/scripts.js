@@ -138,6 +138,18 @@ $(document).ready(function() {
 		$('.calculator-calls-select__to select').val(from).trigger('refresh');;
 	});
 
-	var dateMask = $('.cabinet-history-dates input[type="text"]').attr('placeholder').replace('_ _ - _ _ - _ _', '9 9 - 9 9 - 9 9');
-	$('.cabinet-history-dates input[type="text"]').mask(dateMask);
+	if ($('.cabinet-history-dates input[type="text"]').length) {
+		var dateMask = $('.cabinet-history-dates input[type="text"]').attr('placeholder').replace('_ _ - _ _ - _ _', '9 9 - 9 9 - 9 9');
+		$('.cabinet-history-dates input[type="text"]').mask(dateMask);
+	}
+
+	$('.contacts-map__button a').on('click', function(e) {
+		e.preventDefault();
+
+		$('.contacts-map__map').animate({
+			height: 600,
+		}, 1000, "linear", function() {
+			$('.contacts-map__button, .contacts-map__overflow').hide();
+		});
+	});
 });

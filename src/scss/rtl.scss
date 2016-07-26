@@ -1354,3 +1354,67 @@ body {
 		}
 	}
 }
+
+// contacts
+
+.contacts {
+
+	&__layout-left {
+		float: right;
+	}
+
+	&__layout-right {
+		float: left;
+		margin-right: 0;
+		margin-left: 7%;
+	}
+}
+
+.contacts-form {
+
+	&__placeholder {
+		padding-left: 0;
+		padding-right: 8px;
+
+		.icon {
+			margin-right: 0;
+			margin-left: 9px;
+		}
+	}
+
+	&__field {
+		float: right;
+
+		&_type {
+
+			&_textarea {
+
+				.contacts-form__placeholder {
+					left: auto;
+					right: 12px;
+				}
+			}
+		}
+	}
+
+	&__controls {
+
+		button {
+			@extend .button-forward;
+		}
+	}
+}
+
+.contacts-phones {
+	direction: ltr;
+}
+
+.contacts-self {
+
+	&__go {
+
+		a {
+			@extend .button-forward;
+		}
+	}
+}

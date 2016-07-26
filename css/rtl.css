@@ -2,24 +2,24 @@ body {
   direction: rtl;
 }
 
-.button-forward, .calculator-buy a, .home-events-list-item__more a, .cabinet-info-cards-add a, .cabinet-info-security__edit a, .cabinet-confirm-buy a, .cabinet-did-buy a, .cabinet-done-go a, .cabinet-questions-item-form__controls button, .order-info-pay a, .cabinet-history-controls a {
+.button-forward, .calculator-buy a, .home-events-list-item__more a, .cabinet-info-cards-add a, .cabinet-info-security__edit a, .cabinet-confirm-buy a, .cabinet-did-buy a, .cabinet-done-go a, .cabinet-questions-item-form__controls button, .order-info-pay a, .cabinet-history-controls a, .contacts-form__controls button, .contacts-self__go a {
   padding-right: 17px;
   padding-left: 35px;
 }
 
-.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .order-info-pay a:after, .cabinet-history-controls a:after, .button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before, .order-info-pay a:before, .cabinet-history-controls a:before {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .order-info-pay a:after, .cabinet-history-controls a:after, .contacts-form__controls button:after, .contacts-self__go a:after, .button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before, .order-info-pay a:before, .cabinet-history-controls a:before, .contacts-form__controls button:before, .contacts-self__go a:before {
   right: auto;
   left: 10px;
 }
 
-.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .order-info-pay a:after, .cabinet-history-controls a:after {
+.button-forward:after, .calculator-buy a:after, .home-events-list-item__more a:after, .cabinet-info-cards-add a:after, .cabinet-info-security__edit a:after, .cabinet-confirm-buy a:after, .cabinet-did-buy a:after, .cabinet-done-go a:after, .cabinet-questions-item-form__controls button:after, .order-info-pay a:after, .cabinet-history-controls a:after, .contacts-form__controls button:after, .contacts-self__go a:after {
   border-left-color: transparent;
   border-right-color: #ffffff;
   margin-right: 0;
   margin-left: 2px;
 }
 
-.button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before, .order-info-pay a:before, .cabinet-history-controls a:before {
+.button-forward:before, .calculator-buy a:before, .home-events-list-item__more a:before, .cabinet-info-cards-add a:before, .cabinet-info-security__edit a:before, .cabinet-confirm-buy a:before, .cabinet-did-buy a:before, .cabinet-done-go a:before, .cabinet-questions-item-form__controls button:before, .order-info-pay a:before, .cabinet-history-controls a:before, .contacts-form__controls button:before, .contacts-self__go a:before {
   border-left-color: transparent;
   border-right-color: #000000;
 }
@@ -935,4 +935,37 @@ body {
   text-align: right;
   padding-left: 0;
   padding-right: 15px;
+}
+
+.contacts__layout-left {
+  float: right;
+}
+
+.contacts__layout-right {
+  float: left;
+  margin-right: 0;
+  margin-left: 7%;
+}
+
+.contacts-form__placeholder {
+  padding-left: 0;
+  padding-right: 8px;
+}
+
+.contacts-form__placeholder .icon {
+  margin-right: 0;
+  margin-left: 9px;
+}
+
+.contacts-form__field {
+  float: right;
+}
+
+.contacts-form__field_type_textarea .contacts-form__placeholder {
+  left: auto;
+  right: 12px;
+}
+
+.contacts-phones {
+  direction: ltr;
 }

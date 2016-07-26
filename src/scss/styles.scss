@@ -188,6 +188,24 @@ a {
 			height: 16px;
 			background-image: url(../img/icons/send.png);
 		}
+
+		&_email {
+			width: 19px;
+			height: 14px;
+			background-image: url(../img/icons/email.png);
+		}
+
+		&_name {
+			width: 16px;
+			height: 15px;
+			background-image: url(../img/icons/name.png);
+		}
+
+		&_numbers {
+			width: 16px;
+			height: 16px;
+			background-image: url(../img/icons/numbers.png);
+		}
 	}
 }
 
@@ -499,6 +517,8 @@ a {
 .bottom {
 	margin-top: 63px;
 	margin-bottom: -32px;
+	position: relative;
+	z-index: 1;
 
 	&__layout {
 		@include clearfix;
@@ -4794,5 +4814,214 @@ a {
 				width: 14%;
 			}
 		}
+	}
+}
+
+// contacts
+
+.contacts {
+
+	&__layout {
+		@include clearfix;
+	}
+
+	&__layout-left {
+		float: left;
+		width: 57%;
+	}
+
+	&__layout-right {
+		float: right;
+		width: 36%;
+		margin-right: 7%;
+	}
+}
+
+.contacts-note {
+	color: #282828;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.contacts-form {
+	margin-top: 44px;
+	width: 576px;
+
+	&__form {
+		@include null-block;
+	}
+
+	&__row {
+		@include clearfix;
+		margin: 21px -11px 0 -11px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&__label {
+		@include null-block;
+		width: 100%;
+		display: table;
+		border: 1px solid #d8d8d8;
+		cursor: pointer;
+	}
+
+	&__placeholder {
+		display: table-cell;
+		padding-left: 8px;
+		width: 1px;
+		vertical-align: middle;
+		color: #2D2D2D;
+		font-size: 15px;
+		text-transform: uppercase;
+		white-space: nowrap;
+
+		.icon {
+			vertical-align: baseline;
+			margin-right: 9px;
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	&__field {
+		float: left;
+		width: 50%;
+		padding: 0 11px;
+		position: relative;
+
+		input[type="text"],
+		textarea {
+			@include null-block;
+			display: table-cell;
+			width: 100%;
+			box-shadow: none;
+			height: 36px;
+			line-height: 36px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 15px;
+
+			@include placeholder {
+				color: #7E7E7E;
+				font-weight: 100;
+				font-style: italic;
+			}
+		}
+
+		textarea {
+			display: block;
+			height: 184px;
+			padding-top: 25px;
+			padding-bottom: 5px;
+		}
+
+		&_columns {
+
+			&_2 {
+				width: 100%;
+			}
+		}
+
+		&_type {
+
+			&_textarea {
+
+				.contacts-form__placeholder {
+					display: block;
+					position: absolute;
+					top: 7px;
+					left: 12px;
+				}
+			}
+		}
+	}
+
+	&__controls {
+		margin-top: 35px;
+
+		button {
+			@extend .button-forward;
+		}
+	}
+}
+
+.contacts-phones {
+	margin-top: 51px;
+	padding-top: 222px;
+	background: url(../img/contacts/icons/phones.png) 50% 0 no-repeat;
+	color: #282828;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 53px;
+	text-align: center;
+}
+
+.contacts-self {
+	margin-top: 60px;
+
+	&__go {
+		text-align: center;
+
+		a {
+			@extend .button-forward;
+		}
+	}
+}
+
+.contacts-map {
+	margin-top: 45px;
+	margin-bottom: -168px;
+	position: relative;
+
+	&:before {
+		@include null-pseudo;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 30px;
+		z-index: 1;
+		box-shadow: inset 2.5px 4.3px 5px rgba(0, 0, 0, 0.13);
+	}
+
+	&__button {
+		position: absolute;
+		top: -48px;
+		left: 50%;
+		margin-left: -44px;
+		z-index: 2;
+
+		a {
+			@include img-replace;
+			display: block;
+			width: 88px;
+			height: 89px;
+			background: url(../img/contacts/icons/show-map.png) 50% 0 no-repeat;
+
+			&:hover	{
+				opacity: 1;
+			}
+		}
+	}
+
+	&__map {
+		overflow: hidden;
+		height: 184px;
+
+		iframe {
+			width: 100%;
+		}
+	}
+
+	&__overflow {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 2;
 	}
 }
